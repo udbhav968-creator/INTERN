@@ -1,6 +1,6 @@
 # Model Cards
 
-Generated 2026-11-16T11:54:33+00:00 from commit `c7e8206d0f73d7b4697ab012f3aff3e882cff843` by `python -m model.mlops_registry_and_cards`.
+Generated 2026-11-16T12:31:46+00:00 from commit `e1f6a832bde41e792f858639f86c8af99594e86e` by `python -m model.mlops_registry_and_cards`.
 
 ## Summary
 
@@ -12,6 +12,7 @@ Generated 2026-11-16T11:54:33+00:00 from commit `c7e8206d0f73d7b4697ab012f3aff3e
 | ncert_rag_retriever | production | eval_questions: 9448; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3496; top3_chapter_accuracy: 0.5341; random_baseline_top1: 0.0154 |
 | ncert_rag_retriever_unified | candidate | unified: eval_questions: 1747; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3268; top3_chapter_accuracy: 0.5335; random_baseline_top1: 0.0154; production_on_same_set: eval_questions: 1747; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3183; top3_chapter_accuracy: 0.5031; random_baseline_top1: 0.0154 |
 | irt_cold_start_ridge | production_prior | a_5fold_r2: 0.948; b_5fold_r2: 0.9949; c_5fold_r2: 0.818 |
+| student_response_models | waiting_for_data | status: SKIPPED_INSUFFICIENT_DATA; readiness_checks: students >= 200: False; responses >= 20000: False; items with >= 30 responses >= 50: False; irt: —; bkt: — |
 | bkt_dina_linucb_priors | production_prior | student_attempts_available: 0; linucb_cold_start_regret_reduction_vs_random_percent: 96.8 |
 
 ## difficulty_rf_production
@@ -91,6 +92,19 @@ Generated 2026-11-16T11:54:33+00:00 from commit `c7e8206d0f73d7b4697ab012f3aff3e
 | metrics | a_5fold_r2: 0.948; b_5fold_r2: 0.9949; c_5fold_r2: 0.818 |
 | limitations | high R2 reflects that targets are a function of the inputs (tier, time) |
 | artifacts | model/irt_cold_start_ridge.npz (48e28076ccb1) |
+
+## student_response_models
+
+| Field | Value |
+|---|---|
+| status | waiting_for_data |
+| task | fit IRT a/b/c and per-chapter BKT from real student answers |
+| training_data | 0 responses from 0 students |
+| labels | observed correct/incorrect answers |
+| evaluation | held-out students; predict the second half of each student's answers |
+| metrics | status: SKIPPED_INSUFFICIENT_DATA; readiness_checks: students >= 200: False; responses >= 20000: False; items with >= 30 responses >= 50: False; irt: —; bkt: — |
+| limitations | DINA and LinUCB are not re-fitted here (Q-matrix validation and logged propensities needed) |
+| artifacts | model/student_models/irt_item_parameters_fitted.json (None); model/student_models/bkt_chapter_parameters_fitted.json (None) |
 
 ## bkt_dina_linucb_priors
 

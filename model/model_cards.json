@@ -1,7 +1,7 @@
 {
   "lineage": {
-    "generated_at_utc": "2026-11-16T11:54:33+00:00",
-    "git_commit": "c7e8206d0f73d7b4697ab012f3aff3e882cff843",
+    "generated_at_utc": "2026-11-16T12:31:46+00:00",
+    "git_commit": "e1f6a832bde41e792f858639f86c8af99594e86e",
     "libraries": {
       "python": "3.13.18",
       "numpy": "2.5.3",
@@ -207,6 +207,39 @@
       },
       "limitations": [
         "high R2 reflects that targets are a function of the inputs (tier, time)"
+      ]
+    },
+    {
+      "model": "student_response_models",
+      "status": "waiting_for_data",
+      "task": "fit IRT a/b/c and per-chapter BKT from real student answers",
+      "artifacts": [
+        {
+          "path": "model/student_models/irt_item_parameters_fitted.json",
+          "sha256": null,
+          "size_bytes": null
+        },
+        {
+          "path": "model/student_models/bkt_chapter_parameters_fitted.json",
+          "sha256": null,
+          "size_bytes": null
+        }
+      ],
+      "training_data": "0 responses from 0 students",
+      "labels": "observed correct/incorrect answers",
+      "evaluation": "held-out students; predict the second half of each student's answers",
+      "metrics": {
+        "status": "SKIPPED_INSUFFICIENT_DATA",
+        "readiness_checks": {
+          "students >= 200": false,
+          "responses >= 20000": false,
+          "items with >= 30 responses >= 50": false
+        },
+        "irt": null,
+        "bkt": null
+      },
+      "limitations": [
+        "DINA and LinUCB are not re-fitted here (Q-matrix validation and logged propensities needed)"
       ]
     },
     {
