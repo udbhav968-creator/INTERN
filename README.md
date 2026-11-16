@@ -1,7 +1,7 @@
 # Klassed NEET Adaptive Engine
 
 **Author:** Udbhav Yadav (ML Engineer Intern) · **Institution:** Bennett University  
-**Repository:** `udbhav968-creator/INETERNSHIP_WORK` · **Upstream:** `parvwadhwa/Klassed-neet-adaptive-engine`  
+**Repository:** `udbhav968-creator/INTERN` · **Upstream:** `parvwadhwa/Klassed-neet-adaptive-engine`  
 **Live app:** [klassed-neet-adaptive-engine.vercel.app](https://klassed-neet-adaptive-engine.vercel.app)  
 **Stack:** Python 3.11+, FastAPI, NumPy, SciPy, scikit-learn, SQLite (PostgreSQL adapter available), React 18, TypeScript, Vite, Tailwind CSS, Vercel serverless.
 
@@ -153,8 +153,8 @@ Measured with `scripts/million_user_scale_benchmark.py`, 16 threads, 5,000 simul
 ## 10. Quickstart
 
 ```bash
-git clone https://github.com/udbhav968-creator/INETERNSHIP_WORK.git
-cd INETERNSHIP_WORK
+git clone https://github.com/udbhav968-creator/INTERN.git
+cd INTERN
 python -m venv venv && venv\Scripts\activate
 pip install -r backend/requirements.txt
 
