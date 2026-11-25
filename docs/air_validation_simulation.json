@@ -1,0 +1,637 @@
+{
+  "note": "all students are simulated from the model's own item parameters; this validates the estimator, not real students",
+  "calibration": [
+    {
+      "true_theta": -1.5,
+      "n": 120,
+      "mean_error": 0.0167,
+      "rmse": 0.1982,
+      "mean_claimed_sem": 0.1917,
+      "coverage_95": 0.9667,
+      "median_air": 1701111
+    },
+    {
+      "true_theta": -1.0,
+      "n": 120,
+      "mean_error": 0.011,
+      "rmse": 0.1449,
+      "mean_claimed_sem": 0.162,
+      "coverage_95": 0.9583,
+      "median_air": 1382056
+    },
+    {
+      "true_theta": 0.0,
+      "n": 120,
+      "mean_error": -0.0141,
+      "rmse": 0.0998,
+      "mean_claimed_sem": 0.1093,
+      "coverage_95": 0.975,
+      "median_air": 545606
+    },
+    {
+      "true_theta": 1.0,
+      "n": 120,
+      "mean_error": -0.0117,
+      "rmse": 0.1248,
+      "mean_claimed_sem": 0.1263,
+      "coverage_95": 0.9333,
+      "median_air": 138767
+    },
+    {
+      "true_theta": 2.0,
+      "n": 120,
+      "mean_error": -0.015,
+      "rmse": 0.1208,
+      "mean_claimed_sem": 0.1163,
+      "coverage_95": 0.95,
+      "median_air": 16701
+    },
+    {
+      "true_theta": 2.5,
+      "n": 120,
+      "mean_error": -0.0034,
+      "rmse": 0.1554,
+      "mean_claimed_sem": 0.1424,
+      "coverage_95": 0.9667,
+      "median_air": 1542
+    }
+  ],
+  "equating": [
+    {
+      "paper": "NEET-style form 0",
+      "true_theta": 0.5,
+      "mean_raw_marks": 421.0,
+      "mean_equated_marks": 417.9,
+      "median_air": 262347,
+      "median_range_width": 206289,
+      "verdict": "similar to the NEET-style reference form"
+    },
+    {
+      "paper": "NEET-style form 1",
+      "true_theta": 0.5,
+      "mean_raw_marks": 413.8,
+      "mean_equated_marks": 414.3,
+      "median_air": 271643,
+      "median_range_width": 212489,
+      "verdict": "similar to the NEET-style reference form"
+    },
+    {
+      "paper": "NEET-style form 2",
+      "true_theta": 0.5,
+      "mean_raw_marks": 414.2,
+      "mean_equated_marks": 409.5,
+      "median_air": 278614,
+      "median_range_width": 221788,
+      "verdict": "similar to the NEET-style reference form"
+    },
+    {
+      "paper": "deliberately hard",
+      "true_theta": 0.5,
+      "mean_raw_marks": -31.7,
+      "mean_equated_marks": 294.4,
+      "median_air": 695883,
+      "median_range_width": 1654413,
+      "verdict": "harder than the NEET-style reference form"
+    },
+    {
+      "paper": "deliberately easy",
+      "true_theta": 0.5,
+      "mean_raw_marks": 708.8,
+      "mean_equated_marks": 436.4,
+      "median_air": 259691,
+      "median_range_width": 392829,
+      "verdict": "easier than the NEET-style reference form"
+    }
+  ],
+  "label_sensitivity": [
+    {
+      "true_theta": -1.0,
+      "students": 30,
+      "mean_marks_formula": 147.6,
+      "mean_marks_v21": 90.2,
+      "mean_marks_uninformative": 119.5,
+      "median_air": 1330801,
+      "median_range_if_assumptions_wrong": [
+        772819,
+        2054176
+      ]
+    },
+    {
+      "true_theta": 0.0,
+      "students": 30,
+      "mean_marks_formula": 316.6,
+      "mean_marks_v21": 228.7,
+      "mean_marks_uninformative": 264.6,
+      "median_air": 519363,
+      "median_range_if_assumptions_wrong": [
+        239667,
+        1184881
+      ]
+    },
+    {
+      "true_theta": 1.0,
+      "students": 30,
+      "mean_marks_formula": 493.9,
+      "mean_marks_v21": 395.0,
+      "mean_marks_uninformative": 436.4,
+      "median_air": 135281,
+      "median_range_if_assumptions_wrong": [
+        29075,
+        417578
+      ]
+    },
+    {
+      "true_theta": 2.0,
+      "students": 30,
+      "mean_marks_formula": 625.0,
+      "mean_marks_v21": 583.4,
+      "mean_marks_uninformative": 600.5,
+      "median_air": 17415,
+      "median_range_if_assumptions_wrong": [
+        1,
+        74910
+      ]
+    }
+  ],
+  "sample_year_scenarios": {
+    "2024": {
+      "general_cutoff": 164,
+      "candidates_appeared": 2333297,
+      "score_on_reference_scale": 545.6,
+      "percentile": 96.262,
+      "air": 87209
+    },
+    "2025": {
+      "general_cutoff": 144,
+      "candidates_appeared": 2209318,
+      "score_on_reference_scale": 565.6,
+      "percentile": 97.155,
+      "air": 62851
+    },
+    "2026": {
+      "general_cutoff": 213,
+      "candidates_appeared": 1999895,
+      "score_on_reference_scale": 496.6,
+      "percentile": 93.518,
+      "air": 129637
+    }
+  },
+  "sample_scores": {
+    "raw_marks_this_attempt": 490,
+    "equated_neet_marks": 496.6,
+    "interval_90": [
+      455,
+      540
+    ],
+    "theta": 1.0327,
+    "theta_sem": 0.1273
+  },
+  "sample_focus_chapters": [
+    {
+      "chapter": "Biotechnology",
+      "subject": "Biology",
+      "mastery": 0.5047,
+      "level": "medium",
+      "in_syllabus": true,
+      "nmc_reduced_excluded": false,
+      "evidence": "measured",
+      "attempted_in_this_attempt": 4,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 4.93,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0273747315836787,
+      "pyq_last3_share": 0.034392132228574734,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.014,
+        "pyq_advanced_share": 0.265,
+        "mean_ideal_time_sec": 74.59
+      },
+      "marks_at_stake_if_target_reached": 8.5,
+      "air_places_gained_if_target_reached": 11159
+    },
+    {
+      "chapter": "Human Health, Disease & Microbes",
+      "subject": "Biology",
+      "mastery": 0.4448,
+      "level": "basic",
+      "in_syllabus": true,
+      "nmc_reduced_excluded": false,
+      "evidence": "measured",
+      "attempted_in_this_attempt": 4,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 3.78,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.021003421592568662,
+      "pyq_last3_share": 0.02021696301554102,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.066,
+        "pyq_advanced_share": 0.256,
+        "mean_ideal_time_sec": 75.02
+      },
+      "marks_at_stake_if_target_reached": 7.7,
+      "air_places_gained_if_target_reached": 10244
+    },
+    {
+      "chapter": "Chemical Bonding",
+      "subject": "Chemistry",
+      "mastery": 0.4251,
+      "level": "basic",
+      "in_syllabus": true,
+      "nmc_reduced_excluded": false,
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 3.44,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.01910895238739954,
+      "pyq_last3_share": 0.0110900614532759,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.167,
+        "pyq_advanced_share": 0.268,
+        "mean_ideal_time_sec": 93.93
+      },
+      "marks_at_stake_if_target_reached": 7.3,
+      "air_places_gained_if_target_reached": 9863
+    },
+    {
+      "chapter": "Thermodynamics",
+      "subject": "Chemistry",
+      "mastery": 0.4717,
+      "level": "medium",
+      "in_syllabus": true,
+      "nmc_reduced_excluded": false,
+      "evidence": "measured",
+      "attempted_in_this_attempt": 5,
+      "correct_in_this_attempt": 3,
+      "expected_questions_per_neet_paper": 3.81,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.02118261468606863,
+      "pyq_last3_share": 0.024285641755176442,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.383,
+        "pyq_advanced_share": 0.256,
+        "mean_ideal_time_sec": 105.53
+      },
+      "marks_at_stake_if_target_reached": 7.2,
+      "air_places_gained_if_target_reached": 9760
+    },
+    {
+      "chapter": "Current Electricity",
+      "subject": "Physics",
+      "mastery": 0.4946,
+      "level": "medium",
+      "in_syllabus": true,
+      "nmc_reduced_excluded": false,
+      "evidence": "measured",
+      "attempted_in_this_attempt": 3,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 3.96,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.022009889467726827,
+      "pyq_last3_share": 0.018144296234058038,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.776,
+        "pyq_advanced_share": 0.261,
+        "mean_ideal_time_sec": 115.5
+      },
+      "marks_at_stake_if_target_reached": 7.0,
+      "air_places_gained_if_target_reached": 9575
+    },
+    {
+      "chapter": "Rotational Motion",
+      "subject": "Physics",
+      "mastery": 0.2819,
+      "level": "basic",
+      "in_syllabus": true,
+      "nmc_reduced_excluded": false,
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 2.46,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.013641572001278244,
+      "pyq_last3_share": 0.0110900614532759,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.905,
+        "pyq_advanced_share": 0.31,
+        "mean_ideal_time_sec": 117.76
+      },
+      "marks_at_stake_if_target_reached": 7.0,
+      "air_places_gained_if_target_reached": 9504
+    },
+    {
+      "chapter": "Semiconductor Electronics",
+      "subject": "Physics",
+      "mastery": 0.3325,
+      "level": "basic",
+      "in_syllabus": true,
+      "nmc_reduced_excluded": false,
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 2.72,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.015086067438325223,
+      "pyq_last3_share": 0.014528577814103095,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.441,
+        "pyq_advanced_share": 0.241,
+        "mean_ideal_time_sec": 112.07
+      },
+      "marks_at_stake_if_target_reached": 7.0,
+      "air_places_gained_if_target_reached": 9560
+    },
+    {
+      "chapter": "Work, Energy & Power",
+      "subject": "Physics",
+      "mastery": 0.3686,
+      "level": "basic",
+      "in_syllabus": true,
+      "nmc_reduced_excluded": false,
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 2.6,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.01443898126735311,
+      "pyq_last3_share": 0.012776467566547836,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.654,
+        "pyq_advanced_share": 0.235,
+        "mean_ideal_time_sec": 113.44
+      },
+      "marks_at_stake_if_target_reached": 6.3,
+      "air_places_gained_if_target_reached": 8728
+    }
+  ],
+  "sample_watchlist": [
+    {
+      "chapter": "General Principles & Metallurgy",
+      "subject": "Chemistry",
+      "mastery": 0.6595,
+      "pyq_mean_share": 0.014796371937166939,
+      "pyq_last3_share": 0.0280118625827897
+    },
+    {
+      "chapter": "Redox Reactions & Electrochemistry",
+      "subject": "Chemistry",
+      "mastery": 0.7685,
+      "pyq_mean_share": 0.01273963343066173,
+      "pyq_last3_share": 0.019896406481613296
+    },
+    {
+      "chapter": "Gravitation",
+      "subject": "Physics",
+      "mastery": 0.2907,
+      "pyq_mean_share": 0.011389712126295293,
+      "pyq_last3_share": 0.016844150788997148
+    },
+    {
+      "chapter": "Biomolecules & Polymers",
+      "subject": "Chemistry",
+      "mastery": 0.7978,
+      "pyq_mean_share": 0.01732100352114429,
+      "pyq_last3_share": 0.022599235641904504
+    },
+    {
+      "chapter": "Evolution",
+      "subject": "Biology",
+      "mastery": 0.4059,
+      "pyq_mean_share": 0.011661488318103581,
+      "pyq_last3_share": 0.014771484007514166
+    },
+    {
+      "chapter": "Biotechnology",
+      "subject": "Biology",
+      "mastery": 0.5047,
+      "pyq_mean_share": 0.0273747315836787,
+      "pyq_last3_share": 0.034392132228574734
+    },
+    {
+      "chapter": "Circulation & Excretion",
+      "subject": "Biology",
+      "mastery": 0.6859,
+      "pyq_mean_share": 0.01637327115996667,
+      "pyq_last3_share": 0.020040756473599382
+    }
+  ],
+  "sample_college_reach": [
+    {
+      "college_tier": "AIIMS New Delhi",
+      "target_score_720": 705,
+      "target_air_cutoff": 55,
+      "probability_percent": 0.0,
+      "status": "UNLIKELY",
+      "threshold_status": "approximate"
+    },
+    {
+      "college_tier": "Central Institutes (MAMC, VMMC, JIPMER, AIIMS Top 5)",
+      "target_score_720": 680,
+      "target_air_cutoff": 1200,
+      "probability_percent": 0.0,
+      "status": "UNLIKELY",
+      "threshold_status": "approximate"
+    },
+    {
+      "college_tier": "Top State Govt Medical Colleges",
+      "target_score_720": 630,
+      "target_air_cutoff": 15000,
+      "probability_percent": 0.0,
+      "status": "UNLIKELY",
+      "threshold_status": "approximate"
+    },
+    {
+      "college_tier": "All-India Govt MBBS Floor",
+      "target_score_720": 595,
+      "target_air_cutoff": 32000,
+      "probability_percent": 0.0,
+      "status": "UNLIKELY",
+      "threshold_status": "approximate"
+    },
+    {
+      "college_tier": "State Quota Govt Medical Seats",
+      "target_score_720": 540,
+      "target_air_cutoff": 75000,
+      "probability_percent": 4.6,
+      "status": "UNLIKELY",
+      "threshold_status": "approximate"
+    },
+    {
+      "college_tier": "Deemed / Semi-Govt Merit Seats",
+      "target_score_720": 480,
+      "target_air_cutoff": 150000,
+      "probability_percent": 74.0,
+      "status": "COMPETITIVE",
+      "threshold_status": "approximate"
+    },
+    {
+      "college_tier": "NEET Qualifying Cutoff",
+      "target_score_720": 213,
+      "target_air_cutoff": 1121185,
+      "probability_percent": 100.0,
+      "status": "SECURE",
+      "threshold_status": "sourced"
+    }
+  ],
+  "sample_air": {
+    "estimate": 129637,
+    "range_90": [
+      80796,
+      198690
+    ],
+    "percentile": 93.518,
+    "paper_year_spread": [
+      62851,
+      129637
+    ],
+    "range_if_assumptions_wrong": [
+      26755,
+      451796
+    ],
+    "display": {
+      "estimate": 130000,
+      "range_90": [
+        81000,
+        200000
+      ],
+      "range_if_assumptions_wrong": [
+        27000,
+        450000
+      ],
+      "note": "rounded to 2 significant digits to avoid false precision"
+    }
+  },
+  "sample_reliability": {
+    "basis": "prior_based_no_real_student_calibration",
+    "real_student_attempts_used_for_calibration": 0,
+    "item_difficulty_labels": "PYQ item difficulty is formula-derived (kappa 0.07 against human labels)",
+    "score_to_rank_curve": "hand_set_approximate",
+    "neet_facts_verification": [
+      "not_verified_in_audit"
+    ],
+    "models_by_basis": {
+      "fitted_on_real_human_labels": 3,
+      "fitted_on_formula_derived_labels": 3,
+      "hand_designed_prior": 4,
+      "design_objective_simulated": 1,
+      "rule_based": 3,
+      "math_on_priors": 4,
+      "built_waiting_for_data": 1
+    },
+    "difficulty_label_sensitivity_marks": {
+      "v21_labels": -110.8,
+      "labels_uninformative": -66.5
+    },
+    "direction_of_label_risk": "all tested alternatives lower the estimate",
+    "statement": "Indicative range only. It rests on prior item parameters, not on real students, and changing the difficulty-label assumption alone moves the equated marks by up to 111. Every tested alternative lowers the estimate, so the upper half of the range deserves extra caution. The wider range_if_assumptions_wrong includes that and the 2024-2026 paper-year variation."
+  },
+  "sample_sensitivity": {
+    "difficulty_labels": {
+      "v21_labels": {
+        "theta": -0.2022,
+        "equated_marks": 385.8,
+        "delta_marks": -110.8
+      },
+      "labels_uninformative": {
+        "theta": 0.403,
+        "equated_marks": 430.1,
+        "delta_marks": -66.5
+      }
+    },
+    "meaning": "same answers re-estimated if PYQ difficulty followed the v2.1 human-trained labels, or if the labels carried no information; the production estimate uses the formula labels"
+  },
+  "rank_curve": {
+    "score_anchors": [
+      0.0,
+      80.0,
+      130.0,
+      165.0,
+      200.0,
+      300.0,
+      400.0,
+      500.0,
+      550.0,
+      600.0,
+      650.0,
+      680.0,
+      700.0,
+      715.0,
+      720.0
+    ],
+    "percentile_anchors": [
+      0.0,
+      12.0,
+      27.0,
+      38.5,
+      48.0,
+      71.0,
+      85.5,
+      93.8,
+      96.5,
+      98.6,
+      99.65,
+      99.92,
+      99.988,
+      99.998,
+      100.0
+    ],
+    "air_at_score": {
+      "0": 1999895,
+      "40": 1879901,
+      "80": 1759908,
+      "120": 1519920,
+      "160": 1262791,
+      "200": 1039945,
+      "240": 855955,
+      "280": 671965,
+      "320": 521973,
+      "360": 405979,
+      "400": 289985,
+      "440": 223588,
+      "480": 157192,
+      "520": 102395,
+      "560": 61597,
+      "600": 27999,
+      "640": 11199,
+      "680": 1600,
+      "720": 1
+    },
+    "college_tiers": [
+      {
+        "name": "AIIMS New Delhi",
+        "score": 705,
+        "air": 55
+      },
+      {
+        "name": "Central Institutes (MAMC, VMMC, JIPMER, AIIMS Top 5)",
+        "score": 680,
+        "air": 1200
+      },
+      {
+        "name": "Top State Govt Medical Colleges",
+        "score": 630,
+        "air": 15000
+      },
+      {
+        "name": "All-India Govt MBBS Floor",
+        "score": 595,
+        "air": 32000
+      },
+      {
+        "name": "State Quota Govt Medical Seats",
+        "score": 540,
+        "air": 75000
+      },
+      {
+        "name": "Deemed / Semi-Govt Merit Seats",
+        "score": 480,
+        "air": 150000
+      },
+      {
+        "name": "NEET Qualifying Cutoff",
+        "score": 213,
+        "air": 1121185
+      }
+    ]
+  }
+}

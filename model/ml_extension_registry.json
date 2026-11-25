@@ -3,8 +3,8 @@
   "artifacts": {
     "model/assessment_forms.json": {
       "exists": true,
-      "size_bytes": 15898,
-      "sha256": "7631bc80d59d76c51b8b1d71ebcc44b71a9385ab8be8ef480c8c8618e7dc8d77"
+      "size_bytes": 15900,
+      "sha256": "31de7d4d3e8730d1d06bce371cff6bb0ddd33b8e673cd9d60a8dd8d22ba936e3"
     },
     "model/cold_start_irt_linking.json": {
       "exists": true,
@@ -13,13 +13,13 @@
     },
     "model/sample_paper_irt_parameters.json": {
       "exists": true,
-      "size_bytes": 5447023,
-      "sha256": "49828da65b105f618b58b5ed7a398db0119cbbe29b0c1376140be7a08ff5d010"
+      "size_bytes": 5343570,
+      "sha256": "7dc1851d3a84020f49bf0a93312e115ed57c178530fe851675322648577f58b6"
     },
     "model/unified_near_duplicate_map.json": {
       "exists": true,
-      "size_bytes": 107243,
-      "sha256": "e4c986056825048287d243a3f321e36a83d1dbd0bdadb05ac34781086be78bfc"
+      "size_bytes": 107327,
+      "sha256": "3651a0ba3d60682cf7dad4c16ce1cfd51cf99e017700bf9b58ca741238943522"
     },
     "model/question_difficulty_model_v2_candidate.joblib": {
       "exists": true,
@@ -33,28 +33,28 @@
     },
     "model/bkt_chapter_parameters_unified.json": {
       "exists": true,
-      "size_bytes": 25910,
-      "sha256": "a6220e37c1572eced80b8662b88c3c7b64548b2ecbc1244f1495deb8acccafe1"
+      "size_bytes": 25916,
+      "sha256": "f8c8049fdf1535ad86dc178d3352e7e464c78c515f8502edfe290795d96d66e1"
     },
     "model/dina_calibrated_parameters_unified.json": {
       "exists": true,
-      "size_bytes": 5844,
-      "sha256": "587b9969f04658cb855682c39d56d0d667da9e437c36073a01c078f3b47933aa"
+      "size_bytes": 5836,
+      "sha256": "bc41616c3013e74759c0da5945cc96a2a5fa734dbfa40c6a274a45ebef1a1939"
     },
     "model/ncert_rag_svd_index_unified.npz": {
       "exists": true,
-      "size_bytes": 7780947,
-      "sha256": "f355a356f5bda827ba3f3bbfabea96c7d6a1ec42abfed929d648d8714e249fb7"
+      "size_bytes": 7684540,
+      "sha256": "3129bf5a29702728ffd05230226cc07b4f13a9a2829e37d4de30e424c643bdb5"
     },
     "model/ncert_rag_svd_meta_unified.json": {
       "exists": true,
-      "size_bytes": 3618181,
-      "sha256": "5cf1c29ad8aad943e4032c1b767714e558338da9056e625c99a0022a3bb841d1"
+      "size_bytes": 3589946,
+      "sha256": "87337fec034f11c614dea89cbbccbaf2fe067e951706f11618b693ae9f917e29"
     },
     "model/linucb_prior_init_unified.json": {
       "exists": true,
-      "size_bytes": 1020,
-      "sha256": "7a58fb03e8832b65a7e765de225ffc3482289de1ea80b66de2f3baffce8740a8"
+      "size_bytes": 1017,
+      "sha256": "5ec6e2220cc7f133d94d52f5f3e070a54ec55c86c496936493d7e493acd8cc75"
     },
     "model/conformal_laplacian_model_unified.json": {
       "exists": true,
@@ -63,13 +63,13 @@
     },
     "model/question_difficulty_model_v21_text_candidate.joblib": {
       "exists": true,
-      "size_bytes": 3073042,
-      "sha256": "e1158b6dba209a44bf44f0b9cd99edba04d425cc73c72adf0541ae6e29aa93cf"
+      "size_bytes": 3000379,
+      "sha256": "28d6fc1137e76ccbbb01f3a8d328228699e46ede781003a7d7863bf96b948a54"
     },
     "model/difficulty_model_v21_report.json": {
       "exists": true,
       "size_bytes": 2750,
-      "sha256": "6b234f1ffbffcf643443b3b5c6d678a3ca08fd2700f4f6d41fe88e93ed357eac"
+      "sha256": "94c8429967d4c6a973459305cecb69b0db393cee88cc5771e547eecdc97b6777"
     }
   }
 }

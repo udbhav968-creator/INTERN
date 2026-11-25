@@ -1,12 +1,12 @@
 {
  "method": "word 1-2 gram sublinear TF-IDF cosine on question text + options, same subject only",
  "threshold": 0.85,
- "items_scanned": 11848,
- "items_with_near_duplicates": 1697,
+ "items_scanned": 11664,
+ "items_with_near_duplicates": 1698,
  "near_duplicate_pairs_by_source": {
-  "pyq-sample_paper": 748,
+  "pyq-sample_paper": 750,
   "pyq-pyq": 6,
-  "sample_paper-sample_paper": 561
+  "sample_paper-sample_paper": 560
  },
  "siblings": {
   "NEET2013_BIO_093": [
@@ -104,6 +104,9 @@
   ],
   "NEET2014_CHEM_080": [
    "PAPER_82_QUES_080"
+  ],
+  "NEET2014_CHEM_085": [
+   "PAPER_82_QUES_085"
   ],
   "NEET2014_PHY_002": [
    "PAPER_82_QUES_002"
@@ -693,6 +696,7 @@
    "SAMPLE_048_Q127"
   ],
   "NEET2016_BIO_160": [
+   "SAMPLE_002_Q102",
    "SAMPLE_048_Q073"
   ],
   "NEET2016_BIO_161": [
@@ -873,9 +877,6 @@
   ],
   "NEET2016_PHY_008": [
    "SAMPLE_048_Q141"
-  ],
-  "NEET2016_PHY_009": [
-   "SAMPLE_050_Q032"
   ],
   "NEET2016_PHY_011": [
    "PAPER_80_QUES_011",
@@ -1628,6 +1629,9 @@
   "NEET2022_PHY_004": [
    "PAPER_65_QUES_031"
   ],
+  "NEET2022_PHY_005": [
+   "PAPER_65_QUES_025"
+  ],
   "NEET2022_PHY_013": [
    "PAPER_65_QUES_004"
   ],
@@ -2007,6 +2011,9 @@
   ],
   "PAPER_65_QUES_021": [
    "NEET2022_PHY_023"
+  ],
+  "PAPER_65_QUES_025": [
+   "NEET2022_PHY_005"
   ],
   "PAPER_65_QUES_026": [
    "NEET2022_PHY_020"
@@ -2547,6 +2554,9 @@
   "PAPER_82_QUES_080": [
    "NEET2014_CHEM_080"
   ],
+  "PAPER_82_QUES_085": [
+   "NEET2014_CHEM_085"
+  ],
   "PAPER_82_QUES_113": [
    "NEET2014_BIO_113"
   ],
@@ -3010,6 +3020,7 @@
    "PAPER_57_QUES_009"
   ],
   "SAMPLE_002_Q102": [
+   "NEET2016_BIO_160",
    "SAMPLE_048_Q073"
   ],
   "SAMPLE_002_Q134": [
@@ -3280,7 +3291,8 @@
    "SAMPLE_016_Q054",
    "SAMPLE_016_Q141",
    "SAMPLE_016_Q166",
-   "SAMPLE_016_Q176"
+   "SAMPLE_016_Q176",
+   "SAMPLE_041_Q118"
   ],
   "SAMPLE_013_Q099": [
    "SAMPLE_014_Q099",
@@ -3563,16 +3575,10 @@
    "NEET2018_CHEM_073"
   ],
   "SAMPLE_026_Q154": [
-   "SAMPLE_027_Q122",
-   "SAMPLE_027_Q123"
-  ],
-  "SAMPLE_027_Q122": [
-   "SAMPLE_026_Q154",
    "SAMPLE_027_Q123"
   ],
   "SAMPLE_027_Q123": [
-   "SAMPLE_026_Q154",
-   "SAMPLE_027_Q122"
+   "SAMPLE_026_Q154"
   ],
   "SAMPLE_028_Q066": [
    "NEET2020_CHEM_116"
@@ -3717,6 +3723,7 @@
    "SAMPLE_041_Q118"
   ],
   "SAMPLE_041_Q118": [
+   "SAMPLE_013_Q091",
    "SAMPLE_013_Q114",
    "SAMPLE_013_Q171",
    "SAMPLE_014_Q165",
@@ -6033,9 +6040,6 @@
    "NEET2016_BIO_166",
    "SAMPLE_047_Q166",
    "SAMPLE_048_Q110"
-  ],
-  "SAMPLE_050_Q032": [
-   "NEET2016_PHY_009"
   ]
  }
 }

@@ -1,0 +1,110 @@
+{
+  "_about": "Reference facts used by the rank simulator. Every block carries its own provenance. Nothing here was re-verified against NTA in the 2026-11 audit.",
+  "reference_exam_year": 2026,
+  "years": {
+    "2024": {
+      "registered": 2406079,
+      "appeared": 2333297,
+      "general_cutoff_score": 164,
+      "source": "source not recorded in the repository",
+      "verification": "not_verified_in_audit"
+    },
+    "2025": {
+      "registered": 2276069,
+      "appeared": 2209318,
+      "qualified": 1236531,
+      "general_cutoff_score": 144,
+      "source": "source not recorded in the repository",
+      "verification": "not_verified_in_audit"
+    },
+    "2026": {
+      "registered": 2279743,
+      "appeared": 1999895,
+      "qualified": 1121185,
+      "general_cutoff_score": 213,
+      "topper_score": 715,
+      "source": "NTA NEET UG 2026 result press coverage (re-exam June 21, result July 16, 2026)",
+      "verification": "not_verified_in_audit"
+    }
+  },
+  "score_percentile_anchors": {
+    "status": "hand_set_approximate",
+    "basis": "hand-set piecewise-linear anchors; NTA does not publish a full score-percentile table",
+    "score": [
+      0.0,
+      80.0,
+      130.0,
+      165.0,
+      200.0,
+      300.0,
+      400.0,
+      500.0,
+      550.0,
+      600.0,
+      650.0,
+      680.0,
+      700.0,
+      715.0,
+      720.0
+    ],
+    "percentile": [
+      0.0,
+      12.0,
+      27.0,
+      38.5,
+      48.0,
+      71.0,
+      85.5,
+      93.8,
+      96.5,
+      98.6,
+      99.65,
+      99.92,
+      99.988,
+      99.998,
+      100.0
+    ]
+  },
+  "college_tiers": {
+    "status": "approximate",
+    "basis": "indicative closing scores/ranks from past counselling rounds; vary by year, category, quota and round",
+    "tiers": [
+      {
+        "id": "aiims_delhi",
+        "name": "AIIMS New Delhi",
+        "score_threshold": 705,
+        "air_threshold": 55
+      },
+      {
+        "id": "central_institutes",
+        "name": "Central Institutes (MAMC, VMMC, JIPMER, AIIMS Top 5)",
+        "score_threshold": 680,
+        "air_threshold": 1200
+      },
+      {
+        "id": "top_state_govt",
+        "name": "Top State Govt Medical Colleges",
+        "score_threshold": 630,
+        "air_threshold": 15000
+      },
+      {
+        "id": "peripheral_govt",
+        "name": "All-India Govt MBBS Floor",
+        "score_threshold": 595,
+        "air_threshold": 32000
+      },
+      {
+        "id": "state_quota_govt",
+        "name": "State Quota Govt Medical Seats",
+        "score_threshold": 540,
+        "air_threshold": 75000
+      },
+      {
+        "id": "deemed_semi_govt",
+        "name": "Deemed / Semi-Govt Merit Seats",
+        "score_threshold": 480,
+        "air_threshold": 150000
+      }
+    ]
+  }
+}

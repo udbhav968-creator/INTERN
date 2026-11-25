@@ -1,0 +1,56 @@
+{
+  "rule": "foreign-script characters, Latin-Extended garble, and exact duplicate options (model/text_quality_gate.py)",
+  "pyq": {
+    "rows": 2400,
+    "flagged": 12,
+    "by_flag": {
+      "ocr_foreign_script_in_question": 8,
+      "ocr_foreign_script_in_option": 4
+    },
+    "flagged_ids": [
+      "NEET2023_CHEM_092",
+      "NEET2023_PHY_026",
+      "NEET2023_PHY_046",
+      "NEET2024_PHY_037",
+      "NEET2025_BIO_127",
+      "NEET2025_PHY_041",
+      "RENEET2026_PHY_007",
+      "RENEET2026_PHY_013",
+      "RENEET2026_PHY_023",
+      "RENEET2026_PHY_024",
+      "RENEET2026_PHY_037",
+      "RENEET2026_PHY_039"
+    ]
+  },
+  "sample_raw": {
+    "rows": 16689,
+    "flagged": 311,
+    "by_flag": {
+      "ocr_foreign_script_in_option": 85,
+      "ocr_foreign_script_in_question": 46,
+      "ocr_garbled_question": 55,
+      "ocr_garbled_option": 49,
+      "duplicate_options": 120
+    }
+  },
+  "sample_accepted": {
+    "rows": 9264,
+    "flagged": 0,
+    "by_flag": {}
+  },
+  "assessment_forms_with_flagged_questions": [],
+  "suspect_papers": [
+    {
+      "paper": "Sample Paper 50",
+      "rows": 86,
+      "flagged": 66,
+      "share": 0.7674
+    }
+  ],
+  "invariants": {
+    "accepted_set_has_no_flagged_rows": true,
+    "assessment_forms_have_no_flagged_questions": true
+  },
+  "pyq_policy": "flagged PYQs are excluded from ML-built forms and mocks; the PYQ file itself is not edited (content team decision)",
+  "passed": true
+}

@@ -9,6 +9,8 @@ import numpy as np
 
 from .irt_3pl_model import D_SCALING, get_item_params, theta_to_percentile
 from .question_similarity_audit import get_near_duplicate_siblings_map
+from .response_hygiene import clean_responses
+from .text_quality_gate import is_text_corrupt
 
 MODEL_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = MODEL_DIR.parent
@@ -74,6 +76,8 @@ def load_question_bank(path: Path = QUESTION_BANK_PATH, source: str = "pyq") -> 
     for r in rows:
         tier = str(r.get("difficulty_level") or "medium").strip().lower()
         if tier not in TIER_ORDER or r.get("subject") not in SUBJECT_QUOTAS:
+            continue
+        if is_text_corrupt(r):
             continue
         p = get_item_params(r["question_id"], tier, int(r.get("ideal_time_sec") or 90))
         bank.append(_bank_item(r, tier, {"a": p.a, "b": p.b, "c": p.c}, "pyq"))
@@ -363,6 +367,7 @@ def form_index_for_student(student_id: str, n_forms: int = DEFAULT_FORM_COUNT) -
 def score_initial_assessment(responses: list[dict], bank: list[dict] | None = None) -> dict:
     bank = bank if bank is not None else load_question_bank()
     by_id = {q["question_id"]: q for q in bank}
+    responses, hygiene = clean_responses(responses)
     grid = np.linspace(-4.0, 4.0, 161)
     log_post = -0.5 * grid ** 2
     chapter_obs: dict[str, list[int]] = defaultdict(list)
@@ -389,6 +394,7 @@ def score_initial_assessment(responses: list[dict], bank: list[dict] | None = No
         "theta_sem": round(sem, 4),
         "percentile": theta_to_percentile(theta),
         "attempted": correct + wrong,
+        "data_hygiene": hygiene,
         "correct": correct,
         "marks": correct * MARKS_CORRECT + wrong * MARKS_WRONG,
         "subject_marks": dict(subject_marks),
@@ -396,7 +402,21 @@ def score_initial_assessment(responses: list[dict], bank: list[dict] | None = No
     }
 
 
-def main() -> dict:
+ATTEMPTS_PATH = PROJECT_ROOT / "data" / "training" / "student_attempts.csv"
+
+
+def existing_attempt_rows(path: Path = ATTEMPTS_PATH) -> int:
+    if not path.exists():
+        return 0
+    with open(path, encoding="utf-8") as f:
+        return max(0, sum(1 for _ in f) - 1)
+
+
+def main(argv: list[str] | None = None, attempts_path: Path = ATTEMPTS_PATH) -> dict:
+    argv = argv or []
+    existing = existing_attempt_rows(attempts_path)
+    if existing > 0 and "--force" not in argv:
+        raise SystemExit(f"refusing to rebuild assessment forms: {existing} student attempts already exist and forms must stay fixed once students have taken them (use --force to override)")
     out = build_equated_forms()
     with open(FORMS_PATH, "w", encoding="utf-8") as f:
         json.dump(out["forms"], f, indent=2)
@@ -411,4 +431,6 @@ def main() -> dict:
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    main(sys.argv[1:])

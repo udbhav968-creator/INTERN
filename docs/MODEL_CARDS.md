@@ -1,20 +1,20 @@
 # Model Cards
 
-Generated 2026-11-16T15:20:58+00:00 from commit `14a0ac1c1e7f461db351e267d3df10e2d76c61bc` by `python -m model.mlops_registry_and_cards`.
+Generated 2026-11-23T16:13:21+00:00 from commit `aa97b6c0026a0cd7ce8154ea4f02f5d1fb896c39` by `python -m model.mlops_registry_and_cards`.
 
 ## Summary
 
 | Model | Status | Key metrics |
 |---|---|---|
 | difficulty_rf_production | production | holdout_accuracy: 0.7792; holdout_macro_f1: 0.7825; cv_accuracy_train_split: 0.7953; oof_brier: 0.3072; holdout_ece: 0.052; temperature_decision: rejected_on_holdout_identity_used |
-| difficulty_v21_text | candidate | accuracy: 0.8238; macro_f1: 0.7705; ece: 0.0189; accuracy_duplicate_free_rows: 0.8141; majority_baseline: 0.5252 |
+| difficulty_v21_text | candidate | accuracy: 0.8218; macro_f1: 0.769; ece: 0.0152; accuracy_duplicate_free_rows: 0.8115; majority_baseline: 0.5225 |
 | difficulty_v2_structural | superseded_candidate | accuracy: 0.7851; macro_f1: 0.7227; n: 9448; majority_baseline: 0.5252 |
-| ncert_rag_retriever | production | eval_questions: 9448; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3496; top3_chapter_accuracy: 0.5341; random_baseline_top1: 0.0154 |
-| ncert_rag_retriever_unified | candidate | unified: eval_questions: 1747; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3268; top3_chapter_accuracy: 0.5335; random_baseline_top1: 0.0154; production_on_same_set: eval_questions: 1747; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3183; top3_chapter_accuracy: 0.5031; random_baseline_top1: 0.0154 |
+| ncert_rag_retriever | production | eval_questions: 9264; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3491; top3_chapter_accuracy: 0.5344; random_baseline_top1: 0.0154 |
+| ncert_rag_retriever_unified | candidate | unified: eval_questions: 1674; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.328; top3_chapter_accuracy: 0.5341; random_baseline_top1: 0.0154; production_on_same_set: eval_questions: 1674; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3196; top3_chapter_accuracy: 0.5066; random_baseline_top1: 0.0154 |
 | irt_cold_start_ridge | production_prior | a_5fold_r2: 0.948; b_5fold_r2: 0.9949; c_5fold_r2: 0.818 |
 | student_response_models | waiting_for_data | status: SKIPPED_INSUFFICIENT_DATA; readiness_checks: students >= 200: False; responses >= 20000: False; items with >= 30 responses >= 50: False; irt: —; bkt: — |
 | learning_analytics | waiting_for_data | offline_policy_evaluation: INSUFFICIENT_DATA; selection_ab_test: INSUFFICIENT_DATA; score_prediction_validation: INSUFFICIENT_DATA; fairness: INSUFFICIENT_DATA; empirical_item_times: INSUFFICIENT_DATA; anomalies: INSUFFICIENT_DATA; knowledge_tracing_challenger: INSUFFICIENT_DATA |
-| retrieval_challenger | hold | challenger: retriever: char_ngram_tfidf (offline stand-in, lexical); eval_questions: 9448; top1_chapter_accuracy: 0.3237; top3_chapter_accuracy: 0.488; random_baseline_top1: 0.0154; top1_gain: -0.0259 |
+| retrieval_challenger | hold | challenger: retriever: char_ngram_tfidf (offline stand-in, lexical); eval_questions: 9264; top1_chapter_accuracy: 0.3237; top3_chapter_accuracy: 0.4886; random_baseline_top1: 0.0154; top1_gain: -0.0254 |
 | bkt_dina_linucb_priors | production_prior | student_attempts_available: 0; linucb_cold_start_regret_reduction_vs_random_percent: 96.8 |
 
 ## difficulty_rf_production
@@ -27,8 +27,8 @@ Generated 2026-11-16T15:20:58+00:00 from commit `14a0ac1c1e7f461db351e267d3df10e
 | labels | chapter_text_complexity_quantile_heuristic |
 | evaluation | holdout: 20% grouped stratified split made before any tuning; near-duplicate questions share a group; cross_validation: StratifiedGroupKFold(5) on the training split only; used for hyperparameter selection; calibration: temperature fitted on training out-of-fold probabilities, ECE reported on the untouched holdout; split_seed: 42 |
 | metrics | holdout_accuracy: 0.7792; holdout_macro_f1: 0.7825; cv_accuracy_train_split: 0.7953; oof_brier: 0.3072; holdout_ece: 0.052; temperature_decision: rejected_on_holdout_identity_used |
-| limitations | agreement with the heuristic tier formula, not empirical difficulty; heuristic vs human-verified tiers: kappa 0.0693 |
-| artifacts | model/question_difficulty_model.joblib (a2f55761804f); model/rf_difficulty_forest.npz (cdfd08124ba1) |
+| limitations | agreement with the heuristic tier formula, not empirical difficulty; heuristic vs human-verified tiers: kappa 0.07 |
+| artifacts | model/question_difficulty_model.joblib (0740b35ce84e); model/rf_difficulty_forest.npz (da4b800c7a15) |
 
 ## difficulty_v21_text
 
@@ -36,12 +36,12 @@ Generated 2026-11-16T15:20:58+00:00 from commit `14a0ac1c1e7f461db351e267d3df10e
 |---|---|
 | status | candidate |
 | task | predict the difficulty tier from question text |
-| training_data | 9448 verified sample-paper questions from 83 papers |
+| training_data | 9264 verified sample-paper questions from 83 papers |
 | labels | verified sample-paper tiers (papers 001-101 accepted rows) |
 | evaluation | GroupKFold(5) by paper_source; no paper appears in both train and test |
-| metrics | accuracy: 0.8238; macro_f1: 0.7705; ece: 0.0189; accuracy_duplicate_free_rows: 0.8141; majority_baseline: 0.5252 |
+| metrics | accuracy: 0.8218; macro_f1: 0.769; ece: 0.0152; accuracy_duplicate_free_rows: 0.8115; majority_baseline: 0.5225 |
 | limitations | trained on sample papers; distribution may differ from real exam papers; advanced tier is 8% of labels, so its recall is the weakest |
-| artifacts | model/question_difficulty_model_v21_text_candidate.joblib (e1158b6dba20) |
+| artifacts | model/question_difficulty_model_v21_text_candidate.joblib (28d6fc1137e7) |
 
 ## difficulty_v2_structural
 
@@ -65,9 +65,9 @@ Generated 2026-11-16T15:20:58+00:00 from commit `14a0ac1c1e7f461db351e267d3df10e
 | training_data | NCERT chapter notes + every training question stem, topic tag and explanation |
 | labels | chapter of the question |
 | evaluation | questions not in the index (no chapter hint) |
-| metrics | eval_questions: 9448; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3496; top3_chapter_accuracy: 0.5341; random_baseline_top1: 0.0154 |
+| metrics | eval_questions: 9264; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3491; top3_chapter_accuracy: 0.5344; random_baseline_top1: 0.0154 |
 | limitations | lexical retrieval; no dense embeddings; chapter retrieval is a proxy for answer usefulness |
-| artifacts | model/ncert_rag_svd_index.npz (43bd1232ed96); model/ncert_rag_svd_meta.json (65fb624307f5) |
+| artifacts | model/ncert_rag_svd_index.npz (d3a7b71bb305); model/ncert_rag_svd_meta.json (24e49faa16e7) |
 
 ## ncert_rag_retriever_unified
 
@@ -78,9 +78,9 @@ Generated 2026-11-16T15:20:58+00:00 from commit `14a0ac1c1e7f461db351e267d3df10e
 | training_data | every question from the held-out sample papers |
 | labels | chapter of the question |
 | evaluation | held-out sample papers |
-| metrics | unified: eval_questions: 1747; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3268; top3_chapter_accuracy: 0.5335; random_baseline_top1: 0.0154; production_on_same_set: eval_questions: 1747; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3183; top3_chapter_accuracy: 0.5031; random_baseline_top1: 0.0154 |
+| metrics | unified: eval_questions: 1674; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.328; top3_chapter_accuracy: 0.5341; random_baseline_top1: 0.0154; production_on_same_set: eval_questions: 1674; eval_set: questions not in the index (no chapter hint); top1_chapter_accuracy: 0.3196; top3_chapter_accuracy: 0.5066; random_baseline_top1: 0.0154 |
 | limitations | small gain over production |
-| artifacts | model/ncert_rag_svd_index_unified.npz (f355a356f5bd) |
+| artifacts | model/ncert_rag_svd_index_unified.npz (3129bf5a2970) |
 
 ## irt_cold_start_ridge
 
@@ -93,7 +93,7 @@ Generated 2026-11-16T15:20:58+00:00 from commit `14a0ac1c1e7f461db351e267d3df10e
 | evaluation | 5-fold CV |
 | metrics | a_5fold_r2: 0.948; b_5fold_r2: 0.9949; c_5fold_r2: 0.818 |
 | limitations | high R2 reflects that targets are a function of the inputs (tier, time) |
-| artifacts | model/irt_cold_start_ridge.npz (f8717be1f496) |
+| artifacts | model/irt_cold_start_ridge.npz (fbfe479bbc2e) |
 
 ## student_response_models
 
@@ -119,7 +119,7 @@ Generated 2026-11-16T15:20:58+00:00 from commit `14a0ac1c1e7f461db351e267d3df10e
 | evaluation | each section reports INSUFFICIENT_DATA until its minimum sample is met; methods are checked on simulations in the learning_analytics_self_test stage |
 | metrics | offline_policy_evaluation: INSUFFICIENT_DATA; selection_ab_test: INSUFFICIENT_DATA; score_prediction_validation: INSUFFICIENT_DATA; fairness: INSUFFICIENT_DATA; empirical_item_times: INSUFFICIENT_DATA; anomalies: INSUFFICIENT_DATA; knowledge_tracing_challenger: INSUFFICIENT_DATA |
 | limitations | anomaly flags are for human review only; unbiased bandit evaluation needs the A/B control arm or exploration (KLASSED_BANDIT_EXPLORATION_EPSILON) |
-| artifacts | model/student_models/learning_analytics_report.json (ddee680fcb2a) |
+| artifacts | model/student_models/learning_analytics_report.json (bf081dbab361) |
 
 ## retrieval_challenger
 
@@ -130,9 +130,9 @@ Generated 2026-11-16T15:20:58+00:00 from commit `14a0ac1c1e7f461db351e267d3df10e
 | training_data | NCERT chapter documents and PYQ stems/explanations (same as production) |
 | labels | chapter tags of held-out sample-paper questions |
 | evaluation | top-1 / top-3 chapter accuracy on questions not in the index |
-| metrics | challenger: retriever: char_ngram_tfidf (offline stand-in, lexical); eval_questions: 9448; top1_chapter_accuracy: 0.3237; top3_chapter_accuracy: 0.488; random_baseline_top1: 0.0154; top1_gain: -0.0259 |
+| metrics | challenger: retriever: char_ngram_tfidf (offline stand-in, lexical); eval_questions: 9264; top1_chapter_accuracy: 0.3237; top3_chapter_accuracy: 0.4886; random_baseline_top1: 0.0154; top1_gain: -0.0254 |
 | limitations | the offline run uses a lexical stand-in; the semantic model needs torch and a model download (GPU) |
-| artifacts | model/retrieval_challenger_report.json (53061e39a29a) |
+| artifacts | model/retrieval_challenger_report.json (6f13ebcd2b4f) |
 
 ## bkt_dina_linucb_priors
 
@@ -166,4 +166,4 @@ Policy: a candidate is promoted only after every gate passes and a reviewer sign
 | ncert_knowledge_base | 65 | a5a8f4311b92ce55 |
 | student_attempts | 0 | d0790c7e03db72bd |
 
-Libraries: python: 3.13.18; numpy: 2.5.3; pandas: 3.0.5; sklearn: 1.9.1; scipy: 1.18.1; joblib: 1.6.0
+Libraries: python: 3.13.14; numpy: 2.5.3; pandas: 3.0.5; sklearn: 1.9.1; scipy: 1.18.1; joblib: 1.6.0

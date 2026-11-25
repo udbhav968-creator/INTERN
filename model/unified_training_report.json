@@ -1,30 +1,30 @@
 {
   "training_corpus": {
-    "total_items": 11848,
+    "total_items": 11664,
     "pyq": 2400,
-    "sample_paper": 9448
+    "sample_paper": 9264
   },
   "bkt_chapter_priors": {
     "chapters": 65,
     "weighted_global_prior_production": 0.4034,
-    "weighted_global_prior_unified": 0.4409,
-    "mean_abs_p_init_change": 0.0469,
+    "weighted_global_prior_unified": 0.4411,
+    "mean_abs_p_init_change": 0.047,
     "max_abs_p_init_change": 0.2107,
     "min_items_per_chapter_production": 4,
     "min_items_per_chapter_unified": 4
   },
   "dina_8_skill_priors": {
     "items_production": 2400,
-    "items_unified": 11848,
+    "items_unified": 11664,
     "items_per_skill_unified": {
-      "dimensional_unit_analysis": 1905,
-      "algebraic_numerical_computation": 3708,
-      "log_exp_calculus_reasoning": 2435,
-      "sign_vector_convention": 1394,
-      "mechanism_electronic_flow": 1331,
-      "ncert_exception_trend_recall": 5979,
-      "diagram_circuit_graph_reading": 1576,
-      "assertion_deductive_logic": 7872
+      "dimensional_unit_analysis": 1870,
+      "algebraic_numerical_computation": 3607,
+      "log_exp_calculus_reasoning": 2342,
+      "sign_vector_convention": 1361,
+      "mechanism_electronic_flow": 1321,
+      "ncert_exception_trend_recall": 5932,
+      "diagram_circuit_graph_reading": 1548,
+      "assertion_deductive_logic": 7790
     },
     "prior_mastery_production": {
       "dimensional_unit_analysis": 0.4041,
@@ -37,13 +37,13 @@
       "assertion_deductive_logic": 0.479
     },
     "prior_mastery_unified": {
-      "dimensional_unit_analysis": 0.4607,
-      "algebraic_numerical_computation": 0.3697,
-      "log_exp_calculus_reasoning": 0.4112,
-      "sign_vector_convention": 0.3393,
-      "mechanism_electronic_flow": 0.477,
+      "dimensional_unit_analysis": 0.462,
+      "algebraic_numerical_computation": 0.3705,
+      "log_exp_calculus_reasoning": 0.4128,
+      "sign_vector_convention": 0.3403,
+      "mechanism_electronic_flow": 0.4767,
       "ncert_exception_trend_recall": 0.56,
-      "diagram_circuit_graph_reading": 0.4998,
+      "diagram_circuit_graph_reading": 0.5014,
       "assertion_deductive_logic": 0.56
     }
   },
@@ -52,36 +52,36 @@
       "model_type": "Hybrid_SublinearTFIDF_TruncatedSVD_LSA",
       "index_text": "NCERT chapter notes + every training question stem, topic tag and explanation",
       "heldout_chapter_retrieval": {
-        "eval_questions": 1747,
+        "eval_questions": 1674,
         "eval_set": "questions not in the index (no chapter hint)",
-        "top1_chapter_accuracy": 0.3268,
-        "top3_chapter_accuracy": 0.5335,
+        "top1_chapter_accuracy": 0.328,
+        "top3_chapter_accuracy": 0.5341,
         "random_baseline_top1": 0.0154
       },
       "n_chapters_indexed": 65,
-      "vocab_size": 167482,
+      "vocab_size": 166183,
       "lsa_dimensions": 32,
       "lsa_explained_variance_ratio": 0.5751,
       "svd_variance_spectrum": {
-        "rank_16": 0.3431,
-        "rank_24": 0.461,
+        "rank_16": 0.343,
+        "rank_24": 0.4609,
         "rank_32": 0.5751,
         "rank_48": 0.7916
       }
     },
     "heldout_papers": 16,
     "heldout_chapter_retrieval_production": {
-      "eval_questions": 1747,
+      "eval_questions": 1674,
       "eval_set": "questions not in the index (no chapter hint)",
-      "top1_chapter_accuracy": 0.3183,
-      "top3_chapter_accuracy": 0.5031,
+      "top1_chapter_accuracy": 0.3196,
+      "top3_chapter_accuracy": 0.5066,
       "random_baseline_top1": 0.0154
     },
     "heldout_chapter_retrieval_unified": {
-      "eval_questions": 1747,
+      "eval_questions": 1674,
       "eval_set": "questions not in the index (no chapter hint)",
-      "top1_chapter_accuracy": 0.3268,
-      "top3_chapter_accuracy": 0.5335,
+      "top1_chapter_accuracy": 0.328,
+      "top3_chapter_accuracy": 0.5341,
       "random_baseline_top1": 0.0154
     },
     "unified_index_excludes": "every question from the held-out sample papers"

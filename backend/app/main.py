@@ -61,6 +61,9 @@ from model.dina_cognitive_diagnosis import (
     compute_dina_and_rt_profile,
     extract_item_q_vector,
 )
+from model.air_estimator import build_air_report
+from model.model_provenance import build_provenance, check_consistency
+from model.syllabus import normalise_syllabus_mode
 from model.monte_carlo_conformal_neet import run_monte_carlo_conformal_neet_simulation
 from model.rf_compact_runtime import COMPACT_RF_RUNTIME
 from model.corpus_distribution_and_readiness_audit import (
@@ -1280,6 +1283,47 @@ def get_dashboard_snapshot(
         fatigue_analysis=fatigue_analysis,
         revision_calendar=revision_calendar,
     )
+
+
+@app.get("/students/{student_id}/air_estimate")
+def get_air_estimate(
+    student_id: str,
+    request: Request,
+    paper_number: int | None = None,
+    syllabus_mode: str = "all",
+    authorized_sid: str = Depends(auth.verify_student_access),
+    db: Session = Depends(get_db),
+):
+    _sync_serverless_context(request, db, student_id)
+    try:
+        syllabus_mode = normalise_syllabus_mode(syllabus_mode)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc))
+    attempts = (
+        db.query(TestAttempt)
+        .filter_by(student_id=student_id)
+        .order_by(TestAttempt.timestamp, TestAttempt.attempt_id)
+        .all()
+    )
+    if not attempts:
+        return build_air_report([], syllabus_mode=syllabus_mode)
+    target = paper_number if paper_number is not None else max(a.paper_number for a in attempts)
+
+    def as_response(a: TestAttempt) -> dict:
+        return {"question_id": a.question_id, "is_correct": a.is_correct, "time_taken_seconds": a.time_taken_seconds}
+
+    current = [as_response(a) for a in attempts if a.paper_number == target]
+    if not current:
+        raise HTTPException(status_code=404, detail="No attempt found for this paper number")
+    history = [as_response(a) for a in attempts if a.paper_number != target]
+    return build_air_report(current, history, syllabus_mode=syllabus_mode)
+
+
+@app.get("/mlops/model_provenance")
+def get_model_provenance():
+    prov = build_provenance()
+    problems = check_consistency(prov)
+    return {**prov, "problems": problems, "passed": not problems}
 
 
 @app.post("/mlops/predict_cold_start_item")

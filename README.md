@@ -162,7 +162,7 @@ The method behind each section is checked on simulations in every pipeline run (
 | Suite | Command | Result |
 |---|---|---|
 | Full ML pipeline + reproducibility | `python -m model.run_full_ml_pipeline --verify-reproducible` | 14 / 14 stages pass; 7 / 7 metrics within 0.005 |
-| Standalone ML suites | `python -m model.tests.test_ml_standalone_suite` | 39 / 39 pass |
+| Standalone ML suites | `python -m model.tests.test_ml_standalone_suite` | 45 / 45 pass |
 | Train/serve library parity | `python -m model.serving_runtime_parity` | serving versions = training pins |
 | Backend integration suites | `python backend/tests/test_v2_engine.py` | 30 / 30 pass (runs on a temporary copy of the database) |
 | Core SHA-256 registry | `python -m model.verify_artifact_integrity` | 21 / 21 verified |

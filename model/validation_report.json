@@ -1,6 +1,6 @@
 {
   "pipeline_status": "PASSED",
-  "execution_time_seconds": 63.183,
+  "execution_time_seconds": 75.706,
   "data_validation_gates": {
     "question_bank_schema_valid": true,
     "weightage_schema_valid": true,
@@ -77,10 +77,10 @@
     },
     "heuristic_vs_human_verified_tiers": {
       "available": true,
-      "n": 9448,
-      "accuracy": 0.4188,
-      "macro_f1": 0.3821,
-      "cohens_kappa": 0.0693,
+      "n": 9264,
+      "accuracy": 0.4187,
+      "macro_f1": 0.3822,
+      "cohens_kappa": 0.07,
       "interpretation": "kappa near 0 means the PYQ tier rule barely agrees with human-verified tiers"
     },
     "difficulty_model_on_human_labels": "see difficulty_model_v21_report.json"
@@ -242,7 +242,7 @@
     "post_ece": 0.05201,
     "pre_nll": 0.49372,
     "post_nll": 0.49372,
-    "compression_ratio_x": 18.4
+    "compression_ratio_x": 18.29
   },
   "tier_recalibration_summary": {
     "chapters_missing_basic_before": 3,
@@ -321,10 +321,10 @@
       "model_type": "Hybrid_SublinearTFIDF_TruncatedSVD_LSA",
       "index_text": "NCERT chapter notes + every training question stem, topic tag and explanation",
       "heldout_chapter_retrieval": {
-        "eval_questions": 9448,
+        "eval_questions": 9264,
         "eval_set": "questions not in the index (no chapter hint)",
-        "top1_chapter_accuracy": 0.3496,
-        "top3_chapter_accuracy": 0.5341,
+        "top1_chapter_accuracy": 0.3491,
+        "top3_chapter_accuracy": 0.5344,
         "random_baseline_top1": 0.0154
       },
       "n_chapters_indexed": 65,

@@ -1,0 +1,412 @@
+group,n,accuracy,accuracy_ci95,macro_f1,majority_baseline,beats_majority,tier_mix,reliability
+Physics::Kinematics::Motion in a Straight Line & Graphs,1546,0.8926,"[0.8762, 0.9071]",0.7794,0.7736,True,"{""medium"": 1196, ""basic"": 261, ""advanced"": 89}",ok
+Biology::Biological Classification::Kingdom Monera & Five Kingdom System,868,0.8952,"[0.873, 0.9138]",0.5999,0.8318,True,"{""basic"": 722, ""medium"": 66, ""advanced"": 80}",ok
+Chemistry::Mole Concept / Stoichiometry::Mole Concept & Avogadro's Number,619,0.8643,"[0.8351, 0.889]",0.7164,0.7771,True,"{""medium"": 481, ""basic"": 120, ""advanced"": 18}",ok
+Physics::Kinematics::Kinematics in One Dimension,239,0.9874,"[0.9638, 0.9957]",0.9937,1.0,False,"{""medium"": 239}",ok
+Biology::Morphology of Flowering Plants::Vegetative & Reproductive Plant Structures,169,0.9586,"[0.917, 0.9798]",0.9789,1.0,False,"{""basic"": 169}",ok
+Biology::The Living World & Taxonomy::Taxonomic Hierarchy & Nomenclature,159,0.8805,"[0.8209, 0.9222]",0.6111,0.7862,True,"{""basic"": 125, ""medium"": 16, ""advanced"": 18}",ok
+Physics::Laws of Motion::Newton's Laws & Friction,132,0.9621,"[0.9144, 0.9837]",0.9807,1.0,False,"{""medium"": 132}",ok
+Chemistry::Equilibrium::Ionic & Chemical Equilibrium Principles,108,0.9537,"[0.8962, 0.9801]",0.9763,1.0,False,"{""advanced"": 108}",ok
+"Biology::Plant Physiology::Photosynthesis: Light & Dark Reactions (C3, C4)",90,0.9333,"[0.8621, 0.9691]",0.8675,0.8333,True,"{""advanced"": 6, ""basic"": 75, ""medium"": 9}",ok
+Chemistry::Mole Concept / Stoichiometry::Mole Concept & Stoichiometry,80,0.9125,"[0.8302, 0.957]",0.9542,1.0,False,"{""medium"": 80}",ok
+"Physics::Work, Energy & Power::Work-Energy Theorem & Conservation of Energy",73,0.9452,"[0.8674, 0.9785]",0.9718,1.0,False,"{""medium"": 73}",ok
+Biology::Cell: The Unit of Life::Nucleus & Chromosome Morphology,71,0.9155,"[0.8276, 0.9607]",0.6004,0.8451,True,"{""basic"": 60, ""medium"": 5, ""advanced"": 6}",ok
+Biology::Circulation & Excretion::Cardiovascular Dynamics & Blood Components,68,0.5588,"[0.4408, 0.6705]",0.717,1.0,False,"{""medium"": 68}",ok
+Biology::Locomotion & Neuro-Endocrine Control::Endocrine System & Hormones,67,0.8806,"[0.7817, 0.9382]",0.55,0.8657,True,"{""basic"": 58, ""medium"": 6, ""advanced"": 3}",ok
+"Biology::Cell: The Unit of Life::Organelles: Mitochondria, Plastids & Ribosomes",62,0.9194,"[0.8247, 0.9651]",0.7125,0.8387,True,"{""basic"": 52, ""advanced"": 5, ""medium"": 5}",ok
+Biology::Biomolecules::Enzymatic Kinetics & Cellular Metabolites,60,0.5667,"[0.441, 0.6843]",0.7234,1.0,False,"{""medium"": 60}",ok
+"Physics::Current Electricity::Ohm's Law, Resistance & Power",59,0.8814,"[0.7748, 0.9413]",0.5975,0.7119,True,"{""basic"": 4, ""advanced"": 13, ""medium"": 42}",ok
+"Biology::Structural Organisation in Animals::Connective, Muscular & Neural Tissues",58,0.9138,"[0.8136, 0.9626]",0.5736,0.8621,True,"{""basic"": 50, ""medium"": 5, ""advanced"": 3}",ok
+Biology::Reproduction & Human Development::Human Reproduction & Embryonic Development,56,0.7679,"[0.6423, 0.859]",0.715,0.75,True,"{""basic"": 42, ""medium"": 8, ""advanced"": 6}",ok
+"Biology::Anatomy of Flowering Plants::Tissues & Tissue Systems (Xylem, Phloem)",52,0.9038,"[0.7939, 0.9582]",0.752,0.8077,True,"{""basic"": 42, ""advanced"": 4, ""medium"": 6}",ok
+Physics::Units & Dimensions::Errors & Dimensional Analysis,52,0.8846,"[0.7703, 0.946]",0.9388,1.0,False,"{""basic"": 52}",ok
+Biology::Circulation & Excretion::Blood Composition & Blood Groups,51,0.7255,"[0.5905, 0.8289]",0.6825,0.6863,True,"{""basic"": 35, ""medium"": 8, ""advanced"": 8}",ok
+Biology::Reproduction & Human Development::Birth Control Modalities & Assisted Reproduction,50,0.7,"[0.5625, 0.809]",0.8235,1.0,False,"{""basic"": 50}",ok
+"Biology::Morphology of Flowering Plants::Root, Stem, Leaf & Modifications",49,0.9184,"[0.8081, 0.9678]",0.6515,0.8571,True,"{""basic"": 42, ""medium"": 4, ""advanced"": 3}",ok
+Biology::Structural Organisation in Animals::Animal Tissues & Organ Systems,48,0.8958,"[0.7783, 0.9547]",0.9451,1.0,False,"{""basic"": 48}",ok
+Physics::Current Electricity::Electric Current & DC Circuits,48,0.9375,"[0.8316, 0.9785]",0.9677,1.0,False,"{""medium"": 48}",ok
+Biology::Biomolecules::Enzymes: Mechanism & Kinetics,47,0.6809,"[0.5383, 0.796]",0.7153,0.766,False,"{""medium"": 6, ""basic"": 36, ""advanced"": 5}",ok
+Biology::Biotechnology::Principles & Processes of Biotechnology,47,0.6383,"[0.4954, 0.7603]",0.5231,0.6809,False,"{""medium"": 6, ""advanced"": 9, ""basic"": 32}",ok
+Biology::Ecology & Environment::Ecosystem Dynamics & Pyramids,47,0.8298,"[0.6986, 0.9111]",0.5274,0.8511,False,"{""basic"": 40, ""medium"": 5, ""advanced"": 2}",ok
+"Biology::Genetics & Molecular Inheritance::Gene Expression, Operon Model & DNA Profiling",45,0.5333,"[0.3908, 0.6707]",0.6957,1.0,False,"{""medium"": 45}",ok
+Biology::Locomotion & Neuro-Endocrine Control::Action Potential Propagation & Sensory Reception,45,0.1556,"[0.0775, 0.2878]",0.2692,1.0,False,"{""medium"": 45}",ok
+"Chemistry::Biomolecules & Polymers::Biomolecules: Carbohydrates, Proteins & Nucleic Acids",45,0.5778,"[0.433, 0.7103]",0.4793,0.7556,False,"{""basic"": 7, ""medium"": 34, ""advanced"": 4}",ok
+Biology::Genetics & Molecular Inheritance::Mendelian Genetics & Genetic Disorders,44,0.7955,"[0.655, 0.8885]",0.4773,0.8636,False,"{""basic"": 38, ""medium"": 2, ""advanced"": 4}",ok
+Physics::Magnetic Effects of Current::Biot-Savart Law & Magnetic Fields,44,0.8409,"[0.7063, 0.9207]",0.4404,0.8864,False,"{""medium"": 39, ""basic"": 2, ""advanced"": 3}",ok
+Biology::Cell: The Unit of Life::Organelles & Membrane Structure,43,0.6977,"[0.5489, 0.814]",0.8219,1.0,False,"{""basic"": 43}",ok
+Biology::Biological Classification::Kingdom Systems & Microbial Diversity,42,0.8333,"[0.694, 0.9168]",0.9091,1.0,False,"{""basic"": 42}",ok
+Biology::Plant Physiology::Plant Growth Regulators & Photoperiodism,42,0.881,"[0.75, 0.9481]",0.825,0.8333,True,"{""basic"": 35, ""medium"": 6, ""advanced"": 1}",ok
+Chemistry::Solutions::Colligative Properties & Raoult's Law,41,0.9756,"[0.874, 0.9957]",0.9877,1.0,False,"{""medium"": 41}",ok
+Biology::Cell Cycle & Cell Division::Mitotic & Meiotic Phases,40,0.925,"[0.8014, 0.9742]",0.961,1.0,False,"{""basic"": 40}",ok
+"Biology::Biomolecules::Proteins, Amino Acids & Metabolites",38,0.8158,"[0.6658, 0.9078]",0.7361,0.6053,True,"{""medium"": 3, ""basic"": 23, ""advanced"": 12}",ok
+Biology::Cell: The Unit of Life::Cell Organelles & Biomembrane Structure,38,0.2368,"[0.1299, 0.3921]",0.383,1.0,False,"{""medium"": 38}",ok
+Biology::Circulation & Excretion::Excretory System: Nephron & Counter-Current,38,0.6579,"[0.4989, 0.7879]",0.6205,0.8158,False,"{""basic"": 31, ""medium"": 5, ""advanced"": 2}",ok
+Biology::Ecology & Environment::Organisms and Populations,38,0.7895,"[0.6365, 0.8893]",0.6444,0.7895,False,"{""medium"": 4, ""basic"": 30, ""advanced"": 4}",ok
+Biology::Reproduction & Human Development::Sexual Reproduction in Flowering Plants,37,0.8919,"[0.7529, 0.9571]",0.8438,0.8649,True,"{""basic"": 32, ""advanced"": 5}",ok
+Biology::Locomotion & Neuro-Endocrine Control::Endocrine Mechanisms & Feedback Loops,36,0.9167,"[0.7817, 0.9713]",0.9565,1.0,False,"{""basic"": 36}",ok
+Chemistry::Redox Reactions & Electrochemistry::Oxidation Numbers & Balancing Redox Reactions,36,0.8333,"[0.6811, 0.9213]",0.5198,0.7222,True,"{""medium"": 9, ""basic"": 26, ""advanced"": 1}",ok
+Biology::Cell Cycle & Cell Division::Meiosis: Stages & Recombination,35,0.8,"[0.6411, 0.8996]",0.5565,0.5714,True,"{""medium"": 4, ""basic"": 20, ""advanced"": 11}",ok
+Biology::Cell Cycle & Cell Division::Mitosis: Stages & Cytokinesis,35,0.9429,"[0.8139, 0.9842]",0.8781,0.8571,True,"{""basic"": 30, ""medium"": 4, ""advanced"": 1}",ok
+Biology::Reproduction & Human Development::Reproductive Health & Contraception,35,0.8,"[0.6411, 0.8996]",0.5923,0.6571,True,"{""basic"": 23, ""medium"": 6, ""advanced"": 6}",ok
+Biology::Structural Organisation in Animals::Anatomy of Cockroach & Frog,35,0.8571,"[0.7062, 0.9374]",0.5934,0.6857,True,"{""basic"": 24, ""medium"": 4, ""advanced"": 7}",ok
+"Physics::Electrostatics::Electric Field, Gauss's Law & Dipoles",35,0.8857,"[0.7405, 0.9546]",0.7857,0.7429,True,"{""medium"": 26, ""advanced"": 4, ""basic"": 5}",ok
+"Physics::Electrostatics::Capacitance, Dielectrics & Energy Storage",34,0.8824,"[0.7338, 0.9533]",0.6344,0.8529,True,"{""medium"": 29, ""advanced"": 5}",ok
+"Physics::Work, Energy & Power::Work-Energy Theorem & Work Done",34,0.8824,"[0.7338, 0.9533]",0.7167,0.8529,True,"{""medium"": 29, ""advanced"": 5}",ok
+"Biology::Morphology of Flowering Plants::Inflorescence, Flower Structure & Placentation",33,0.9091,"[0.7643, 0.9686]",0.3175,0.9091,False,"{""basic"": 30, ""medium"": 2, ""advanced"": 1}",ok
+"Biology::Plant Physiology::Cellular Respiration in Plants (Glycolysis, Krebs)",32,0.75,"[0.5789, 0.8675]",0.4286,0.875,False,"{""basic"": 28, ""medium"": 4}",ok
+"Physics::Oscillations & Waves::Doppler Effect, Organ Pipes & Acoustics",32,0.9062,"[0.7578, 0.9676]",0.5386,0.875,True,"{""basic"": 2, ""medium"": 28, ""advanced"": 2}",ok
+Biology::Plant Kingdom::Plant Diversity & Alternation of Generations,31,0.871,"[0.7115, 0.9487]",0.931,1.0,False,"{""basic"": 31}",ok
+Chemistry::Equilibrium::Chemical & Ionic Equilibrium,31,0.1613,"[0.0709, 0.3263]",0.2778,1.0,False,"{""medium"": 31}",ok
+"Physics::Properties of Matter::Elasticity: Stress, Strain & Moduli",31,0.871,"[0.7115, 0.9487]",0.7204,0.8065,True,"{""medium"": 25, ""basic"": 4, ""advanced"": 2}",ok
+"Biology::Human Health, Disease & Microbes::Microbes in Human Welfare",30,0.9667,"[0.8333, 0.9941]",0.8818,0.7667,True,"{""basic"": 23, ""medium"": 5, ""advanced"": 2}",ok
+Chemistry::Mole Concept / Stoichiometry::Mole Concept & Stoichiometric Calculations,30,1.0,"[0.8865, 1.0]",1.0,1.0,False,"{""medium"": 30}",ok
+Chemistry::Structure of Atom::Atomic Orbitals & Quantum Mechanical Model,30,0.7333,"[0.5555, 0.8582]",0.8462,1.0,False,"{""basic"": 30}",ok
+"Physics::Current Electricity::Measuring Instruments: Potentiometer, Bridge & Galvanometer",30,0.8,"[0.6269, 0.905]",0.5426,0.6,True,"{""medium"": 18, ""basic"": 2, ""advanced"": 10}",ok
+"Biology::Cell: The Unit of Life::Cell Envelope, Plasma Membrane & Cell Wall",29,0.7931,"[0.6161, 0.9015]",0.5215,0.7586,True,"{""basic"": 22, ""advanced"": 1, ""medium"": 6}",ok
+Biology::Genetics & Molecular Inheritance::Molecular Biology: Translation & Gene Expression,29,0.7241,"[0.5428, 0.853]",0.5811,0.7241,False,"{""basic"": 21, ""medium"": 3, ""advanced"": 5}",ok
+Biology::Locomotion & Neuro-Endocrine Control::Muscular System & Skeletal Framework,29,0.931,"[0.7804, 0.9809]",0.82,0.8276,True,"{""medium"": 3, ""basic"": 24, ""advanced"": 2}",ok
+"Biology::Plant Kingdom::Algae (Chlorophyceae, Phaeophyceae, Rhodophyceae)",29,0.931,"[0.7804, 0.9809]",0.5872,0.8621,True,"{""basic"": 25, ""medium"": 1, ""advanced"": 3}",ok
+Biology::Biomolecules::Nucleic Acids: Structure & Nucleotides,28,0.8571,"[0.6851, 0.943]",0.8142,0.7143,True,"{""medium"": 5, ""basic"": 20, ""advanced"": 3}",ok
+Biology::Plant Kingdom::Angiosperms & Life Cycles,28,0.9286,"[0.7735, 0.9802]",0.6538,0.8929,True,"{""basic"": 25, ""advanced"": 1, ""medium"": 2}",ok
+Physics::Electrostatics::Capacitance & Electrostatic Energy,28,0.9643,"[0.8229, 0.9937]",0.9818,1.0,False,"{""medium"": 28}",ok
+Physics::Laws of Motion::Friction & Inclined Planes,28,0.9286,"[0.7735, 0.9802]",0.4815,0.9286,False,"{""medium"": 26, ""advanced"": 2}",ok
+Biology::Human Digestion & Respiration::Digestive System: Anatomy & Enzymes,27,0.9259,"[0.7663, 0.9794]",0.6533,0.8889,True,"{""basic"": 24, ""advanced"": 1, ""medium"": 2}",ok
+Biology::Human Digestion & Respiration::Respiratory System: Mechanics & Gas Transport,27,0.7037,"[0.5152, 0.8415]",0.7549,0.6667,True,"{""medium"": 7, ""basic"": 18, ""advanced"": 2}",ok
+Biology::Reproduction & Human Development::Gametogenesis & Gestational Development,27,0.2963,"[0.1585, 0.4848]",0.4571,1.0,False,"{""medium"": 27}",ok
+Biology::Biological Classification::Kingdom Fungi,26,0.9615,"[0.8111, 0.9932]",0.8231,0.9231,True,"{""basic"": 24, ""advanced"": 2}",ok
+Physics::Dual Nature of Matter::Photoelectric Effect & Work Function,26,1.0,"[0.8713, 1.0]",1.0,0.9231,True,"{""medium"": 24, ""basic"": 1, ""advanced"": 1}",ok
+Physics::Ray Optics::Lenses & Combinations,26,0.8077,"[0.6212, 0.9149]",0.2979,0.8462,False,"{""medium"": 22, ""advanced"": 2, ""basic"": 2}",ok
+Biology::Animal Kingdom::Non-Chordates: Higher Invertebrates,25,0.8,"[0.6087, 0.9114]",0.5482,0.68,True,"{""basic"": 17, ""medium"": 4, ""advanced"": 4}",ok
+Biology::Biological Classification::Kingdom Protista,25,0.96,"[0.8046, 0.9929]",0.5556,0.92,True,"{""basic"": 23, ""medium"": 1, ""advanced"": 1}",ok
+"Biology::Biological Classification::Viruses, Viroids, Prions & Lichens",25,0.96,"[0.8046, 0.9929]",0.6596,0.92,True,"{""basic"": 23, ""advanced"": 1, ""medium"": 1}",ok
+"Biology::Cell: The Unit of Life::Endomembrane System: ER, Golgi & Lysosomes",25,1.0,"[0.8668, 1.0]",1.0,0.8,True,"{""basic"": 20, ""advanced"": 4, ""medium"": 1}",ok
+"Biology::Circulation & Excretion::Circulatory System: Heart, Cardiac Cycle & ECG",25,0.6,"[0.4074, 0.766]",0.5601,0.84,False,"{""basic"": 21, ""advanced"": 2, ""medium"": 2}",ok
+"Biology::Human Health, Disease & Microbes::Immunity & Human Diseases",25,0.68,"[0.4841, 0.828]",0.7206,0.68,False,"{""basic"": 17, ""advanced"": 3, ""medium"": 5}",ok
+Chemistry::Structure of Atom::Quantum Numbers & Electronic Configuration,25,0.52,"[0.335, 0.6997]",0.5105,0.8,False,"{""basic"": 5, ""medium"": 20}",ok
+"Biology::Human Health, Disease & Microbes::Humoral and Cell-Mediated Immunity & Pathogens",24,0.5,"[0.3143, 0.6857]",0.6667,1.0,False,"{""medium"": 24}",ok
+Biology::Animal Kingdom::Non-Chordates: Lower Invertebrates & Classification Basis,23,0.913,"[0.732, 0.9758]",0.8713,0.7826,True,"{""basic"": 18, ""medium"": 4, ""advanced"": 1}",ok
+Biology::Biotechnology::Recombinant DNA Tools & Gene Cloning Vectors,23,0.5217,"[0.3296, 0.7076]",0.6857,1.0,False,"{""advanced"": 23}",ok
+Biology::Ecology & Environment::Ecological Adaptations & Population Interactions,23,0.3043,"[0.156, 0.5087]",0.4667,1.0,False,"{""medium"": 23}",ok
+"Biology::Locomotion & Neuro-Endocrine Control::Neural System, Impulse & Sensory Organs",23,0.913,"[0.732, 0.9758]",0.4773,0.9565,False,"{""basic"": 22, ""advanced"": 1}",ok
+Chemistry::Chemical Bonding::VSEPR Theory & Molecular Geometry,23,0.8696,"[0.6787, 0.9546]",0.5312,0.8261,True,"{""medium"": 19, ""basic"": 2, ""advanced"": 2}",ok
+Physics::Electrostatics::Electric Potential & Electrostatic Energy,23,0.8261,"[0.6286, 0.9302]",0.7444,0.7826,True,"{""medium"": 18, ""advanced"": 5}",ok
+Physics::Kinematics::Uniformly Accelerated Motion & Free Fall,23,0.9565,"[0.7901, 0.9923]",0.6589,0.913,True,"{""medium"": 21, ""advanced"": 1, ""basic"": 1}",ok
+"Physics::Rotational Motion::Torque, Angular Momentum & Conservation",23,0.7826,"[0.581, 0.9034]",0.4239,0.8696,False,"{""medium"": 20, ""basic"": 2, ""advanced"": 1}",ok
+"Biology::Human Health, Disease & Microbes::Cancer, AIDS, Drugs & Alcohol Abuse",22,0.7727,"[0.5656, 0.8988]",0.8295,0.5909,True,"{""basic"": 13, ""advanced"": 2, ""medium"": 7}",ok
+Biology::Plant Kingdom::Pteridophytes & Bryophytes,22,0.8636,"[0.6666, 0.9525]",0.4744,0.8182,True,"{""medium"": 1, ""basic"": 18, ""advanced"": 3}",ok
+Biology::Plant Physiology::Photochemical & Biosynthetic Phases,22,0.1818,"[0.0731, 0.3852]",0.3077,1.0,False,"{""medium"": 22}",ok
+"Physics::Ray Optics::Refraction, Total Internal Reflection & Mirrors",22,0.9545,"[0.782, 0.9919]",0.4884,0.9545,False,"{""medium"": 21, ""advanced"": 1}",ok
+Physics::Rotational Motion::Moment of Inertia & Theorems,22,0.5909,"[0.3873, 0.7674]",0.2476,0.8636,False,"{""medium"": 19, ""basic"": 1, ""advanced"": 2}",ok
+Biology::Evolution::Origin of Life & Evidences for Evolution,21,0.8095,"[0.6, 0.9233]",0.7487,0.7143,True,"{""medium"": 3, ""basic"": 15, ""advanced"": 3}",ok
+Biology::Genetics & Molecular Inheritance::Molecular Biology: DNA Structure & Transcription,21,0.7619,"[0.5491, 0.8937]",0.5296,0.8095,False,"{""basic"": 17, ""medium"": 1, ""advanced"": 3}",ok
+Biology::Reproduction & Human Development::Pollination Mechanisms & Megasporogenesis,21,0.5238,"[0.3237, 0.7166]",0.6875,1.0,False,"{""medium"": 21}",ok
+Physics::Atoms & Nuclei::Bohr's Model & Hydrogen Line Spectrum,21,0.8095,"[0.6, 0.9233]",0.4846,0.7143,True,"{""basic"": 5, ""medium"": 15, ""advanced"": 1}",ok
+"Physics::Magnetism & Matter::Magnetic Properties: Dia, Para, Ferro & Hysteresis",21,0.619,"[0.4088, 0.7925]",0.4008,0.8095,False,"{""medium"": 17, ""advanced"": 1, ""basic"": 3}",ok
+Biology::Plant Kingdom::Gymnosperms,20,0.95,"[0.7639, 0.9911]",0.8857,0.85,True,"{""basic"": 17, ""advanced"": 3}",ok
+"Biology::Animal Kingdom::Vertebrata: Fishes, Amphibia, Reptilia, Aves & Mammalia",19,0.9474,"[0.7536, 0.9906]",0.8848,0.8421,True,"{""basic"": 16, ""advanced"": 3}",insufficient_support
+Biology::Ecology & Environment::Environmental Issues & Conservation,19,0.9474,"[0.7536, 0.9906]",0.9857,0.9474,False,"{""basic"": 18, ""advanced"": 1}",insufficient_support
+Biology::Locomotion & Neuro-Endocrine Control::Sliding Filament Theory & Skeletal Framework,19,0.5789,"[0.3628, 0.7686]",0.7333,1.0,False,"{""basic"": 19}",insufficient_support
+Chemistry::Chemical Kinetics::Reaction Rates & Arrhenius Equation,19,1.0,"[0.8318, 1.0]",1.0,1.0,False,"{""medium"": 19}",insufficient_support
+Chemistry::General Organic Chemistry::Electronic Effects & Reaction Intermediates,19,1.0,"[0.8318, 1.0]",1.0,1.0,False,"{""medium"": 19}",insufficient_support
+Biology::Biotechnology::Biotechnological Applications,18,0.8889,"[0.672, 0.969]",0.6,0.6667,True,"{""basic"": 12, ""medium"": 2, ""advanced"": 4}",insufficient_support
+Biology::Genetics & Molecular Inheritance::Central Dogma & Gene Regulation,18,0.3889,"[0.203, 0.6138]",0.56,1.0,False,"{""advanced"": 18}",insufficient_support
+Physics::Electrostatics::Coulomb's Law & Gauss's Law,18,1.0,"[0.8241, 1.0]",1.0,1.0,False,"{""medium"": 18}",insufficient_support
+Physics::Units & Dimensions::Dimensions & Dimensional Formulae,18,0.7778,"[0.5478, 0.91]",0.5963,0.6667,True,"{""medium"": 4, ""basic"": 12, ""advanced"": 2}",insufficient_support
+Biology::Human Digestion & Respiration::Pulmonary Mechanics & Gas Transport,17,0.1765,"[0.0619, 0.4103]",0.3,1.0,False,"{""medium"": 17}",insufficient_support
+"Biology::Morphology of Flowering Plants::Floral Diagrams, Formulas & Inflorescence Types",17,0.1765,"[0.0619, 0.4103]",0.3,1.0,False,"{""medium"": 17}",insufficient_support
+Biology::Reproduction & Human Development::Gametogenesis & Embryonic Development Stages,17,0.5294,"[0.3096, 0.7384]",0.6923,1.0,False,"{""medium"": 17}",insufficient_support
+Chemistry::Periodic Table::Ionization Enthalpy & Electron Gain Enthalpy,17,0.5294,"[0.3096, 0.7384]",0.5873,0.6471,False,"{""medium"": 11, ""basic"": 4, ""advanced"": 2}",insufficient_support
+"Physics::Current Electricity::Ohm's Law, Kirchhoff's Laws & Measuring Instruments",17,0.9412,"[0.7302, 0.9895]",0.9697,1.0,False,"{""medium"": 17}",insufficient_support
+Physics::Ray Optics::Prisms: Dispersion & Deviation,17,0.8824,"[0.6566, 0.9671]",0.3125,0.8824,False,"{""medium"": 15, ""advanced"": 1, ""basic"": 1}",insufficient_support
+Biology::Genetics & Molecular Inheritance::Chromosomal Sex Determination & Mendelian Inheritance,16,0.5,"[0.28, 0.72]",0.6667,1.0,False,"{""medium"": 16}",insufficient_support
+Chemistry::Chemical Bonding::Valence Bond Theory & Hybridisation,16,0.75,"[0.505, 0.8982]",0.5,0.75,False,"{""medium"": 12, ""advanced"": 1, ""basic"": 3}",insufficient_support
+"Chemistry::Chemical Kinetics::Rate of Reaction, Rate Law & Order",16,0.9375,"[0.7167, 0.9889]",0.8161,0.875,True,"{""medium"": 14, ""basic"": 2}",insufficient_support
+Chemistry::d- and f-Block Elements::Compounds of Transition Metals: KMnO4 & K2Cr2O7,16,0.8125,"[0.5699, 0.9341]",0.7922,0.625,True,"{""basic"": 6, ""medium"": 10}",insufficient_support
+Physics::Gravitation::Universal Gravitation & Acceleration Due to Gravity,16,0.875,"[0.6398, 0.965]",0.7143,0.8125,True,"{""medium"": 13, ""advanced"": 3}",insufficient_support
+Physics::Wave Optics::Interference & Young's Double Slit (YDSE),16,0.875,"[0.6398, 0.965]",0.8333,0.8125,True,"{""medium"": 13, ""advanced"": 3}",insufficient_support
+Biology::Circulation & Excretion::Renal Filtration & Osmoregulation,15,0.5333,"[0.3012, 0.7519]",0.6957,1.0,False,"{""medium"": 15}",insufficient_support
+Biology::Evolution::Evolutionary Theories & Population Genetics,15,0.4,"[0.1982, 0.6425]",0.5714,1.0,False,"{""medium"": 15}",insufficient_support
+Biology::Evolution::Mechanisms of Evolution & Natural Selection,15,0.7333,"[0.4805, 0.891]",0.4111,0.8667,False,"{""basic"": 13, ""medium"": 1, ""advanced"": 1}",insufficient_support
+Biology::Plant Physiology::Cellular Respiration & ATP Synthesis,15,0.4,"[0.1982, 0.6425]",0.5714,1.0,False,"{""medium"": 15}",insufficient_support
+Chemistry::Hydrocarbons::Aromatic Hydrocarbons & Electrophilic Substitution,15,1.0,"[0.7961, 1.0]",1.0,1.0,False,"{""medium"": 15}",insufficient_support
+Physics::Ray Optics::Geometrical Optics & Optical Instruments,15,1.0,"[0.7961, 1.0]",1.0,1.0,False,"{""medium"": 15}",insufficient_support
+Physics::Rotational Motion::Rotational Dynamics & Moment of Inertia,15,0.5333,"[0.3012, 0.7519]",0.6957,1.0,False,"{""advanced"": 15}",insufficient_support
+Physics::Thermal Physics::Thermal Expansion & Calorimetry,15,1.0,"[0.7961, 1.0]",1.0,1.0,False,"{""medium"": 15}",insufficient_support
+"Physics::Units & Dimensions::Units, Significant Figures & Instruments",15,0.5333,"[0.3012, 0.7519]",0.5111,0.4667,True,"{""medium"": 7, ""advanced"": 4, ""basic"": 4}",insufficient_support
+Biology::Ecology & Environment::Biodiversity Patterns & Conservation Paradigms,14,0.8571,"[0.6006, 0.9599]",0.9231,1.0,False,"{""basic"": 14}",insufficient_support
+Chemistry::Biomolecules & Polymers::Structure & Function of Biological Macromolecules,14,0.7143,"[0.4535, 0.8828]",0.8333,1.0,False,"{""basic"": 14}",insufficient_support
+Chemistry::Haloalkanes & Haloarenes::Nucleophilic Substitution: SN1 & SN2 Mechanisms,14,0.6429,"[0.3876, 0.8366]",0.5456,0.5714,True,"{""medium"": 8, ""advanced"": 3, ""basic"": 3}",insufficient_support
+"Chemistry::Redox Reactions & Electrochemistry::Galvanic Cells, Nernst Equation & Cell EMF",14,0.7143,"[0.4535, 0.8828]",0.6,0.7857,False,"{""medium"": 11, ""basic"": 2, ""advanced"": 1}",insufficient_support
+Chemistry::p-Block Elements::Group 13 & 14 (Boron & Carbon Families),14,0.7143,"[0.4535, 0.8828]",0.2778,0.7857,False,"{""medium"": 11, ""basic"": 2, ""advanced"": 1}",insufficient_support
+"Physics::Electromagnetic Induction::Faraday's Laws, Lenz's Law & Motional EMF",14,0.7857,"[0.5241, 0.9243]",0.44,0.8571,False,"{""advanced"": 2, ""medium"": 12}",insufficient_support
+Physics::Kinematics::Projectile Motion & Trajectory,14,0.9286,"[0.6853, 0.9873]",0.4815,0.9286,False,"{""advanced"": 1, ""medium"": 13}",insufficient_support
+Biology::Ecology & Environment::Ecological Pyramids & Nutrient Cycling,13,0.7692,"[0.4974, 0.9182]",0.8696,1.0,False,"{""basic"": 13}",insufficient_support
+Physics::Atoms & Nuclei::Radioactivity: Decay Law & Half-Life,13,0.8462,"[0.5776, 0.9567]",0.4583,0.8462,False,"{""basic"": 2, ""medium"": 11}",insufficient_support
+Physics::Electromagnetic Waves::Displacement Current & Wave Propagation,13,1.0,"[0.7719, 1.0]",1.0,1.0,False,"{""medium"": 13}",insufficient_support
+Physics::Electromagnetic Waves::Electromagnetic Spectrum & Applications,13,0.9231,"[0.6669, 0.9863]",0.48,0.9231,False,"{""medium"": 12, ""basic"": 1}",insufficient_support
+"Physics::Oscillations & Waves::Wave Motion, Standing Waves & Sound",13,1.0,"[0.7719, 1.0]",1.0,1.0,False,"{""medium"": 13}",insufficient_support
+"Physics::Work, Energy & Power::Collisions (Elastic & Inelastic)",13,0.8462,"[0.5776, 0.9567]",0.6364,0.7692,True,"{""medium"": 10, ""advanced"": 2, ""basic"": 1}",insufficient_support
+Biology::Animal Kingdom::Animal Phylogeny & Diagnostic Characteristics,12,0.6667,"[0.3906, 0.8619]",0.8,1.0,False,"{""basic"": 12}",insufficient_support
+Biology::Genetics & Molecular Inheritance::Mendelian Genetics & Chromosomal Linkage,12,0.3333,"[0.1381, 0.6094]",0.5,1.0,False,"{""advanced"": 12}",insufficient_support
+Chemistry::Amines & Nitrogen Compounds::Amines: Preparation & Basicity,12,0.8333,"[0.552, 0.953]",0.563,0.6667,True,"{""medium"": 8, ""basic"": 3, ""advanced"": 1}",insufficient_support
+Chemistry::Thermodynamics::Thermochemistry & Gibbs Free Energy,12,0.8333,"[0.552, 0.953]",0.9091,1.0,False,"{""advanced"": 12}",insufficient_support
+Physics::Electromagnetic Induction::Self & Mutual Inductance,12,0.9167,"[0.6461, 0.9851]",0.4783,0.9167,False,"{""medium"": 11, ""advanced"": 1}",insufficient_support
+"Physics::Gravitation::Escape Velocity, Orbital Velocity & Satellites",12,1.0,"[0.7575, 1.0]",1.0,0.9167,True,"{""medium"": 11, ""advanced"": 1}",insufficient_support
+Physics::Kinematics::Foundational Physics Principles,12,0.9167,"[0.6461, 0.9851]",0.9565,1.0,False,"{""medium"": 12}",insufficient_support
+Physics::Magnetism & Matter::Magnetic Properties of Matter & Terrestrial Magnetism,12,0.25,"[0.0889, 0.5323]",0.4,1.0,False,"{""basic"": 12}",insufficient_support
+Physics::Oscillations & Waves::Wave Equation & Stationary Waves,12,1.0,"[0.7575, 1.0]",1.0,1.0,False,"{""medium"": 12}",insufficient_support
+Biology::Anatomy of Flowering Plants::Plant Tissues & Secondary Growth,11,0.9091,"[0.6226, 0.9838]",0.9524,1.0,False,"{""basic"": 11}",insufficient_support
+"Biology::Cell Cycle & Cell Division::Cell Cycle: Interphase (G1, S, G2)",11,0.9091,"[0.6226, 0.9838]",0.5,0.9091,False,"{""basic"": 10, ""medium"": 1}",insufficient_support
+"Biology::Circulation & Excretion::Blood Groups, Cardiac Cycle & Blood Vessels",11,1.0,"[0.7412, 1.0]",1.0,1.0,False,"{""medium"": 11}",insufficient_support
+Biology::Ecology & Environment::Population Growth Models & Interspecific Interactions,11,0.6364,"[0.3538, 0.8483]",0.7778,1.0,False,"{""medium"": 11}",insufficient_support
+Chemistry::Chemical Kinetics::Rate Laws & Arrhenius Equation,11,1.0,"[0.7412, 1.0]",1.0,1.0,False,"{""medium"": 11}",insufficient_support
+"Chemistry::Chemical Kinetics::Temperature Dependence, Arrhenius & Catalysis",11,0.8182,"[0.523, 0.9486]",0.5185,0.7273,True,"{""medium"": 8, ""basic"": 2, ""advanced"": 1}",insufficient_support
+"Chemistry::Solutions::Concentration Terms: Molarity, Molality & Mole Fraction",11,0.9091,"[0.6226, 0.9838]",0.4762,0.9091,False,"{""medium"": 10, ""basic"": 1}",insufficient_support
+Physics::Alternating Current::Series LCR Circuits & AC Voltage,11,0.2727,"[0.0975, 0.5657]",0.1953,0.5455,False,"{""advanced"": 3, ""medium"": 6, ""basic"": 2}",insufficient_support
+Physics::Laws of Motion::Newton's Laws of Motion & Momentum,11,0.9091,"[0.6226, 0.9838]",0.4762,0.9091,False,"{""medium"": 10, ""basic"": 1}",insufficient_support
+Physics::Magnetic Effects of Current::Magnetic Fields & Forces on Charges,11,0.3636,"[0.1517, 0.6462]",0.5333,1.0,False,"{""advanced"": 11}",insufficient_support
+Physics::Thermal Physics::Ideal Gas Laws & Kinetic Energy of Gases,11,1.0,"[0.7412, 1.0]",1.0,1.0,False,"{""medium"": 11}",insufficient_support
+Physics::Thermodynamics::Thermodynamic Processes & Indicator Diagrams,11,0.6364,"[0.3538, 0.8483]",0.3889,0.9091,False,"{""medium"": 10, ""basic"": 1}",insufficient_support
+"Physics::Work, Energy & Power::Conservation of Energy & Potential Energy",11,0.8182,"[0.523, 0.9486]",0.5185,0.7273,True,"{""medium"": 8, ""advanced"": 2, ""basic"": 1}",insufficient_support
+Biology::Animal Kingdom::Non-Chordates & Chordates Classification,10,0.2,"[0.0567, 0.5098]",0.3333,1.0,False,"{""medium"": 10}",insufficient_support
+Biology::Ecology & Environment::Energy Flow Dynamics & Biogeochemical Cycles,10,0.1,"[0.0179, 0.4042]",0.1818,1.0,False,"{""medium"": 10}",insufficient_support
+"Biology::Human Health, Disease & Microbes::Life Cycle of Pathogens & Drug Abuse",10,0.6,"[0.3127, 0.8318]",0.75,1.0,False,"{""medium"": 10}",insufficient_support
+Biology::The Living World & Taxonomy::Characteristics of Living Organisms,10,0.9,"[0.5958, 0.9821]",0.5556,0.8,True,"{""basic"": 8, ""medium"": 1, ""advanced"": 1}",insufficient_support
+"Chemistry::Mole Concept / Stoichiometry::Stoichiometry, Limiting Reagent & Formulae",10,0.6,"[0.3127, 0.8318]",0.3714,0.5,True,"{""medium"": 5, ""advanced"": 1, ""basic"": 4}",insufficient_support
+Chemistry::Periodic Table::Periodic Trends in Elemental Properties,10,0.3,"[0.1078, 0.6032]",0.4615,1.0,False,"{""basic"": 10}",insufficient_support
+Chemistry::Redox Reactions & Electrochemistry::Balancing Redox Reactions & Oxidation States,10,0.3,"[0.1078, 0.6032]",0.4615,1.0,False,"{""basic"": 10}",insufficient_support
+Chemistry::Solutions::Concentration Terms & Colligative Properties,10,0.9,"[0.5958, 0.9821]",0.9474,1.0,False,"{""medium"": 10}",insufficient_support
+Chemistry::p-Block Elements::Group 17 & 18 (Halogens & Noble Gases),10,0.9,"[0.5958, 0.9821]",0.8901,0.7,True,"{""medium"": 7, ""basic"": 3}",insufficient_support
+Physics::Alternating Current::Transformers & Power Transmission,10,1.0,"[0.7225, 1.0]",1.0,0.8,True,"{""medium"": 8, ""basic"": 2}",insufficient_support
+Physics::Properties of Matter::Fluid Dynamics & Surface Tension,10,1.0,"[0.7225, 1.0]",1.0,1.0,False,"{""medium"": 10}",insufficient_support
+Physics::Rotational Motion::Centre of Mass & Discrete/Continuous Systems,10,0.5,"[0.2366, 0.7634]",0.4505,0.9,False,"{""medium"": 9, ""advanced"": 1}",insufficient_support
+Physics::Thermal Physics::Calorimetry & Heat Transfer,10,1.0,"[0.7225, 1.0]",1.0,1.0,False,"{""medium"": 10}",insufficient_support
+Physics::Wave Optics::Diffraction at Single Slit,10,1.0,"[0.7225, 1.0]",1.0,1.0,False,"{""medium"": 10}",insufficient_support
+Biology::Evolution::Human Evolution & Speciation,9,0.8889,"[0.565, 0.9801]",0.8632,0.7778,True,"{""basic"": 7, ""medium"": 1, ""advanced"": 1}",insufficient_support
+Biology::Evolution::Human Evolution Chronology & Evolutionary Patterns,9,0.5556,"[0.2666, 0.8112]",0.7143,1.0,False,"{""medium"": 9}",insufficient_support
+"Biology::Human Health, Disease & Microbes::Industrial & Agricultural Applications of Microbes",9,0.4444,"[0.1888, 0.7334]",0.6154,1.0,False,"{""basic"": 9}",insufficient_support
+Biology::Morphology of Flowering Plants::Families of Angiosperms & Floral Formulas,9,1.0,"[0.7008, 1.0]",1.0,1.0,False,"{""basic"": 9}",insufficient_support
+"Chemistry::Aldehydes, Ketones & Carboxylic Acids::Carbonyl Group & Nucleophilic Additions",9,0.5556,"[0.2666, 0.8112]",0.3846,0.7778,False,"{""medium"": 7, ""basic"": 2}",insufficient_support
+"Chemistry::Chemical Bonding::Ionic Bonding, Lattice Enthalpy & Dipole Moment",9,0.5556,"[0.2666, 0.8112]",0.5556,0.5556,False,"{""medium"": 5, ""basic"": 3, ""advanced"": 1}",insufficient_support
+"Chemistry::Coordination Chemistry::Nomenclature, Ligands & Werner's Theory",9,0.6667,"[0.3542, 0.8794]",0.6667,0.6667,False,"{""basic"": 3, ""medium"": 6}",insufficient_support
+Chemistry::Hydrocarbons::Aliphatic & Aromatic Hydrocarbon Reactions,9,1.0,"[0.7008, 1.0]",1.0,1.0,False,"{""medium"": 9}",insufficient_support
+Chemistry::Redox Reactions & Electrochemistry::Nernst Equation & Electrochemical Cells,9,0.3333,"[0.1206, 0.6458]",0.25,0.6667,False,"{""advanced"": 6, ""medium"": 3}",insufficient_support
+Chemistry::Solutions::Colligative Properties: Freezing & Boiling Points,9,0.8889,"[0.565, 0.9801]",0.4706,0.8889,False,"{""medium"": 8, ""basic"": 1}",insufficient_support
+Chemistry::p-Block Elements::Group 15 & 16 (Nitrogen & Oxygen Families),9,1.0,"[0.7008, 1.0]",1.0,0.7778,True,"{""medium"": 7, ""basic"": 2}",insufficient_support
+Physics::Dual Nature of Matter::Matter Waves & de Broglie Wavelength,9,1.0,"[0.7008, 1.0]",1.0,0.8889,True,"{""medium"": 8, ""basic"": 1}",insufficient_support
+Physics::Dual Nature of Matter::Photoelectric Effect & Matter Waves,9,1.0,"[0.7008, 1.0]",1.0,1.0,False,"{""medium"": 9}",insufficient_support
+"Physics::Laws of Motion::Connected Bodies, Pulleys & Tension",9,0.7778,"[0.4526, 0.9368]",0.4375,0.7778,False,"{""advanced"": 2, ""medium"": 7}",insufficient_support
+"Physics::Magnetic Effects of Current::Ampere's Law, Solenoids & Toroids",9,0.8889,"[0.565, 0.9801]",0.9412,1.0,False,"{""medium"": 9}",insufficient_support
+Physics::Oscillations & Waves::Simple Harmonic Motion,9,1.0,"[0.7008, 1.0]",1.0,1.0,False,"{""medium"": 9}",insufficient_support
+Physics::Oscillations & Waves::Simple Harmonic Motion & Pendulums,9,0.8889,"[0.565, 0.9801]",0.8,0.7778,True,"{""basic"": 2, ""medium"": 7}",insufficient_support
+Physics::Semiconductor Electronics::Diode Applications & Rectifiers,9,0.8889,"[0.565, 0.9801]",0.903,0.5556,True,"{""advanced"": 1, ""medium"": 5, ""basic"": 3}",insufficient_support
+Physics::Semiconductor Electronics::p-n Junction Devices & Logic Gates,9,0.3333,"[0.1206, 0.6458]",0.5,1.0,False,"{""basic"": 9}",insufficient_support
+Biology::Biological Classification::Foundational Biological Principles,8,0.0,"[0.0, 0.3244]",0.0,1.0,False,"{""medium"": 8}",insufficient_support
+Biology::Ecology & Environment::Threats to Biodiversity & Conservation Strategies,8,0.875,"[0.5291, 0.9776]",0.9333,1.0,False,"{""basic"": 8}",insufficient_support
+Biology::Plant Physiology::Calvin Cycle & Light Reaction Mechanism,8,0.25,"[0.0715, 0.5907]",0.4,1.0,False,"{""medium"": 8}",insufficient_support
+Biology::Plant Physiology::Mineral Nutrition & Nitrogen Cycle,8,1.0,"[0.6756, 1.0]",1.0,1.0,False,"{""basic"": 8}",insufficient_support
+"Biology::Reproduction & Human Development::Microsporogenesis, Megasporogenesis & Double Fertilization",8,0.125,"[0.0224, 0.4709]",0.2222,1.0,False,"{""medium"": 8}",insufficient_support
+Biology::The Living World & Taxonomy::Taxonomical Aids,8,0.75,"[0.4093, 0.9285]",0.4286,0.75,False,"{""basic"": 6, ""medium"": 2}",insufficient_support
+"Chemistry::Alcohols, Phenols & Ethers::Alcohols: Preparation & Reactions",8,0.75,"[0.4093, 0.9285]",0.4286,0.75,False,"{""medium"": 6, ""basic"": 2}",insufficient_support
+"Chemistry::Aldehydes, Ketones & Carboxylic Acids::Carbonyl Condensation & Oxidation-Reduction",8,0.625,"[0.3057, 0.8632]",0.7692,1.0,False,"{""advanced"": 8}",insufficient_support
+Chemistry::Amines & Nitrogen Compounds::Amine Preparation & Carbylamine Reaction,8,1.0,"[0.6756, 1.0]",1.0,1.0,False,"{""medium"": 8}",insufficient_support
+Chemistry::Chemical Bonding::Molecular Orbital Theory (MOT) & Bond Order,8,0.875,"[0.5291, 0.9776]",0.6,0.625,True,"{""advanced"": 1, ""basic"": 5, ""medium"": 2}",insufficient_support
+Chemistry::Chemical Kinetics::Integrated Rate Equations & Half-Life,8,0.875,"[0.5291, 0.9776]",0.4667,0.875,False,"{""medium"": 7, ""basic"": 1}",insufficient_support
+"Chemistry::Thermodynamics::First & Second Laws, Internal Energy & Entropy",8,0.5,"[0.2152, 0.7848]",0.3333,0.75,False,"{""basic"": 1, ""medium"": 6, ""advanced"": 1}",insufficient_support
+Chemistry::d- and f-Block Elements::Transition Elements: Properties & Electronic Config,8,0.75,"[0.4093, 0.9285]",0.7667,0.625,True,"{""medium"": 5, ""basic"": 2, ""advanced"": 1}",insufficient_support
+Physics::Atoms & Nuclei::Nuclear Binding Energy & Radioactivity,8,0.875,"[0.5291, 0.9776]",0.9333,1.0,False,"{""medium"": 8}",insufficient_support
+Physics::Properties of Matter::Elasticity & Hooke's Law,8,0.0,"[0.0, 0.3244]",0.0,1.0,False,"{""basic"": 8}",insufficient_support
+Physics::Thermal Physics::Thermal Expansion & Heat Transfer,8,1.0,"[0.6756, 1.0]",1.0,1.0,False,"{""medium"": 8}",insufficient_support
+Physics::Thermodynamics::Laws of Thermodynamics & Carnot Engine,8,0.625,"[0.3057, 0.8632]",0.7692,1.0,False,"{""advanced"": 8}",insufficient_support
+"Biology::Anatomy of Flowering Plants::Internal Anatomy of Root, Stem & Leaf",7,1.0,"[0.6457, 1.0]",1.0,0.8571,True,"{""basic"": 6, ""medium"": 1}",insufficient_support
+"Chemistry::Alcohols, Phenols & Ethers::Ethers: Williamson Synthesis & Cleavage",7,0.7143,"[0.3589, 0.9178]",0.4167,0.7143,False,"{""basic"": 2, ""medium"": 5}",insufficient_support
+"Chemistry::Alcohols, Phenols & Ethers::Phenols: Properties & Named Reactions",7,1.0,"[0.6457, 1.0]",1.0,1.0,False,"{""medium"": 7}",insufficient_support
+"Chemistry::Alcohols, Phenols & Ethers::Preparation, Properties & Phenol Chemistry",7,0.8571,"[0.4869, 0.9743]",0.9231,1.0,False,"{""medium"": 7}",insufficient_support
+Chemistry::Amines & Nitrogen Compounds::Nitrogenous Organic Compounds & Diazonium Chemistry,7,0.8571,"[0.4869, 0.9743]",0.9231,1.0,False,"{""medium"": 7}",insufficient_support
+Chemistry::Biomolecules & Polymers::Structure of Nucleic Acids & Proteins,7,0.0,"[0.0, 0.3543]",0.0,1.0,False,"{""basic"": 7}",insufficient_support
+Chemistry::Chemical Bonding::VSEPR Theory & Molecular Orbital Theory,7,1.0,"[0.6457, 1.0]",1.0,1.0,False,"{""medium"": 7}",insufficient_support
+Chemistry::Equilibrium::Solubility Product & Common Ion Effect,7,0.0,"[0.0, 0.3543]",0.0,0.8571,False,"{""medium"": 6, ""basic"": 1}",insufficient_support
+"Chemistry::Mole Concept / Stoichiometry::Equivalent Weight, Normality & Titrations",7,0.8571,"[0.4869, 0.9743]",0.4615,0.8571,False,"{""medium"": 6, ""basic"": 1}",insufficient_support
+Chemistry::States of Matter::Crystal Systems & Packing in Solids,7,0.8571,"[0.4869, 0.9743]",0.9231,1.0,False,"{""medium"": 7}",insufficient_support
+"Physics::Alternating Current::AC Resonance, Q-Factor & Power Factor",7,0.7143,"[0.3589, 0.9178]",0.8333,1.0,False,"{""medium"": 7}",insufficient_support
+Physics::Atoms & Nuclei::Bohr Model of Hydrogen Atom,7,0.8571,"[0.4869, 0.9743]",0.9231,1.0,False,"{""medium"": 7}",insufficient_support
+Physics::Current Electricity::Foundational Physics Principles,7,0.8571,"[0.4869, 0.9743]",0.9231,1.0,False,"{""medium"": 7}",insufficient_support
+Physics::Electrostatics::Coulomb's Law & Electric Flux,7,1.0,"[0.6457, 1.0]",1.0,1.0,False,"{""medium"": 7}",insufficient_support
+Physics::Kinematics::Vectors and Projectile Motion,7,0.8571,"[0.4869, 0.9743]",0.9231,1.0,False,"{""medium"": 7}",insufficient_support
+Physics::Oscillations & Waves::Wave Motion & Acoustics,7,1.0,"[0.6457, 1.0]",1.0,1.0,False,"{""medium"": 7}",insufficient_support
+"Physics::Ray Optics::Refraction, Reflection & Prism Formula",7,1.0,"[0.6457, 1.0]",1.0,1.0,False,"{""medium"": 7}",insufficient_support
+Biology::Anatomy of Flowering Plants::Secondary Growth: Cambium & Wood,6,1.0,"[0.6097, 1.0]",1.0,1.0,False,"{""basic"": 6}",insufficient_support
+Biology::Plant Physiology::Foundational Biological Principles,6,0.0,"[0.0, 0.3903]",0.0,1.0,False,"{""medium"": 6}",insufficient_support
+Biology::Plant Physiology::Phytohormones & Environmental Responses,6,0.6667,"[0.3, 0.9032]",0.8,1.0,False,"{""basic"": 6}",insufficient_support
+Biology::Reproduction & Human Development::Contraceptive Methods & Devices,6,0.6667,"[0.3, 0.9032]",0.8,1.0,False,"{""basic"": 6}",insufficient_support
+Chemistry::Haloalkanes & Haloarenes::Haloarenes & Polyhalogen Compounds,6,1.0,"[0.6097, 1.0]",1.0,0.8333,True,"{""basic"": 1, ""medium"": 5}",insufficient_support
+"Chemistry::Redox Reactions & Electrochemistry::Electrolysis, Faraday's Laws & Batteries",6,0.3333,"[0.0968, 0.7]",0.3333,0.6667,False,"{""medium"": 4, ""basic"": 1, ""advanced"": 1}",insufficient_support
+Chemistry::Thermodynamics::Gibbs Free Energy & Spontaneity,6,0.1667,"[0.0301, 0.5635]",0.2857,1.0,False,"{""medium"": 6}",insufficient_support
+Chemistry::d- and f-Block Elements::Lanthanoids & Actinoids (f-Block),6,0.6667,"[0.3, 0.9032]",0.6667,0.5,True,"{""basic"": 3, ""medium"": 3}",insufficient_support
+Chemistry::p-Block Elements::Group Trends & Chemical Properties of p-Block,6,1.0,"[0.6097, 1.0]",1.0,1.0,False,"{""medium"": 6}",insufficient_support
+Chemistry::p-Block Elements::Trends & Chemistry of Groups 13-18 Elements,6,0.8333,"[0.4365, 0.9699]",0.9091,1.0,False,"{""medium"": 6}",insufficient_support
+"Physics::Atoms & Nuclei::Nuclear Physics: Binding Energy, Fission & Fusion",6,0.8333,"[0.4365, 0.9699]",0.9091,1.0,False,"{""medium"": 6}",insufficient_support
+"Physics::Magnetism & Matter::Bar Magnet, Dipole & Magnetic Moment",6,1.0,"[0.6097, 1.0]",1.0,1.0,False,"{""medium"": 6}",insufficient_support
+Physics::Ray Optics::Optical Instruments: Microscope & Telescope,6,1.0,"[0.6097, 1.0]",1.0,1.0,False,"{""medium"": 6}",insufficient_support
+Physics::Semiconductor Electronics::Logic Gates & Digital Circuits,6,0.5,"[0.1876, 0.8124]",0.4857,0.8333,False,"{""medium"": 5, ""basic"": 1}",insufficient_support
+Physics::Semiconductor Electronics::P-N Junction & Semiconductors,6,0.5,"[0.1876, 0.8124]",0.3333,0.8333,False,"{""advanced"": 1, ""medium"": 5}",insufficient_support
+"Physics::Work, Energy & Power::Power & Vertical Circular Motion",6,0.6667,"[0.3, 0.9032]",0.4,0.6667,False,"{""medium"": 4, ""basic"": 2}",insufficient_support
+Biology::Biotechnology::Tools of Recombinant DNA & PCR Cycles,5,0.2,"[0.0362, 0.6245]",0.3333,1.0,False,"{""medium"": 5}",insufficient_support
+Biology::Plant Physiology::Plant Growth Regulators & Plasticity,5,1.0,"[0.5655, 1.0]",1.0,1.0,False,"{""basic"": 5}",insufficient_support
+Biology::Structural Organisation in Animals::Epithelial Tissues & Cell Junctions,5,1.0,"[0.5655, 1.0]",1.0,0.8,True,"{""basic"": 4, ""advanced"": 1}",insufficient_support
+Biology::The Living World & Taxonomy::Foundational Biological Principles,5,0.0,"[0.0, 0.4345]",0.0,1.0,False,"{""medium"": 5}",insufficient_support
+Chemistry::Coordination Chemistry::Crystal Field Theory & Nomenclature,5,0.2,"[0.0362, 0.6245]",0.3333,1.0,False,"{""advanced"": 5}",insufficient_support
+Chemistry::Coordination Chemistry::Nomenclature & Ligand Classification,5,0.6,"[0.2307, 0.8824]",0.75,1.0,False,"{""medium"": 5}",insufficient_support
+Chemistry::Equilibrium::Chemical Equilibrium & Le Chatelier's Principle,5,0.2,"[0.0362, 0.6245]",0.1111,0.6,False,"{""medium"": 3, ""basic"": 1, ""advanced"": 1}",insufficient_support
+"Chemistry::Equilibrium::Ionic Equilibrium, pH & Buffers",5,0.0,"[0.0, 0.4345]",0.0,1.0,False,"{""medium"": 5}",insufficient_support
+Chemistry::Hydrocarbons::Alkanes: Halogenation & Conformations,5,1.0,"[0.5655, 1.0]",1.0,1.0,False,"{""medium"": 5}",insufficient_support
+Chemistry::Periodic Table::Periodic Trends & Atomic Radii,5,0.8,"[0.3755, 0.9638]",0.8222,0.6,True,"{""basic"": 1, ""medium"": 3, ""advanced"": 1}",insufficient_support
+Chemistry::Redox Reactions & Electrochemistry::Conductance & Kohlrausch's Law,5,0.8,"[0.3755, 0.9638]",0.8889,1.0,False,"{""medium"": 5}",insufficient_support
+Chemistry::Redox Reactions & Electrochemistry::Oxidation Numbers & Redox Equations,5,0.6,"[0.2307, 0.8824]",0.75,1.0,False,"{""medium"": 5}",insufficient_support
+Chemistry::Solutions::Colligative Properties: Osmotic Pressure & van 't Hoff,5,0.8,"[0.3755, 0.9638]",0.4444,0.8,False,"{""basic"": 1, ""medium"": 4}",insufficient_support
+Physics::Gravitation::Gravitational Field & Orbital Motion,5,1.0,"[0.5655, 1.0]",1.0,1.0,False,"{""medium"": 5}",insufficient_support
+Physics::Properties of Matter::Elastic Moduli & Hooke's Law,5,1.0,"[0.5655, 1.0]",1.0,1.0,False,"{""medium"": 5}",insufficient_support
+Physics::Thermodynamics::First Law of Thermodynamics & Heat Capacities,5,0.6,"[0.2307, 0.8824]",0.5833,0.8,False,"{""medium"": 4, ""advanced"": 1}",insufficient_support
+Biology::Anatomy of Flowering Plants::Internal Structure of Dicot & Monocot Organs,4,0.0,"[0.0, 0.4899]",0.0,1.0,False,"{""medium"": 4}",insufficient_support
+Biology::Biomolecules::Fundamental Biological Principles,4,0.75,"[0.3006, 0.9544]",0.8571,1.0,False,"{""basic"": 4}",insufficient_support
+Biology::Biotechnology::Agricultural & Therapeutic Genetic Engineering,4,0.0,"[0.0, 0.4899]",0.0,1.0,False,"{""medium"": 4}",insufficient_support
+Biology::Locomotion & Neuro-Endocrine Control::Hormones & Mechanism of Hormone Action,4,0.0,"[0.0, 0.4899]",0.0,1.0,False,"{""medium"": 4}",insufficient_support
+Biology::Plant Kingdom::Fundamental Biological Principles,4,1.0,"[0.5101, 1.0]",1.0,1.0,False,"{""basic"": 4}",insufficient_support
+"Chemistry::Aldehydes, Ketones & Carboxylic Acids::Carboxylic Acids & Derivatives",4,0.75,"[0.3006, 0.9544]",0.8571,1.0,False,"{""medium"": 4}",insufficient_support
+Chemistry::General Organic Chemistry::IUPAC Nomenclature & Isomerism,4,1.0,"[0.5101, 1.0]",1.0,1.0,False,"{""medium"": 4}",insufficient_support
+"Chemistry::Hydrocarbons::Alkenes: Additions, Markovnikov & Ozonolysis",4,0.5,"[0.15, 0.85]",0.3333,0.5,False,"{""medium"": 2, ""basic"": 2}",insufficient_support
+Chemistry::Hydrocarbons::Reactions of Hydrocarbons & Aromaticity,4,1.0,"[0.5101, 1.0]",1.0,1.0,False,"{""medium"": 4}",insufficient_support
+Chemistry::Structure of Atom::Subatomic Particles & Dual Nature,4,0.5,"[0.15, 0.85]",0.5,0.75,False,"{""medium"": 3, ""basic"": 1}",insufficient_support
+"Chemistry::Thermodynamics::Enthalpy, Heat Capacity & Thermochemistry",4,0.75,"[0.3006, 0.9544]",0.7333,0.75,False,"{""medium"": 3, ""advanced"": 1}",insufficient_support
+Physics::Electrostatics::Capacitor Networks & Electrostatic Energy,4,1.0,"[0.5101, 1.0]",1.0,1.0,False,"{""medium"": 4}",insufficient_support
+Physics::Kinematics::Fundamental Concepts of Physics,4,1.0,"[0.5101, 1.0]",1.0,1.0,False,"{""medium"": 4}",insufficient_support
+Physics::Rotational Motion::Rolling Motion (Without Slipping),4,0.75,"[0.3006, 0.9544]",0.5,0.75,False,"{""medium"": 3, ""basic"": 1}",insufficient_support
+Physics::Thermal Physics::Heat Transfer & Conduction,4,1.0,"[0.5101, 1.0]",1.0,1.0,False,"{""medium"": 4}",insufficient_support
+"Physics::Thermodynamics::Heat Engines, Refrigerators & Carnot Cycle",4,1.0,"[0.5101, 1.0]",1.0,1.0,False,"{""medium"": 4}",insufficient_support
+Physics::Units & Dimensions::Errors in Measurement & Percentage Error,4,0.0,"[0.0, 0.4899]",0.0,1.0,False,"{""medium"": 4}",insufficient_support
+Biology::Biomolecules::Foundational Biological Principles,3,0.0,"[0.0, 0.5615]",0.0,1.0,False,"{""medium"": 3}",insufficient_support
+Biology::Human Digestion & Respiration::Respiratory Capacities & Mechanics of Breathing,3,1.0,"[0.4385, 1.0]",1.0,1.0,False,"{""medium"": 3}",insufficient_support
+Biology::Plant Physiology::Cellular Respiration & Respiratory Quotient,3,0.0,"[0.0, 0.5615]",0.0,1.0,False,"{""medium"": 3}",insufficient_support
+Biology::Structural Organisation in Animals::Foundational Biological Principles,3,0.0,"[0.0, 0.5615]",0.0,1.0,False,"{""medium"": 3}",insufficient_support
+Chemistry::Biomolecules & Polymers::Chemistry in Everyday Life,3,0.6667,"[0.2077, 0.9385]",0.5556,0.3333,True,"{""medium"": 1, ""advanced"": 1, ""basic"": 1}",insufficient_support
+Chemistry::Chemical Bonding::VSEPR Theory & Formal Charge,3,1.0,"[0.4385, 1.0]",1.0,1.0,False,"{""medium"": 3}",insufficient_support
+Chemistry::Haloalkanes & Haloarenes::Nucleophilic Substitution & Elimination Mechanisms,3,1.0,"[0.4385, 1.0]",1.0,1.0,False,"{""medium"": 3}",insufficient_support
+Chemistry::Solutions::Ideal/Non-Ideal Solutions & Raoult's Law,3,0.6667,"[0.2077, 0.9385]",0.6667,0.6667,False,"{""medium"": 1, ""advanced"": 2}",insufficient_support
+Chemistry::Structure of Atom::Bohr Model & Quantum Mechanics,3,0.3333,"[0.0615, 0.7923]",0.5,0.6667,False,"{""medium"": 2, ""advanced"": 1}",insufficient_support
+"Physics::Current Electricity::Kirchhoff's Laws, Networks & Cells",3,1.0,"[0.4385, 1.0]",1.0,1.0,False,"{""medium"": 3}",insufficient_support
+"Physics::Laws of Motion::Circular Motion, Banking & Centripetal Force",3,1.0,"[0.4385, 1.0]",1.0,1.0,False,"{""medium"": 3}",insufficient_support
+Physics::Properties of Matter::Hydrodynamics: Viscosity & Bernoulli's Theorem,3,1.0,"[0.4385, 1.0]",1.0,1.0,False,"{""medium"": 3}",insufficient_support
+Physics::Properties of Matter::Hydrostatics & Archimedes' Principle,3,1.0,"[0.4385, 1.0]",1.0,1.0,False,"{""medium"": 3}",insufficient_support
+"Physics::Properties of Matter::Surface Tension, Capillarity & Excess Pressure",3,1.0,"[0.4385, 1.0]",1.0,1.0,False,"{""medium"": 3}",insufficient_support
+Physics::Semiconductor Electronics::Foundational Physics Principles,3,1.0,"[0.4385, 1.0]",1.0,1.0,False,"{""medium"": 3}",insufficient_support
+Physics::Semiconductor Electronics::P-N Junction Diodes & Semiconductor Devices,3,0.6667,"[0.2077, 0.9385]",0.8,1.0,False,"{""medium"": 3}",insufficient_support
+Physics::Thermal Physics::Kinetic Interpretation of Temperature & Speeds,3,1.0,"[0.4385, 1.0]",1.0,1.0,False,"{""medium"": 3}",insufficient_support
+Physics::Wave Optics::Interference & Diffraction Phenomena,3,0.0,"[0.0, 0.5615]",0.0,1.0,False,"{""advanced"": 3}",insufficient_support
+Physics::Wave Optics::Polarization of Light & Brewster's Law,3,1.0,"[0.4385, 1.0]",1.0,1.0,False,"{""medium"": 3}",insufficient_support
+Biology::Animal Kingdom::Foundational Biological Principles,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""medium"": 2}",insufficient_support
+Biology::Animal Kingdom::Fundamental Biological Principles,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""basic"": 2}",insufficient_support
+Biology::Biological Classification::Five Kingdom System & Microbial Classification,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""basic"": 2}",insufficient_support
+Biology::Biological Classification::Fundamental Biological Principles,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""basic"": 2}",insufficient_support
+Biology::Cell Cycle & Cell Division::Foundational Biological Principles,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""medium"": 2}",insufficient_support
+Biology::Cell: The Unit of Life::Foundational Biological Principles,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""medium"": 2}",insufficient_support
+Biology::Circulation & Excretion::Urine Formation & Regulation of Kidney Function,2,0.5,"[0.0945, 0.9055]",0.6667,1.0,False,"{""medium"": 2}",insufficient_support
+Biology::Ecology & Environment::Foundational Biological Principles,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""medium"": 2}",insufficient_support
+Biology::Genetics & Molecular Inheritance::Foundational Biological Principles,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""medium"": 2}",insufficient_support
+Biology::Locomotion & Neuro-Endocrine Control::Fundamental Biological Principles,2,0.5,"[0.0945, 0.9055]",0.6667,1.0,False,"{""basic"": 2}",insufficient_support
+Biology::Locomotion & Neuro-Endocrine Control::Mechanism of Muscle Contraction & Disorders,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""medium"": 2}",insufficient_support
+Biology::Locomotion & Neuro-Endocrine Control::Synaptic Transmission & Nerve Impulse Propagation,2,0.5,"[0.0945, 0.9055]",0.6667,1.0,False,"{""medium"": 2}",insufficient_support
+Biology::Morphology of Flowering Plants::Foundational Biological Principles,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""medium"": 2}",insufficient_support
+Biology::Reproduction & Human Development::Foundational Biological Principles,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""medium"": 2}",insufficient_support
+"Chemistry::Aldehydes, Ketones & Carboxylic Acids::Named Condensations: Aldol & Cannizzaro",2,1.0,"[0.3424, 1.0]",1.0,0.5,True,"{""advanced"": 1, ""medium"": 1}",insufficient_support
+Chemistry::Amines & Nitrogen Compounds::Diazonium Salts & Coupling Reactions,2,0.5,"[0.0945, 0.9055]",0.3333,0.5,False,"{""medium"": 1, ""basic"": 1}",insufficient_support
+Chemistry::Biomolecules & Polymers::Polymers & Polymerisation Mechanisms,2,1.0,"[0.3424, 1.0]",1.0,0.5,True,"{""medium"": 1, ""basic"": 1}",insufficient_support
+Chemistry::Chemical Bonding::Isoelectronic and Isostructural Species,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""basic"": 2}",insufficient_support
+Chemistry::Coordination Chemistry::Crystal Field Theory & Magnetic Properties,2,0.5,"[0.0945, 0.9055]",0.6667,1.0,False,"{""medium"": 2}",insufficient_support
+Chemistry::Haloalkanes & Haloarenes::Elimination & Organometallics (Grignard),2,0.5,"[0.0945, 0.9055]",0.3333,0.5,False,"{""basic"": 1, ""medium"": 1}",insufficient_support
+Chemistry::Hydrocarbons::Hydration of Alkynes to Carbonyl Compounds,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""medium"": 2}",insufficient_support
+Chemistry::Periodic Table::Periodic Trends in Chemical Properties,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""basic"": 2}",insufficient_support
+Chemistry::d- and f-Block Elements::Transition Metals & Coordination Trends,2,0.5,"[0.0945, 0.9055]",0.6667,1.0,False,"{""medium"": 2}",insufficient_support
+Physics::Alternating Current::LCR Circuits & AC Power,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""advanced"": 2}",insufficient_support
+Physics::Atoms & Nuclei::Nuclear Density & Binding Energy,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""medium"": 2}",insufficient_support
+Physics::Current Electricity::Resistance and Stretching of Wire,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""basic"": 2}",insufficient_support
+Physics::Gravitation::Kepler's Laws of Planetary Motion,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""medium"": 2}",insufficient_support
+Physics::Kinematics::Vectors & Relative Velocity,2,0.5,"[0.0945, 0.9055]",0.3333,0.5,False,"{""medium"": 1, ""advanced"": 1}",insufficient_support
+Physics::Magnetic Effects of Current::Biot-Savart Law & Magnetic Force on Charges,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""medium"": 2}",insufficient_support
+Physics::Oscillations & Waves::Velocity & Acceleration in Simple Harmonic Motion,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""medium"": 2}",insufficient_support
+Physics::Properties of Matter::Young's Modulus & Stretching of Wire,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""basic"": 2}",insufficient_support
+Physics::Ray Optics::Astronomical Telescope Resolving Power,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""basic"": 2}",insufficient_support
+Physics::Ray Optics::Foundational Physics Principles,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""medium"": 2}",insufficient_support
+Physics::Ray Optics::Refraction Through Prism & Critical Angle,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""medium"": 2}",insufficient_support
+Physics::Ray Optics::Spherical Mirrors & Real Image Formation,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""basic"": 2}",insufficient_support
+Physics::Rotational Motion::Rotational Kinematics & Moment of Inertia,2,0.0,"[0.0, 0.6576]",0.0,1.0,False,"{""advanced"": 2}",insufficient_support
+Physics::Semiconductor Electronics::Fundamental Concepts of Physics,2,0.5,"[0.0945, 0.9055]",0.6667,1.0,False,"{""medium"": 2}",insufficient_support
+Physics::Thermal Physics::Equivalent Thermal Conductivity of Composite Rod,2,1.0,"[0.3424, 1.0]",1.0,1.0,False,"{""medium"": 2}",insufficient_support
+Biology::Biotechnology::Transgenic Organisms & Bt Toxins,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""medium"": 1}",insufficient_support
+Biology::Cell: The Unit of Life::Fundamental Biological Principles,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""basic"": 1}",insufficient_support
+Biology::Circulation & Excretion::Excretory System: Permeability of Henle's Loop,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""basic"": 1}",insufficient_support
+Biology::Circulation & Excretion::Foundational Biological Principles,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""medium"": 1}",insufficient_support
+Biology::Evolution::Foundational Biological Principles,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""medium"": 1}",insufficient_support
+"Biology::Human Health, Disease & Microbes::Foundational Biological Principles",1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""medium"": 1}",insufficient_support
+Biology::Morphology of Flowering Plants::Fundamental Biological Principles,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""basic"": 1}",insufficient_support
+Biology::Morphology of Flowering Plants::Modification of Stem: Tendrils and Thorns,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""basic"": 1}",insufficient_support
+Biology::Plant Kingdom::Classification of Gymnosperms & Cryptogams,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""medium"": 1}",insufficient_support
+Biology::Plant Kingdom::Foundational Biological Principles,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""medium"": 1}",insufficient_support
+Biology::Plant Kingdom::Monoecious and Dioecious Gymnosperms,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""basic"": 1}",insufficient_support
+Biology::Plant Physiology::Fundamental Biological Principles,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""basic"": 1}",insufficient_support
+Biology::Plant Physiology::Transport in Plants & Water Relations,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""basic"": 1}",insufficient_support
+Biology::Reproduction & Human Development::Modes of Reproduction,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Biology::Structural Organisation in Animals::Fundamental Biological Principles,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""basic"": 1}",insufficient_support
+Biology::The Living World & Taxonomy::Fundamental Biological Principles,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""basic"": 1}",insufficient_support
+"Chemistry::Alcohols, Phenols & Ethers::Acidic Strength of Substituted Phenols",1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+"Chemistry::Alcohols, Phenols & Ethers::Reactions & Preparation of Phenols and Alcohols",1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+"Chemistry::Aldehydes, Ketones & Carboxylic Acids::Aldol Condensation of Cyclic Ketones",1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+"Chemistry::Aldehydes, Ketones & Carboxylic Acids::Reactions and Tests for Aldehydes & Ketones",1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""advanced"": 1}",insufficient_support
+Chemistry::Amines & Nitrogen Compounds::Basic Strength of Substituted Anilines,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Chemistry::Amines & Nitrogen Compounds::Chemical Reactions & Tests of Amines,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Chemistry::Biomolecules & Polymers::Classification of Polymers & Monomers,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""basic"": 1}",insufficient_support
+Chemistry::Biomolecules & Polymers::Structure & Denaturation of Proteins,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""basic"": 1}",insufficient_support
+Chemistry::Chemical Kinetics::Reaction Mechanism & Rate Determining Step,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Chemistry::Coordination Chemistry::Geometrical & Optical Isomerism in Coordination Complexes,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Chemistry::Coordination Chemistry::Isomerism in Coordination Compounds,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""medium"": 1}",insufficient_support
+Chemistry::Equilibrium::Solubility Product & Precipitation of Salts,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""medium"": 1}",insufficient_support
+Chemistry::General Organic Chemistry::IUPAC Nomenclature of Polyfunctional Compounds,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Chemistry::Haloalkanes & Haloarenes::Nucleophilic Aromatic Substitution via Benzyne Intermediate,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""advanced"": 1}",insufficient_support
+Chemistry::Haloalkanes & Haloarenes::Nucleophilic Substitution & Alkyl Halide Reactions,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""medium"": 1}",insufficient_support
+Chemistry::Redox Reactions & Electrochemistry::Standard Electrode Potentials & Nernst Equation,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Chemistry::States of Matter::Solid State & Unit Cells,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Chemistry::Structure of Atom::De-Broglie Wavelength & Bohr Orbit Velocity,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Chemistry::Surface Chemistry::Adsorption & Catalysis,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+"Chemistry::Surface Chemistry::Colloids, Emulsions & Properties",1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Chemistry::d- and f-Block Elements::Transition Element Properties & Magnetic Moments,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Chemistry::p-Block Elements::Inert Pair Effect & Oxidation States of Group 14,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Chemistry::p-Block Elements::Properties and Redox Reactions of Sulfur Dioxide,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Physics::Alternating Current::AC Circuit with Inductor & Frequency Variation,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Physics::Atoms & Nuclei::Balmer Series Spectral Lines,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Physics::Atoms & Nuclei::Radioactive Decay Law,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Dual Nature of Matter::Photoelectric Effect & Stopping Potential,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Dual Nature of Matter::de-Broglie Wavelength of Thermal Neutrons,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Physics::Electromagnetic Induction::Induced Charge & Mutual Induction in Solenoid,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Electromagnetic Induction::LR Transient Circuit & Inductor Behavior,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""advanced"": 1}",insufficient_support
+Physics::Electromagnetic Waves::Properties & Spectrum of EM Waves,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Physics::Electrostatics::Equipotential Surfaces & Work Done,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Physics::Kinematics::Relative Velocity in Two Dimensions,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Kinematics::Two-Dimensional Kinematics & Acceleration,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Physics::Laws of Motion::Spring-Mass System & Instantaneous Acceleration,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+"Physics::Magnetic Effects of Current::Magnetic Force, Lorentz Force & Cyclotron",1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Magnetic Effects of Current::Torque and Work Done on Magnetic Dipole,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Magnetism & Matter::Earth's Magnetism & Magnetic Elements,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Magnetism & Matter::Magnetic Properties of Materials,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Physics::Oscillations & Waves::Combination of Springs in Series and Parallel,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Oscillations & Waves::Foundational Physics Principles,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Oscillations & Waves::Fundamental Concepts of Physics,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Properties of Matter::U-Tube Manometer & Fluid Statics,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Rotational Motion::Conservation of Angular Momentum & Rotational Energy Loss,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Semiconductor Electronics::Logic Gate Combination & Truth Table,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Physics::Semiconductor Electronics::Transistor Amplifier & Power Gain,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Thermal Physics::Internal Energy of Gas Mixture,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Thermal Physics::Thermal Radiation & Cooling Laws,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""basic"": 1}",insufficient_support
+Physics::Thermodynamics::P-V Indicator Diagram & Thermodynamic Processes,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Units & Dimensions::Foundational Physics Principles,1,0.0,"[0.0, 0.7935]",0.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Wave Optics::Malus Law & Transmission of Polarized Light,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+Physics::Wave Optics::Young's Double Slit Experiment in Medium,1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support
+"Physics::Work, Energy & Power::Work-Energy Theorem & Variable Force",1,1.0,"[0.2065, 1.0]",1.0,1.0,False,"{""medium"": 1}",insufficient_support

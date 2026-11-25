@@ -5,13 +5,13 @@
   "artifacts": {
     "model/question_difficulty_model.joblib": {
       "exists": true,
-      "size_bytes": 19199738,
-      "sha256": "a2f55761804f0db652975fec240a7e46fb1c7c70b47f73240989275c8815fc85"
+      "size_bytes": 19204746,
+      "sha256": "0740b35ce84e1f021b65d892f4e23aaf57c61c15ae72ac5484d1f345ca282d94"
     },
     "model/rf_difficulty_forest.npz": {
       "exists": true,
-      "size_bytes": 1030582,
-      "sha256": "cdfd08124ba13b1366034ed072dfb56b0f58e513f8b9c3432533106d9e08b5ae"
+      "size_bytes": 1037083,
+      "sha256": "da4b800c7a15578b9c2626cdc530de3895155aa7005bd0a6c5d77a1b6e5fcfce"
     },
     "model/rf_difficulty_meta.json": {
       "exists": true,
@@ -25,8 +25,8 @@
     },
     "model/irt_cold_start_ridge.npz": {
       "exists": true,
-      "size_bytes": 1113,
-      "sha256": "f8717be1f496213bf61aa36ed83d4f558bcb7ceee79f44bcd5d12c508611dc35"
+      "size_bytes": 1105,
+      "sha256": "fbfe479bbc2e285653e151e6ef707fa34aa81439224fd9bb5cbf40831ca25ac2"
     },
     "model/bkt_chapter_parameters.json": {
       "exists": true,
@@ -40,13 +40,13 @@
     },
     "model/ncert_rag_svd_index.npz": {
       "exists": true,
-      "size_bytes": 3089648,
-      "sha256": "43bd1232ed96264fadaf75c5cb57464520e9049dba79d3d55798430c21a3d969"
+      "size_bytes": 3074164,
+      "sha256": "d3a7b71bb3058fd1e910a21fd1439b7ad70fb88355e8caa0d3c26c7db5fa3413"
     },
     "model/ncert_rag_svd_meta.json": {
       "exists": true,
       "size_bytes": 1403048,
-      "sha256": "65fb624307f5b2ffb593c674eba82e78f5e177d627404d5963df88ac375caf03"
+      "sha256": "24e49faa16e7aab4edc89e3376e71f27140f0dd0fd2d15b85100766ee450f299"
     },
     "model/linucb_prior_init.json": {
       "exists": true,
@@ -65,8 +65,8 @@
     },
     "model/rf_temperature_calibration.json": {
       "exists": true,
-      "size_bytes": 1169,
-      "sha256": "11c8c6071ab2ce4238cecda8361089fe3fce277ab829d13ae803a15e394ef4f0"
+      "size_bytes": 1170,
+      "sha256": "6421621f3cffbb8f908ed0a22b86dcbe229c309e89384776a6e4a852d4c7f540"
     },
     "model/tier_recalibration_proposal.json": {
       "exists": true,

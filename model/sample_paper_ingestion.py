@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import hashlib
 import json
 import os
@@ -9,8 +11,12 @@ from pathlib import Path
 
 import numpy as np
 
-from .chapter_resolver import ChapterResolver
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from .chapter_resolver import ChapterResolver
 from .irt_3pl_model import CALIBRATED_ITEMS, predict_cold_start_difficulty_and_irt
+from .text_quality_gate import text_quality_flags
 
 MODEL_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = MODEL_DIR.parent
@@ -226,6 +232,7 @@ def validate_rows(
         opts = [_norm_key(row.get(f"option_{x}", "")) for x in "abcd"]
         if all(opts) and len(set(opts)) < 4:
             reasons.append("duplicate_options")
+        reasons.extend(flag for flag in text_quality_flags(row) if flag not in reasons)
         if subject in SUBJECTS and res["chapter"] is None:
             reasons.append(res["method"])
         if row.get("has_diagram"):
@@ -303,6 +310,8 @@ def ingest(
     linking = linking or _load_json(LINKING_PATH, None) or fit_linking_constants(pyq_rows)
     assets_root = Path(assets_root) if assets_root else sample_path.parent
     if resolver is None:
+        from .chapter_resolver import ChapterResolver
+
         resolver = ChapterResolver(pyq_rows)
         resolver.fit(rows)
         if progress:

@@ -1,0 +1,16 @@
+{
+  "pyq_zero_tier_chapters": [
+    "Physics::Dual Nature of Matter::basic",
+    "Physics::Electromagnetic Induction::advanced",
+    "Chemistry::Environmental Chemistry::medium",
+    "Physics::Wave Optics::basic",
+    "Chemistry::s-Block Elements::basic"
+  ],
+  "chapters_in_multiple_subjects": [
+    "Thermodynamics"
+  ],
+  "taxonomy_vs_bank": {
+    "max_bank_missing_questions": 161,
+    "min_chapter_share_spearman": 0.85
+  }
+}

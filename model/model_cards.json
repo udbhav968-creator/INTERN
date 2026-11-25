@@ -1,9 +1,9 @@
 {
   "lineage": {
-    "generated_at_utc": "2026-11-16T15:20:58+00:00",
-    "git_commit": "14a0ac1c1e7f461db351e267d3df10e2d76c61bc",
+    "generated_at_utc": "2026-11-23T16:13:21+00:00",
+    "git_commit": "aa97b6c0026a0cd7ce8154ea4f02f5d1fb896c39",
     "libraries": {
-      "python": "3.13.18",
+      "python": "3.13.14",
       "numpy": "2.5.3",
       "pandas": "3.0.5",
       "sklearn": "1.9.1",
@@ -41,13 +41,13 @@
       "artifacts": [
         {
           "path": "model/question_difficulty_model.joblib",
-          "sha256": "a2f55761804f0db652975fec240a7e46fb1c7c70b47f73240989275c8815fc85",
-          "size_bytes": 19199738
+          "sha256": "0740b35ce84e1f021b65d892f4e23aaf57c61c15ae72ac5484d1f345ca282d94",
+          "size_bytes": 19204746
         },
         {
           "path": "model/rf_difficulty_forest.npz",
-          "sha256": "cdfd08124ba13b1366034ed072dfb56b0f58e513f8b9c3432533106d9e08b5ae",
-          "size_bytes": 1030582
+          "sha256": "da4b800c7a15578b9c2626cdc530de3895155aa7005bd0a6c5d77a1b6e5fcfce",
+          "size_bytes": 1037083
         }
       ],
       "training_data": "2,400 official PYQs, 11 non-leaking features",
@@ -68,7 +68,7 @@
       },
       "limitations": [
         "agreement with the heuristic tier formula, not empirical difficulty",
-        "heuristic vs human-verified tiers: kappa 0.0693"
+        "heuristic vs human-verified tiers: kappa 0.07"
       ]
     },
     {
@@ -78,19 +78,19 @@
       "artifacts": [
         {
           "path": "model/question_difficulty_model_v21_text_candidate.joblib",
-          "sha256": "e1158b6dba209a44bf44f0b9cd99edba04d425cc73c72adf0541ae6e29aa93cf",
-          "size_bytes": 3073042
+          "sha256": "28d6fc1137e76ccbbb01f3a8d328228699e46ede781003a7d7863bf96b948a54",
+          "size_bytes": 3000379
         }
       ],
-      "training_data": "9448 verified sample-paper questions from 83 papers",
+      "training_data": "9264 verified sample-paper questions from 83 papers",
       "labels": "verified sample-paper tiers (papers 001-101 accepted rows)",
       "evaluation": "GroupKFold(5) by paper_source; no paper appears in both train and test",
       "metrics": {
-        "accuracy": 0.8238,
-        "macro_f1": 0.7705,
-        "ece": 0.0189,
-        "accuracy_duplicate_free_rows": 0.8141,
-        "majority_baseline": 0.5252
+        "accuracy": 0.8218,
+        "macro_f1": 0.769,
+        "ece": 0.0152,
+        "accuracy_duplicate_free_rows": 0.8115,
+        "majority_baseline": 0.5225
       },
       "limitations": [
         "trained on sample papers; distribution may differ from real exam papers",
@@ -128,12 +128,12 @@
       "artifacts": [
         {
           "path": "model/ncert_rag_svd_index.npz",
-          "sha256": "43bd1232ed96264fadaf75c5cb57464520e9049dba79d3d55798430c21a3d969",
-          "size_bytes": 3089648
+          "sha256": "d3a7b71bb3058fd1e910a21fd1439b7ad70fb88355e8caa0d3c26c7db5fa3413",
+          "size_bytes": 3074164
         },
         {
           "path": "model/ncert_rag_svd_meta.json",
-          "sha256": "65fb624307f5b2ffb593c674eba82e78f5e177d627404d5963df88ac375caf03",
+          "sha256": "24e49faa16e7aab4edc89e3376e71f27140f0dd0fd2d15b85100766ee450f299",
           "size_bytes": 1403048
         }
       ],
@@ -141,10 +141,10 @@
       "labels": "chapter of the question",
       "evaluation": "questions not in the index (no chapter hint)",
       "metrics": {
-        "eval_questions": 9448,
+        "eval_questions": 9264,
         "eval_set": "questions not in the index (no chapter hint)",
-        "top1_chapter_accuracy": 0.3496,
-        "top3_chapter_accuracy": 0.5341,
+        "top1_chapter_accuracy": 0.3491,
+        "top3_chapter_accuracy": 0.5344,
         "random_baseline_top1": 0.0154
       },
       "limitations": [
@@ -159,8 +159,8 @@
       "artifacts": [
         {
           "path": "model/ncert_rag_svd_index_unified.npz",
-          "sha256": "f355a356f5bda827ba3f3bbfabea96c7d6a1ec42abfed929d648d8714e249fb7",
-          "size_bytes": 7780947
+          "sha256": "3129bf5a29702728ffd05230226cc07b4f13a9a2829e37d4de30e424c643bdb5",
+          "size_bytes": 7684540
         }
       ],
       "training_data": "every question from the held-out sample papers",
@@ -168,17 +168,17 @@
       "evaluation": "held-out sample papers",
       "metrics": {
         "unified": {
-          "eval_questions": 1747,
+          "eval_questions": 1674,
           "eval_set": "questions not in the index (no chapter hint)",
-          "top1_chapter_accuracy": 0.3268,
-          "top3_chapter_accuracy": 0.5335,
+          "top1_chapter_accuracy": 0.328,
+          "top3_chapter_accuracy": 0.5341,
           "random_baseline_top1": 0.0154
         },
         "production_on_same_set": {
-          "eval_questions": 1747,
+          "eval_questions": 1674,
           "eval_set": "questions not in the index (no chapter hint)",
-          "top1_chapter_accuracy": 0.3183,
-          "top3_chapter_accuracy": 0.5031,
+          "top1_chapter_accuracy": 0.3196,
+          "top3_chapter_accuracy": 0.5066,
           "random_baseline_top1": 0.0154
         }
       },
@@ -193,8 +193,8 @@
       "artifacts": [
         {
           "path": "model/irt_cold_start_ridge.npz",
-          "sha256": "f8717be1f496213bf61aa36ed83d4f558bcb7ceee79f44bcd5d12c508611dc35",
-          "size_bytes": 1113
+          "sha256": "fbfe479bbc2e285653e151e6ef707fa34aa81439224fd9bb5cbf40831ca25ac2",
+          "size_bytes": 1105
         }
       ],
       "training_data": "2,400 PYQs",
@@ -249,7 +249,7 @@
       "artifacts": [
         {
           "path": "model/student_models/learning_analytics_report.json",
-          "sha256": "ddee680fcb2a1ec3b5a85562f2d82d383ba69c68636715aebddd0acccccc4e3f",
+          "sha256": "bf081dbab36171f734609a6bc54181d2ffd1f5ffa211ad2f36262fc1b190e387",
           "size_bytes": 2952
         }
       ],
@@ -277,8 +277,8 @@
       "artifacts": [
         {
           "path": "model/retrieval_challenger_report.json",
-          "sha256": "53061e39a29a370bb8e71dec55c416d60ae83dcda93681f867b6299d45105248",
-          "size_bytes": 928
+          "sha256": "6f13ebcd2b4fc58cf69a97a1b0069480ddbbc65d522a62e09519ec9d07a88ebf",
+          "size_bytes": 929
         }
       ],
       "training_data": "NCERT chapter documents and PYQ stems/explanations (same as production)",
@@ -287,12 +287,12 @@
       "metrics": {
         "challenger": {
           "retriever": "char_ngram_tfidf (offline stand-in, lexical)",
-          "eval_questions": 9448,
+          "eval_questions": 9264,
           "top1_chapter_accuracy": 0.3237,
-          "top3_chapter_accuracy": 0.488,
+          "top3_chapter_accuracy": 0.4886,
           "random_baseline_top1": 0.0154
         },
-        "top1_gain": -0.0259
+        "top1_gain": -0.0254
       },
       "limitations": [
         "the offline run uses a lexical stand-in; the semantic model needs torch and a model download (GPU)"

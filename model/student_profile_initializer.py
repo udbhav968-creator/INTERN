@@ -15,6 +15,7 @@ from .assessment_blueprint import (
 from .irt_3pl_model import D_SCALING, theta_to_percentile
 from .knowledge_graph_dag import compute_hierarchical_shrinkage_prior, compute_prerequisite_readiness
 from .national_rank_simulator import score_to_all_india_rank, score_to_neet_percentile
+from .response_hygiene import clean_responses
 from .state_machine.bkt_model import CHAPTER_BKT_REGISTRY, get_chapter_bkt_params, get_chapter_bkt_prior
 
 MODEL_DIR = Path(__file__).resolve().parent
@@ -99,6 +100,7 @@ def _predicted_neet_score(post: np.ndarray, bank: dict[str, dict]) -> dict:
 
 def initialize_student_profile(responses: list[dict], source: str = "unified") -> dict:
     bank = _bank_by_id(source)
+    responses, hygiene = clean_responses(responses)
     obs_all: list[tuple[dict, int]] = []
     by_chapter: dict[str, list[tuple[dict, int]]] = defaultdict(list)
     times_by_chapter: dict[str, list[float]] = defaultdict(list)
@@ -198,6 +200,8 @@ def initialize_student_profile(responses: list[dict], source: str = "unified") -
     return {
         "profile_version": PROFILE_VERSION,
         "responses_scored": len(obs_all),
+        "prior_only": len(obs_all) == 0,
+        "data_hygiene": hygiene,
         "unknown_question_ids": unknown,
         "marks": marks,
         "global_theta": round(g_theta, 4),

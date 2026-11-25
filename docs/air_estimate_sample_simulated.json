@@ -1,0 +1,1739 @@
+{
+  "report_version": "air_estimate_v1",
+  "data_hygiene": {
+    "duplicate_responses_dropped": 0,
+    "invalid_is_correct_dropped": 0,
+    "responses_without_question_id": 0,
+    "duplicate_policy": "last answer per question wins"
+  },
+  "status": "ok",
+  "evidence": {
+    "scored_questions": 180,
+    "per_subject": {
+      "Physics": 45,
+      "Chemistry": 45,
+      "Biology": 90
+    },
+    "chapters_touched": 65,
+    "scope": "full_mock",
+    "sufficient_for_air": true,
+    "source": "attempt"
+  },
+  "scores": {
+    "raw_marks_this_attempt": 490,
+    "equated_neet_marks": 496.6,
+    "interval_90": [
+      455,
+      540
+    ],
+    "theta": 1.0327,
+    "theta_sem": 0.1273
+  },
+  "mock_difficulty": {
+    "questions": 180,
+    "mean_item_difficulty_b": 0.21,
+    "reference_mean_item_difficulty_b": 0.21,
+    "average_student_marks_on_this_paper_per_180": 313.8,
+    "average_student_marks_on_reference_form": 313.8,
+    "gap_marks": 0.0,
+    "verdict": "similar to the NEET-style reference form",
+    "tolerance_marks": 6.0
+  },
+  "air": {
+    "estimate": 129637,
+    "range_90": [
+      80796,
+      198690
+    ],
+    "percentile": 93.518,
+    "reference_exam_year": 2026,
+    "candidates_appeared": 1999895,
+    "curve_status": "approximate",
+    "paper_year_scenarios": {
+      "2024": {
+        "general_cutoff": 164,
+        "candidates_appeared": 2333297,
+        "score_on_reference_scale": 545.6,
+        "percentile": 96.262,
+        "air": 87209
+      },
+      "2025": {
+        "general_cutoff": 144,
+        "candidates_appeared": 2209318,
+        "score_on_reference_scale": 565.6,
+        "percentile": 97.155,
+        "air": 62851
+      },
+      "2026": {
+        "general_cutoff": 213,
+        "candidates_appeared": 1999895,
+        "score_on_reference_scale": 496.6,
+        "percentile": 93.518,
+        "air": 129637
+      }
+    },
+    "paper_year_spread": [
+      62851,
+      129637
+    ]
+  },
+  "reason": null,
+  "college_reach": [
+    {
+      "college_tier": "AIIMS New Delhi",
+      "target_score_720": 705,
+      "target_air_cutoff": 55,
+      "probability_percent": 0.0,
+      "status": "UNLIKELY",
+      "threshold_status": "approximate"
+    },
+    {
+      "college_tier": "Central Institutes (MAMC, VMMC, JIPMER, AIIMS Top 5)",
+      "target_score_720": 680,
+      "target_air_cutoff": 1200,
+      "probability_percent": 0.0,
+      "status": "UNLIKELY",
+      "threshold_status": "approximate"
+    },
+    {
+      "college_tier": "Top State Govt Medical Colleges",
+      "target_score_720": 630,
+      "target_air_cutoff": 15000,
+      "probability_percent": 0.0,
+      "status": "UNLIKELY",
+      "threshold_status": "approximate"
+    },
+    {
+      "college_tier": "All-India Govt MBBS Floor",
+      "target_score_720": 595,
+      "target_air_cutoff": 32000,
+      "probability_percent": 0.0,
+      "status": "UNLIKELY",
+      "threshold_status": "approximate"
+    },
+    {
+      "college_tier": "State Quota Govt Medical Seats",
+      "target_score_720": 540,
+      "target_air_cutoff": 75000,
+      "probability_percent": 4.6,
+      "status": "UNLIKELY",
+      "threshold_status": "approximate"
+    },
+    {
+      "college_tier": "Deemed / Semi-Govt Merit Seats",
+      "target_score_720": 480,
+      "target_air_cutoff": 150000,
+      "probability_percent": 74.0,
+      "status": "COMPETITIVE",
+      "threshold_status": "approximate"
+    },
+    {
+      "college_tier": "NEET Qualifying Cutoff",
+      "target_score_720": 213,
+      "target_air_cutoff": 1121185,
+      "probability_percent": 100.0,
+      "status": "SECURE",
+      "threshold_status": "sourced"
+    }
+  ],
+  "subject_wise": {
+    "Physics": {
+      "attempted": 45,
+      "correct": 29,
+      "wrong": 16,
+      "marks": 100,
+      "accuracy": 0.6444
+    },
+    "Chemistry": {
+      "attempted": 45,
+      "correct": 35,
+      "wrong": 10,
+      "marks": 130,
+      "accuracy": 0.7778
+    },
+    "Biology": {
+      "attempted": 90,
+      "correct": 70,
+      "wrong": 20,
+      "marks": 260,
+      "accuracy": 0.7778
+    }
+  },
+  "chapter_wise": [
+    {
+      "chapter": "Chemical Bonding",
+      "subject": "Chemistry",
+      "mastery": 0.4251,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 3.08,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0171,
+      "pyq_last3_share": 0.0184,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.167,
+        "pyq_advanced_share": 0.268,
+        "mean_ideal_time_sec": 93.93
+      },
+      "marks_at_stake_if_target_reached": 6.5,
+      "air_places_gained_if_target_reached": 9034
+    },
+    {
+      "chapter": "Human Health, Disease & Microbes",
+      "subject": "Biology",
+      "mastery": 0.4448,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 4,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 3.22,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0179,
+      "pyq_last3_share": 0.0184,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.066,
+        "pyq_advanced_share": 0.256,
+        "mean_ideal_time_sec": 75.02
+      },
+      "marks_at_stake_if_target_reached": 6.5,
+      "air_places_gained_if_target_reached": 9021
+    },
+    {
+      "chapter": "Biotechnology",
+      "subject": "Biology",
+      "mastery": 0.5047,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 4,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 3.65,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0203,
+      "pyq_last3_share": 0.0301,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.014,
+        "pyq_advanced_share": 0.265,
+        "mean_ideal_time_sec": 74.59
+      },
+      "marks_at_stake_if_target_reached": 6.3,
+      "air_places_gained_if_target_reached": 8785
+    },
+    {
+      "chapter": "Rotational Motion",
+      "subject": "Physics",
+      "mastery": 0.2819,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 2.18,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0121,
+      "pyq_last3_share": 0.0062,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.905,
+        "pyq_advanced_share": 0.31,
+        "mean_ideal_time_sec": 117.76
+      },
+      "marks_at_stake_if_target_reached": 6.2,
+      "air_places_gained_if_target_reached": 8653
+    },
+    {
+      "chapter": "Current Electricity",
+      "subject": "Physics",
+      "mastery": 0.4946,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 3,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 3.44,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0191,
+      "pyq_last3_share": 0.0178,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.776,
+        "pyq_advanced_share": 0.261,
+        "mean_ideal_time_sec": 115.5
+      },
+      "marks_at_stake_if_target_reached": 6.1,
+      "air_places_gained_if_target_reached": 8569
+    },
+    {
+      "chapter": "Oscillations & Waves",
+      "subject": "Physics",
+      "mastery": 0.5155,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 3,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 3.67,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0204,
+      "pyq_last3_share": 0.0165,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.678,
+        "pyq_advanced_share": 0.265,
+        "mean_ideal_time_sec": 114.94
+      },
+      "marks_at_stake_if_target_reached": 6.1,
+      "air_places_gained_if_target_reached": 8604
+    },
+    {
+      "chapter": "Thermodynamics",
+      "subject": "Chemistry",
+      "mastery": 0.4717,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 5,
+      "correct_in_this_attempt": 3,
+      "expected_questions_per_neet_paper": 3.2,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0178,
+      "pyq_last3_share": 0.0144,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.383,
+        "pyq_advanced_share": 0.256,
+        "mean_ideal_time_sec": 105.53
+      },
+      "marks_at_stake_if_target_reached": 6.1,
+      "air_places_gained_if_target_reached": 8517
+    },
+    {
+      "chapter": "Work, Energy & Power",
+      "subject": "Physics",
+      "mastery": 0.3686,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 2.54,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0141,
+      "pyq_last3_share": 0.0138,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.654,
+        "pyq_advanced_share": 0.235,
+        "mean_ideal_time_sec": 113.44
+      },
+      "marks_at_stake_if_target_reached": 6.1,
+      "air_places_gained_if_target_reached": 8569
+    },
+    {
+      "chapter": "Semiconductor Electronics",
+      "subject": "Physics",
+      "mastery": 0.3325,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 2.16,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.012,
+      "pyq_last3_share": 0.012,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.441,
+        "pyq_advanced_share": 0.241,
+        "mean_ideal_time_sec": 112.07
+      },
+      "marks_at_stake_if_target_reached": 5.6,
+      "air_places_gained_if_target_reached": 8008
+    },
+    {
+      "chapter": "Electrostatics",
+      "subject": "Physics",
+      "mastery": 0.5198,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 3,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 3.06,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.017,
+      "pyq_last3_share": 0.0124,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.605,
+        "pyq_advanced_share": 0.268,
+        "mean_ideal_time_sec": 114.27
+      },
+      "marks_at_stake_if_target_reached": 5.1,
+      "air_places_gained_if_target_reached": 7428
+    },
+    {
+      "chapter": "Gravitation",
+      "subject": "Physics",
+      "mastery": 0.2907,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 1.82,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0101,
+      "pyq_last3_share": 0.0148,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.927,
+        "pyq_advanced_share": 0.375,
+        "mean_ideal_time_sec": 119.92
+      },
+      "marks_at_stake_if_target_reached": 5.1,
+      "air_places_gained_if_target_reached": 7462
+    },
+    {
+      "chapter": "Equilibrium",
+      "subject": "Chemistry",
+      "mastery": 0.4874,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 2.54,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0141,
+      "pyq_last3_share": 0.0178,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.427,
+        "pyq_advanced_share": 0.265,
+        "mean_ideal_time_sec": 97.59
+      },
+      "marks_at_stake_if_target_reached": 4.6,
+      "air_places_gained_if_target_reached": 6941
+    },
+    {
+      "chapter": "Evolution",
+      "subject": "Biology",
+      "mastery": 0.4059,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 3,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 2.09,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0116,
+      "pyq_last3_share": 0.014,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.238,
+        "pyq_advanced_share": 0.179,
+        "mean_ideal_time_sec": 71.43
+      },
+      "marks_at_stake_if_target_reached": 4.6,
+      "air_places_gained_if_target_reached": 6979
+    },
+    {
+      "chapter": "Atoms & Nuclei",
+      "subject": "Physics",
+      "mastery": 0.2877,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 1.57,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0087,
+      "pyq_last3_share": 0.0041,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.824,
+        "pyq_advanced_share": 0.286,
+        "mean_ideal_time_sec": 116.19
+      },
+      "marks_at_stake_if_target_reached": 4.4,
+      "air_places_gained_if_target_reached": 6726
+    },
+    {
+      "chapter": "Ecology & Environment",
+      "subject": "Biology",
+      "mastery": 0.7028,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 5,
+      "correct_in_this_attempt": 3,
+      "expected_questions_per_neet_paper": 5.44,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0302,
+      "pyq_last3_share": 0.0297,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.005,
+        "pyq_advanced_share": 0.26,
+        "mean_ideal_time_sec": 74.7
+      },
+      "marks_at_stake_if_target_reached": 4.0,
+      "air_places_gained_if_target_reached": 6292
+    },
+    {
+      "chapter": "Magnetic Effects of Current",
+      "subject": "Physics",
+      "mastery": 0.3459,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 1.49,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0083,
+      "pyq_last3_share": 0.014,
+      "chapter_difficulty": {
+        "mean_irt_b": 1.076,
+        "pyq_advanced_share": 0.35,
+        "mean_ideal_time_sec": 121.75
+      },
+      "marks_at_stake_if_target_reached": 3.8,
+      "air_places_gained_if_target_reached": 6038
+    },
+    {
+      "chapter": "Thermal Physics",
+      "subject": "Physics",
+      "mastery": 0.2254,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 1.21,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0067,
+      "pyq_last3_share": 0.008,
+      "chapter_difficulty": {
+        "mean_irt_b": 1.24,
+        "pyq_advanced_share": 0.438,
+        "mean_ideal_time_sec": 123.38
+      },
+      "marks_at_stake_if_target_reached": 3.8,
+      "air_places_gained_if_target_reached": 6039
+    },
+    {
+      "chapter": "d- and f-Block Elements",
+      "subject": "Chemistry",
+      "mastery": 0.4122,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 1.75,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0097,
+      "pyq_last3_share": 0.0262,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.259,
+        "pyq_advanced_share": 0.304,
+        "mean_ideal_time_sec": 95.57
+      },
+      "marks_at_stake_if_target_reached": 3.8,
+      "air_places_gained_if_target_reached": 6099
+    },
+    {
+      "chapter": "Properties of Matter",
+      "subject": "Physics",
+      "mastery": 0.2223,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 0,
+      "expected_questions_per_neet_paper": 1.1,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0061,
+      "pyq_last3_share": 0.0,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.562,
+        "pyq_advanced_share": 0.267,
+        "mean_ideal_time_sec": 112.67
+      },
+      "marks_at_stake_if_target_reached": 3.4,
+      "air_places_gained_if_target_reached": 5693
+    },
+    {
+      "chapter": "Structure of Atom",
+      "subject": "Chemistry",
+      "mastery": 0.7074,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 3,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 4.16,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0231,
+      "pyq_last3_share": 0.0184,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.206,
+        "pyq_advanced_share": 0.268,
+        "mean_ideal_time_sec": 94.61
+      },
+      "marks_at_stake_if_target_reached": 3.0,
+      "air_places_gained_if_target_reached": 4921
+    },
+    {
+      "chapter": "Coordination Chemistry",
+      "subject": "Chemistry",
+      "mastery": 0.3509,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 0,
+      "expected_questions_per_neet_paper": 1.12,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0062,
+      "pyq_last3_share": 0.008,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.038,
+        "pyq_advanced_share": 0.2,
+        "mean_ideal_time_sec": 92.13
+      },
+      "marks_at_stake_if_target_reached": 2.8,
+      "air_places_gained_if_target_reached": 4623
+    },
+    {
+      "chapter": "Units & Dimensions",
+      "subject": "Physics",
+      "mastery": 0.4886,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 1.57,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0087,
+      "pyq_last3_share": 0.0083,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.422,
+        "pyq_advanced_share": 0.19,
+        "mean_ideal_time_sec": 110.1
+      },
+      "marks_at_stake_if_target_reached": 2.8,
+      "air_places_gained_if_target_reached": 4697
+    },
+    {
+      "chapter": "Alcohols, Phenols & Ethers",
+      "subject": "Chemistry",
+      "mastery": 0.5521,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 1.78,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0099,
+      "pyq_last3_share": 0.0022,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.113,
+        "pyq_advanced_share": 0.292,
+        "mean_ideal_time_sec": 92.79
+      },
+      "marks_at_stake_if_target_reached": 2.7,
+      "air_places_gained_if_target_reached": 4406
+    },
+    {
+      "chapter": "General Principles & Metallurgy",
+      "subject": "Chemistry",
+      "mastery": 0.6595,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 2.65,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0147,
+      "pyq_last3_share": 0.0185,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.28,
+        "pyq_advanced_share": 0.257,
+        "mean_ideal_time_sec": 95.43
+      },
+      "marks_at_stake_if_target_reached": 2.5,
+      "air_places_gained_if_target_reached": 4183
+    },
+    {
+      "chapter": "Human Digestion & Respiration",
+      "subject": "Biology",
+      "mastery": 0.6096,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 2.07,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0115,
+      "pyq_last3_share": 0.0019,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.087,
+        "pyq_advanced_share": 0.214,
+        "mean_ideal_time_sec": 73.36
+      },
+      "marks_at_stake_if_target_reached": 2.5,
+      "air_places_gained_if_target_reached": 4130
+    },
+    {
+      "chapter": "Morphology of Flowering Plants",
+      "subject": "Biology",
+      "mastery": 0.7464,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 5,
+      "correct_in_this_attempt": 3,
+      "expected_questions_per_neet_paper": 4.88,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0271,
+      "pyq_last3_share": 0.0265,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.071,
+        "pyq_advanced_share": 0.262,
+        "mean_ideal_time_sec": 73.45
+      },
+      "marks_at_stake_if_target_reached": 2.5,
+      "air_places_gained_if_target_reached": 4194
+    },
+    {
+      "chapter": "Ray Optics",
+      "subject": "Physics",
+      "mastery": 0.6305,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 2.23,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0124,
+      "pyq_last3_share": 0.0083,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.712,
+        "pyq_advanced_share": 0.233,
+        "mean_ideal_time_sec": 113.83
+      },
+      "marks_at_stake_if_target_reached": 2.4,
+      "air_places_gained_if_target_reached": 4066
+    },
+    {
+      "chapter": "Periodic Table",
+      "subject": "Chemistry",
+      "mastery": 0.3864,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 0,
+      "expected_questions_per_neet_paper": 0.97,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0054,
+      "pyq_last3_share": 0.0059,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.021,
+        "pyq_advanced_share": 0.154,
+        "mean_ideal_time_sec": 91.62
+      },
+      "marks_at_stake_if_target_reached": 2.3,
+      "air_places_gained_if_target_reached": 3740
+    },
+    {
+      "chapter": "Wave Optics",
+      "subject": "Physics",
+      "mastery": 0.2828,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 0,
+      "expected_questions_per_neet_paper": 0.74,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0041,
+      "pyq_last3_share": 0.0058,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.933,
+        "pyq_advanced_share": 0.2,
+        "mean_ideal_time_sec": 117.5
+      },
+      "marks_at_stake_if_target_reached": 2.1,
+      "air_places_gained_if_target_reached": 3474
+    },
+    {
+      "chapter": "p-Block Elements",
+      "subject": "Chemistry",
+      "mastery": 0.6366,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 2.0,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0111,
+      "pyq_last3_share": 0.0079,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.328,
+        "pyq_advanced_share": 0.296,
+        "mean_ideal_time_sec": 96.59
+      },
+      "marks_at_stake_if_target_reached": 2.1,
+      "air_places_gained_if_target_reached": 3539
+    },
+    {
+      "chapter": "Laws of Motion",
+      "subject": "Physics",
+      "mastery": 0.6747,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 2.12,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0118,
+      "pyq_last3_share": 0.0149,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.693,
+        "pyq_advanced_share": 0.214,
+        "mean_ideal_time_sec": 114.04
+      },
+      "marks_at_stake_if_target_reached": 1.9,
+      "air_places_gained_if_target_reached": 3090
+    },
+    {
+      "chapter": "Circulation & Excretion",
+      "subject": "Biology",
+      "mastery": 0.6859,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 3,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 2.23,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0124,
+      "pyq_last3_share": 0.0158,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.169,
+        "pyq_advanced_share": 0.267,
+        "mean_ideal_time_sec": 76.73
+      },
+      "marks_at_stake_if_target_reached": 1.8,
+      "air_places_gained_if_target_reached": 3040
+    },
+    {
+      "chapter": "Dual Nature of Matter",
+      "subject": "Physics",
+      "mastery": 0.3667,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 0.68,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0038,
+      "pyq_last3_share": 0.0043,
+      "chapter_difficulty": {
+        "mean_irt_b": 1.047,
+        "pyq_advanced_share": 0.333,
+        "mean_ideal_time_sec": 122.89
+      },
+      "marks_at_stake_if_target_reached": 1.7,
+      "air_places_gained_if_target_reached": 2743
+    },
+    {
+      "chapter": "Electromagnetic Waves",
+      "subject": "Physics",
+      "mastery": 0.3159,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 0,
+      "expected_questions_per_neet_paper": 0.59,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0033,
+      "pyq_last3_share": 0.004,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.159,
+        "pyq_advanced_share": 0.125,
+        "mean_ideal_time_sec": 107.5
+      },
+      "marks_at_stake_if_target_reached": 1.6,
+      "air_places_gained_if_target_reached": 2633
+    },
+    {
+      "chapter": "s-Block Elements",
+      "subject": "Chemistry",
+      "mastery": 0.318,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 0,
+      "expected_questions_per_neet_paper": 0.52,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0029,
+      "pyq_last3_share": 0.0,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.648,
+        "pyq_advanced_share": 0.429,
+        "mean_ideal_time_sec": 100.29
+      },
+      "marks_at_stake_if_target_reached": 1.4,
+      "air_places_gained_if_target_reached": 2305
+    },
+    {
+      "chapter": "Alternating Current",
+      "subject": "Physics",
+      "mastery": 0.4823,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 0.67,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0037,
+      "pyq_last3_share": 0.0041,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.897,
+        "pyq_advanced_share": 0.333,
+        "mean_ideal_time_sec": 118.56
+      },
+      "marks_at_stake_if_target_reached": 1.2,
+      "air_places_gained_if_target_reached": 2032
+    },
+    {
+      "chapter": "Solutions",
+      "subject": "Chemistry",
+      "mastery": 0.6463,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 1.15,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0064,
+      "pyq_last3_share": 0.0084,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.482,
+        "pyq_advanced_share": 0.267,
+        "mean_ideal_time_sec": 97.2
+      },
+      "marks_at_stake_if_target_reached": 1.2,
+      "air_places_gained_if_target_reached": 1947
+    },
+    {
+      "chapter": "Anatomy of Flowering Plants",
+      "subject": "Biology",
+      "mastery": 0.7528,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 3,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 2.3,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0128,
+      "pyq_last3_share": 0.004,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.086,
+        "pyq_advanced_share": 0.258,
+        "mean_ideal_time_sec": 73.52
+      },
+      "marks_at_stake_if_target_reached": 1.1,
+      "air_places_gained_if_target_reached": 1858
+    },
+    {
+      "chapter": "Magnetism & Matter",
+      "subject": "Physics",
+      "mastery": 0.4838,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 0.52,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0029,
+      "pyq_last3_share": 0.0,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.94,
+        "pyq_advanced_share": 0.429,
+        "mean_ideal_time_sec": 121.43
+      },
+      "marks_at_stake_if_target_reached": 1.0,
+      "air_places_gained_if_target_reached": 1586
+    },
+    {
+      "chapter": "Chemical Kinetics",
+      "subject": "Chemistry",
+      "mastery": 0.7464,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 1.73,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0096,
+      "pyq_last3_share": 0.0138,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.589,
+        "pyq_advanced_share": 0.304,
+        "mean_ideal_time_sec": 99.78
+      },
+      "marks_at_stake_if_target_reached": 0.9,
+      "air_places_gained_if_target_reached": 1486
+    },
+    {
+      "chapter": "Redox Reactions & Electrochemistry",
+      "subject": "Chemistry",
+      "mastery": 0.7685,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 2.09,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0116,
+      "pyq_last3_share": 0.01,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.379,
+        "pyq_advanced_share": 0.25,
+        "mean_ideal_time_sec": 96.39
+      },
+      "marks_at_stake_if_target_reached": 0.9,
+      "air_places_gained_if_target_reached": 1412
+    },
+    {
+      "chapter": "Electromagnetic Induction",
+      "subject": "Physics",
+      "mastery": 0.5607,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 0.54,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.003,
+      "pyq_last3_share": 0.0022,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.265,
+        "pyq_advanced_share": 0.0,
+        "mean_ideal_time_sec": 98.71
+      },
+      "marks_at_stake_if_target_reached": 0.8,
+      "air_places_gained_if_target_reached": 1296
+    },
+    {
+      "chapter": "States of Matter",
+      "subject": "Chemistry",
+      "mastery": 0.7445,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 1.42,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0079,
+      "pyq_last3_share": 0.0063,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.549,
+        "pyq_advanced_share": 0.316,
+        "mean_ideal_time_sec": 98.79
+      },
+      "marks_at_stake_if_target_reached": 0.8,
+      "air_places_gained_if_target_reached": 1245
+    },
+    {
+      "chapter": "Biomolecules & Polymers",
+      "subject": "Chemistry",
+      "mastery": 0.7978,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 2.81,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0156,
+      "pyq_last3_share": 0.0172,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.196,
+        "pyq_advanced_share": 0.27,
+        "mean_ideal_time_sec": 93.95
+      },
+      "marks_at_stake_if_target_reached": 0.7,
+      "air_places_gained_if_target_reached": 1216
+    },
+    {
+      "chapter": "Haloalkanes & Haloarenes",
+      "subject": "Chemistry",
+      "mastery": 0.6997,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 0.97,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0054,
+      "pyq_last3_share": 0.0041,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.27,
+        "pyq_advanced_share": 0.308,
+        "mean_ideal_time_sec": 95.08
+      },
+      "marks_at_stake_if_target_reached": 0.7,
+      "air_places_gained_if_target_reached": 1212
+    },
+    {
+      "chapter": "Surface Chemistry",
+      "subject": "Chemistry",
+      "mastery": 0.6623,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 0.67,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0037,
+      "pyq_last3_share": 0.0,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.19,
+        "pyq_advanced_share": 0.222,
+        "mean_ideal_time_sec": 93.78
+      },
+      "marks_at_stake_if_target_reached": 0.6,
+      "air_places_gained_if_target_reached": 1037
+    },
+    {
+      "chapter": "Aldehydes, Ketones & Carboxylic Acids",
+      "subject": "Chemistry",
+      "mastery": 0.7767,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 1.28,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0071,
+      "pyq_last3_share": 0.0064,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.557,
+        "pyq_advanced_share": 0.412,
+        "mean_ideal_time_sec": 99.29
+      },
+      "marks_at_stake_if_target_reached": 0.5,
+      "air_places_gained_if_target_reached": 777
+    },
+    {
+      "chapter": "Environmental Chemistry",
+      "subject": "Chemistry",
+      "mastery": 0.4712,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 1,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 0.29,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0016,
+      "pyq_last3_share": 0.0,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.803,
+        "pyq_advanced_share": 0.75,
+        "mean_ideal_time_sec": 104.0
+      },
+      "marks_at_stake_if_target_reached": 0.5,
+      "air_places_gained_if_target_reached": 905
+    },
+    {
+      "chapter": "Amines & Nitrogen Compounds",
+      "subject": "Chemistry",
+      "mastery": 0.79,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 1.22,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0068,
+      "pyq_last3_share": 0.0105,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.222,
+        "pyq_advanced_share": 0.375,
+        "mean_ideal_time_sec": 95.44
+      },
+      "marks_at_stake_if_target_reached": 0.4,
+      "air_places_gained_if_target_reached": 609
+    },
+    {
+      "chapter": "General Organic Chemistry",
+      "subject": "Chemistry",
+      "mastery": 0.7787,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 1.12,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0062,
+      "pyq_last3_share": 0.0041,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.371,
+        "pyq_advanced_share": 0.333,
+        "mean_ideal_time_sec": 96.47
+      },
+      "marks_at_stake_if_target_reached": 0.4,
+      "air_places_gained_if_target_reached": 660
+    },
+    {
+      "chapter": "Hydrocarbons",
+      "subject": "Chemistry",
+      "mastery": 0.7927,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 1.28,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0071,
+      "pyq_last3_share": 0.0043,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.268,
+        "pyq_advanced_share": 0.353,
+        "mean_ideal_time_sec": 95.29
+      },
+      "marks_at_stake_if_target_reached": 0.4,
+      "air_places_gained_if_target_reached": 608
+    },
+    {
+      "chapter": "Kinematics",
+      "subject": "Physics",
+      "mastery": 0.8409,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 5,
+      "correct_in_this_attempt": 5,
+      "expected_questions_per_neet_paper": 5.15,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0286,
+      "pyq_last3_share": 0.0433,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.721,
+        "pyq_advanced_share": 0.265,
+        "mean_ideal_time_sec": 116.06
+      },
+      "marks_at_stake_if_target_reached": 0.2,
+      "air_places_gained_if_target_reached": 389
+    },
+    {
+      "chapter": "Animal Kingdom",
+      "subject": "Biology",
+      "mastery": 0.9248,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 4,
+      "correct_in_this_attempt": 4,
+      "expected_questions_per_neet_paper": 3.29,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0183,
+      "pyq_last3_share": 0.0184,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.051,
+        "pyq_advanced_share": 0.25,
+        "mean_ideal_time_sec": 75.14
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    },
+    {
+      "chapter": "Biological Classification",
+      "subject": "Biology",
+      "mastery": 0.9499,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 6,
+      "correct_in_this_attempt": 6,
+      "expected_questions_per_neet_paper": 7.69,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0427,
+      "pyq_last3_share": 0.0234,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.106,
+        "pyq_advanced_share": 0.265,
+        "mean_ideal_time_sec": 72.84
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    },
+    {
+      "chapter": "Biomolecules",
+      "subject": "Biology",
+      "mastery": 0.9437,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 7,
+      "correct_in_this_attempt": 7,
+      "expected_questions_per_neet_paper": 7.99,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0444,
+      "pyq_last3_share": 0.0423,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.045,
+        "pyq_advanced_share": 0.262,
+        "mean_ideal_time_sec": 73.87
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    },
+    {
+      "chapter": "Cell Cycle & Cell Division",
+      "subject": "Biology",
+      "mastery": 0.8725,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 4,
+      "correct_in_this_attempt": 3,
+      "expected_questions_per_neet_paper": 3.2,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0178,
+      "pyq_last3_share": 0.0162,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.012,
+        "pyq_advanced_share": 0.256,
+        "mean_ideal_time_sec": 74.35
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    },
+    {
+      "chapter": "Cell: The Unit of Life",
+      "subject": "Biology",
+      "mastery": 0.9291,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 5,
+      "correct_in_this_attempt": 5,
+      "expected_questions_per_neet_paper": 5.53,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0307,
+      "pyq_last3_share": 0.0355,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.045,
+        "pyq_advanced_share": 0.26,
+        "mean_ideal_time_sec": 73.81
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    },
+    {
+      "chapter": "Genetics & Molecular Inheritance",
+      "subject": "Biology",
+      "mastery": 0.8941,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 5,
+      "correct_in_this_attempt": 4,
+      "expected_questions_per_neet_paper": 5.2,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0289,
+      "pyq_last3_share": 0.0219,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.025,
+        "pyq_advanced_share": 0.257,
+        "mean_ideal_time_sec": 74.51
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    },
+    {
+      "chapter": "Locomotion & Neuro-Endocrine Control",
+      "subject": "Biology",
+      "mastery": 0.8524,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 4,
+      "correct_in_this_attempt": 3,
+      "expected_questions_per_neet_paper": 4.05,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0225,
+      "pyq_last3_share": 0.0204,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.035,
+        "pyq_advanced_share": 0.259,
+        "mean_ideal_time_sec": 73.65
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    },
+    {
+      "chapter": "Mole Concept / Stoichiometry",
+      "subject": "Chemistry",
+      "mastery": 0.8875,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 5,
+      "correct_in_this_attempt": 4,
+      "expected_questions_per_neet_paper": 9.45,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0525,
+      "pyq_last3_share": 0.0819,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.25,
+        "pyq_advanced_share": 0.258,
+        "mean_ideal_time_sec": 95.19
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    },
+    {
+      "chapter": "Plant Kingdom",
+      "subject": "Biology",
+      "mastery": 0.8926,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 4,
+      "correct_in_this_attempt": 3,
+      "expected_questions_per_neet_paper": 4.23,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0235,
+      "pyq_last3_share": 0.0313,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.094,
+        "pyq_advanced_share": 0.268,
+        "mean_ideal_time_sec": 73.75
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    },
+    {
+      "chapter": "Plant Physiology",
+      "subject": "Biology",
+      "mastery": 0.9123,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 5,
+      "correct_in_this_attempt": 4,
+      "expected_questions_per_neet_paper": 5.26,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0292,
+      "pyq_last3_share": 0.0262,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.005,
+        "pyq_advanced_share": 0.254,
+        "mean_ideal_time_sec": 74.08
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    },
+    {
+      "chapter": "Reproduction & Human Development",
+      "subject": "Biology",
+      "mastery": 0.9253,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 7,
+      "correct_in_this_attempt": 7,
+      "expected_questions_per_neet_paper": 8.64,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.048,
+      "pyq_last3_share": 0.0492,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.015,
+        "pyq_advanced_share": 0.261,
+        "mean_ideal_time_sec": 74.35
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    },
+    {
+      "chapter": "Structural Organisation in Animals",
+      "subject": "Biology",
+      "mastery": 0.9085,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 5,
+      "correct_in_this_attempt": 4,
+      "expected_questions_per_neet_paper": 5.04,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.028,
+      "pyq_last3_share": 0.0312,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.02,
+        "pyq_advanced_share": 0.254,
+        "mean_ideal_time_sec": 74.55
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    },
+    {
+      "chapter": "The Living World & Taxonomy",
+      "subject": "Biology",
+      "mastery": 0.935,
+      "level": "advanced",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 5,
+      "correct_in_this_attempt": 4,
+      "expected_questions_per_neet_paper": 5.63,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0313,
+      "pyq_last3_share": 0.0246,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.079,
+        "pyq_advanced_share": 0.267,
+        "mean_ideal_time_sec": 73.48
+      },
+      "marks_at_stake_if_target_reached": 0.0,
+      "air_places_gained_if_target_reached": 0
+    }
+  ],
+  "focus_chapters": [
+    {
+      "chapter": "Chemical Bonding",
+      "subject": "Chemistry",
+      "mastery": 0.4251,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 3.08,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0171,
+      "pyq_last3_share": 0.0184,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.167,
+        "pyq_advanced_share": 0.268,
+        "mean_ideal_time_sec": 93.93
+      },
+      "marks_at_stake_if_target_reached": 6.5,
+      "air_places_gained_if_target_reached": 9034
+    },
+    {
+      "chapter": "Human Health, Disease & Microbes",
+      "subject": "Biology",
+      "mastery": 0.4448,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 4,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 3.22,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0179,
+      "pyq_last3_share": 0.0184,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.066,
+        "pyq_advanced_share": 0.256,
+        "mean_ideal_time_sec": 75.02
+      },
+      "marks_at_stake_if_target_reached": 6.5,
+      "air_places_gained_if_target_reached": 9021
+    },
+    {
+      "chapter": "Biotechnology",
+      "subject": "Biology",
+      "mastery": 0.5047,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 4,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 3.65,
+      "pyq_trend": "rising",
+      "pyq_mean_share": 0.0203,
+      "pyq_last3_share": 0.0301,
+      "chapter_difficulty": {
+        "mean_irt_b": -0.014,
+        "pyq_advanced_share": 0.265,
+        "mean_ideal_time_sec": 74.59
+      },
+      "marks_at_stake_if_target_reached": 6.3,
+      "air_places_gained_if_target_reached": 8785
+    },
+    {
+      "chapter": "Rotational Motion",
+      "subject": "Physics",
+      "mastery": 0.2819,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 2.18,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.0121,
+      "pyq_last3_share": 0.0062,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.905,
+        "pyq_advanced_share": 0.31,
+        "mean_ideal_time_sec": 117.76
+      },
+      "marks_at_stake_if_target_reached": 6.2,
+      "air_places_gained_if_target_reached": 8653
+    },
+    {
+      "chapter": "Current Electricity",
+      "subject": "Physics",
+      "mastery": 0.4946,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 3,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 3.44,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0191,
+      "pyq_last3_share": 0.0178,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.776,
+        "pyq_advanced_share": 0.261,
+        "mean_ideal_time_sec": 115.5
+      },
+      "marks_at_stake_if_target_reached": 6.1,
+      "air_places_gained_if_target_reached": 8569
+    },
+    {
+      "chapter": "Oscillations & Waves",
+      "subject": "Physics",
+      "mastery": 0.5155,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 3,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 3.67,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0204,
+      "pyq_last3_share": 0.0165,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.678,
+        "pyq_advanced_share": 0.265,
+        "mean_ideal_time_sec": 114.94
+      },
+      "marks_at_stake_if_target_reached": 6.1,
+      "air_places_gained_if_target_reached": 8604
+    },
+    {
+      "chapter": "Thermodynamics",
+      "subject": "Chemistry",
+      "mastery": 0.4717,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 5,
+      "correct_in_this_attempt": 3,
+      "expected_questions_per_neet_paper": 3.2,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0178,
+      "pyq_last3_share": 0.0144,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.383,
+        "pyq_advanced_share": 0.256,
+        "mean_ideal_time_sec": 105.53
+      },
+      "marks_at_stake_if_target_reached": 6.1,
+      "air_places_gained_if_target_reached": 8517
+    },
+    {
+      "chapter": "Work, Energy & Power",
+      "subject": "Physics",
+      "mastery": 0.3686,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 2.54,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.0141,
+      "pyq_last3_share": 0.0138,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.654,
+        "pyq_advanced_share": 0.235,
+        "mean_ideal_time_sec": 113.44
+      },
+      "marks_at_stake_if_target_reached": 6.1,
+      "air_places_gained_if_target_reached": 8569
+    },
+    {
+      "chapter": "Semiconductor Electronics",
+      "subject": "Physics",
+      "mastery": 0.3325,
+      "level": "basic",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 2,
+      "correct_in_this_attempt": 1,
+      "expected_questions_per_neet_paper": 2.16,
+      "pyq_trend": "stable",
+      "pyq_mean_share": 0.012,
+      "pyq_last3_share": 0.012,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.441,
+        "pyq_advanced_share": 0.241,
+        "mean_ideal_time_sec": 112.07
+      },
+      "marks_at_stake_if_target_reached": 5.6,
+      "air_places_gained_if_target_reached": 8008
+    },
+    {
+      "chapter": "Electrostatics",
+      "subject": "Physics",
+      "mastery": 0.5198,
+      "level": "medium",
+      "evidence": "measured",
+      "attempted_in_this_attempt": 3,
+      "correct_in_this_attempt": 2,
+      "expected_questions_per_neet_paper": 3.06,
+      "pyq_trend": "falling",
+      "pyq_mean_share": 0.017,
+      "pyq_last3_share": 0.0124,
+      "chapter_difficulty": {
+        "mean_irt_b": 0.605,
+        "pyq_advanced_share": 0.268,
+        "mean_ideal_time_sec": 114.27
+      },
+      "marks_at_stake_if_target_reached": 5.1,
+      "air_places_gained_if_target_reached": 7428
+    }
+  ],
+  "trend_watchlist": [
+    {
+      "chapter": "Kinematics",
+      "subject": "Physics",
+      "mastery": 0.8409,
+      "pyq_mean_share": 0.0286,
+      "pyq_last3_share": 0.0433
+    },
+    {
+      "chapter": "Biotechnology",
+      "subject": "Biology",
+      "mastery": 0.5047,
+      "pyq_mean_share": 0.0203,
+      "pyq_last3_share": 0.0301
+    },
+    {
+      "chapter": "Circulation & Excretion",
+      "subject": "Biology",
+      "mastery": 0.6859,
+      "pyq_mean_share": 0.0124,
+      "pyq_last3_share": 0.0158
+    },
+    {
+      "chapter": "Laws of Motion",
+      "subject": "Physics",
+      "mastery": 0.6747,
+      "pyq_mean_share": 0.0118,
+      "pyq_last3_share": 0.0149
+    },
+    {
+      "chapter": "Equilibrium",
+      "subject": "Chemistry",
+      "mastery": 0.4874,
+      "pyq_mean_share": 0.0141,
+      "pyq_last3_share": 0.0178
+    },
+    {
+      "chapter": "General Principles & Metallurgy",
+      "subject": "Chemistry",
+      "mastery": 0.6595,
+      "pyq_mean_share": 0.0147,
+      "pyq_last3_share": 0.0185
+    }
+  ],
+  "assumptions": {
+    "target_mastery": {
+      "value": 0.85,
+      "kind": "scenario parameter, not a measurement"
+    },
+    "minimum_scored_per_subject_for_air": {
+      "value": 10,
+      "kind": "policy threshold, not statistically derived"
+    },
+    "mock_difficulty_tolerance_marks": {
+      "value": 6.0,
+      "kind": "same tolerance as the equated-form gate"
+    },
+    "score_to_percentile_curve": {
+      "status": "approximate",
+      "basis": "hand-set piecewise-linear anchors; NTA does not publish a full score-percentile table; year-to-year shifts of tens of marks are normal"
+    },
+    "paper_year_scenarios": "same marks re-read on the curve shifted by the difference in sourced general cut-off scores (2024-2026); an approximation, not a published distribution",
+    "college_probabilities": "normal approximation to the 90% score interval against approximate tier thresholds",
+    "ability_basis": "IRT 3PL with priors; no real student attempts exist yet to fit item parameters",
+    "pyq_weightage_short_years": [
+      2018,
+      2025,
+      2026
+    ],
+    "chapter_keys": "Thermodynamics is one chapter key for Physics and Chemistry (known issue)",
+    "chapter_marks_at_stake": "each chapter assumes only that chapter reaches the target; the values are not additive"
+  },
+  "_note": "SIMULATED student (true theta 0.8) on equated form 0; illustrative only, not a real student result"
+}

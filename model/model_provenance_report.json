@@ -1,0 +1,343 @@
+{
+  "real_student_attempts": 0,
+  "student_training_status": "SKIPPED_INSUFFICIENT_DATA",
+  "formula_vs_human_label_kappa": 0.07,
+  "models": [
+    {
+      "id": "irt_items_pyq",
+      "name": "3PL IRT item parameters (PYQs)",
+      "job": "difficulty, discrimination, guessing per question",
+      "basis": "hand_designed_prior",
+      "parameters_come_from": "hand-designed formula: per-tier base values plus constant adjustments for time, text length, explanation steps, diagram and question type",
+      "evidence": {
+        "accuracy": null
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "no response data exists to fit them",
+        "the time input is itself derived from the tier, so the chain is circular",
+        "formula tiers agree with human tiers at kappa 0.07"
+      ]
+    },
+    {
+      "id": "irt_ability",
+      "name": "IRT ability estimate (EAP)",
+      "job": "student ability theta from answers",
+      "basis": "math_on_priors",
+      "parameters_come_from": "Bayesian posterior under the item parameters above and a N(0,1) prior",
+      "evidence": {
+        "simulated_calibration_95_coverage": 0.975
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "calibration holds only for simulated students drawn from the same parameters",
+        "no real student has been scored against a ground truth"
+      ]
+    },
+    {
+      "id": "cold_start_ridge",
+      "name": "Cold-start ridge (new items)",
+      "job": "a, b, c for unseen questions",
+      "basis": "fitted_on_formula_derived_labels",
+      "parameters_come_from": "ridge regression on targets that are derived from the question features",
+      "evidence": {
+        "r2_is_high_by_construction": true
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "R-squared is high because targets are computed from the inputs"
+      ]
+    },
+    {
+      "id": "bkt",
+      "name": "Bayesian Knowledge Tracing",
+      "job": "chapter mastery and forgetting",
+      "basis": "hand_designed_prior",
+      "parameters_come_from": "hand-set guess, slip, transit and half-life constants per tier; p_init from a hand-written mixture clipped to 0.22-0.54",
+      "evidence": {
+        "accuracy": null
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "real EM trainer is built but skipped until 200 students exist"
+      ]
+    },
+    {
+      "id": "dina",
+      "name": "DINA skill diagnosis",
+      "job": "8 thinking skills per student",
+      "basis": "hand_designed_prior",
+      "parameters_come_from": "regex keyword rules decide which skills a question needs (unvalidated Q-matrix)",
+      "evidence": {
+        "accuracy": null
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "excluded from real training because the Q-matrix is not validated"
+      ]
+    },
+    {
+      "id": "linucb",
+      "name": "LinUCB question picker",
+      "job": "chooses the next questions",
+      "basis": "design_objective_simulated",
+      "parameters_come_from": "reward is a design objective (0.65 ZPD alignment + 0.35 Fisher information); warm start from a synthetic reward",
+      "evidence": {
+        "simulated_regret_reduction_percent": 96.8,
+        "reward_noise_sd": 0.15
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "regret is measured on the simulated reward, not on student learning",
+        "A/B test against random needs 100 students per arm"
+      ]
+    },
+    {
+      "id": "difficulty_rf",
+      "name": "Difficulty random forest (production)",
+      "job": "PYQ tier",
+      "basis": "fitted_on_formula_derived_labels",
+      "parameters_come_from": "trained to reproduce formula tiers",
+      "evidence": {
+        "holdout_accuracy": 0.7791666666666667,
+        "kappa_vs_human_labels": 0.07
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "accuracy measures how well the formula is re-learned, not real difficulty"
+      ]
+    },
+    {
+      "id": "difficulty_v21",
+      "name": "Difficulty v2.1 (candidate)",
+      "job": "tier from question text",
+      "basis": "fitted_on_real_human_labels",
+      "parameters_come_from": "TF-IDF + logistic regression on content-team tiers, 5-fold split by paper",
+      "evidence": {
+        "accuracy": 0.8218,
+        "macro_f1": 0.769,
+        "ece": 0.0152,
+        "majority_baseline": 0.5225,
+        "rows": 9264,
+        "chapters_not_beating_majority": 17,
+        "promotion_decision": "ELIGIBLE_PENDING_HUMAN_REVIEW"
+      },
+      "uses_real_human_labels": true,
+      "validated_on_real_students": false,
+      "limitations": [
+        "trained on sample papers; domain shift to PYQs is unmeasured",
+        "how the human tiers were produced is not visible to the ML side",
+        "not promoted: needs the blind human review"
+      ]
+    },
+    {
+      "id": "temperature",
+      "name": "Temperature calibration",
+      "job": "calibrate the forest's confidence",
+      "basis": "fitted_on_formula_derived_labels",
+      "parameters_come_from": "fitted then rejected on the untouched holdout",
+      "evidence": {
+        "decision": "rejected_on_holdout_identity_used"
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "not in use"
+      ]
+    },
+    {
+      "id": "ncert_retriever",
+      "name": "NCERT retriever (TF-IDF + SVD)",
+      "job": "finds the right NCERT chapter",
+      "basis": "fitted_on_real_human_labels",
+      "parameters_come_from": "TF-IDF and 32-dimensional SVD over NCERT notes and PYQs",
+      "evidence": {
+        "top1": 0.3491,
+        "top3": 0.5344,
+        "chance_top1": 0.0154,
+        "chance_top3": 0.0462
+      },
+      "uses_real_human_labels": true,
+      "validated_on_real_students": false,
+      "limitations": [
+        "measures chapter retrieval, not tutoring quality",
+        "semantic challenger is on HOLD"
+      ]
+    },
+    {
+      "id": "chapter_resolver",
+      "name": "Chapter resolver",
+      "job": "fixes chapter labels at ingestion",
+      "basis": "fitted_on_real_human_labels",
+      "parameters_come_from": "TF-IDF + logistic regression; acts only at >= 90% held-out precision",
+      "evidence": {
+        "Biology": {
+          "top1": 0.5664,
+          "coverage_at_threshold": 0.0978,
+          "precision_at_threshold": 0.9151
+        },
+        "Chemistry": {
+          "top1": 0.5913,
+          "coverage_at_threshold": 0.0,
+          "precision_at_threshold": 0.0
+        },
+        "Physics": {
+          "top1": 0.6877,
+          "coverage_at_threshold": 0.4408,
+          "precision_at_threshold": 0.9003
+        }
+      },
+      "uses_real_human_labels": true,
+      "validated_on_real_students": false,
+      "limitations": [
+        "low coverage: most generic labels stay quarantined"
+      ]
+    },
+    {
+      "id": "near_duplicate_guard",
+      "name": "Near-duplicate guard",
+      "job": "prevents repeated questions in mocks",
+      "basis": "rule_based",
+      "parameters_come_from": "TF-IDF cosine with a chosen threshold",
+      "evidence": {
+        "accuracy": null
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "no labeled accuracy measured"
+      ]
+    },
+    {
+      "id": "score_simulator",
+      "name": "Monte Carlo score simulator",
+      "job": "NEET score range",
+      "basis": "math_on_priors",
+      "parameters_come_from": "posterior predictive on the equated reference form",
+      "evidence": {
+        "validated_against_real_scores": false
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "no real NEET scores exist to validate against"
+      ]
+    },
+    {
+      "id": "rank_curve",
+      "name": "Score-to-percentile-to-AIR curve",
+      "job": "rank from marks",
+      "basis": "hand_designed_prior",
+      "parameters_come_from": "hand-set anchors; only candidate counts and cut-offs are sourced",
+      "evidence": {
+        "anchors_status": "hand_set_approximate",
+        "facts_verification": [
+          "not_verified_in_audit"
+        ]
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "NTA publishes no full score-percentile table",
+        "facts were not re-verified in the audit"
+      ]
+    },
+    {
+      "id": "equated_forms",
+      "name": "Equated 180-question forms",
+      "job": "equal-difficulty papers",
+      "basis": "math_on_priors",
+      "parameters_come_from": "item swaps to match information curves",
+      "evidence": {
+        "max_expected_marks_gap": 0.47,
+        "tolerance": 6.0
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "equality holds under the model's own parameters, not proven on students"
+      ]
+    },
+    {
+      "id": "study_plan",
+      "name": "Study plan, importance, leverage, drift limits",
+      "job": "chapter priorities and monitoring",
+      "basis": "rule_based",
+      "parameters_come_from": "rules, heuristic weights and chosen thresholds",
+      "evidence": {
+        "accuracy": null
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "no outcome data to validate against"
+      ]
+    },
+    {
+      "id": "student_training",
+      "name": "Student-response training (IRT MML-EM, BKT EM)",
+      "job": "fit real parameters from answers",
+      "basis": "built_waiting_for_data",
+      "parameters_come_from": "needs 200 students and 20,000 answers",
+      "evidence": {
+        "status": "SKIPPED_INSUFFICIENT_DATA",
+        "real_attempts": 0,
+        "simulated_self_test": {
+          "label": "SIMULATED data, used only to verify the estimation code; not a model result",
+          "recovery": {
+            "a": 0.6514,
+            "b": 0.9815,
+            "c": 0.617
+          },
+          "fitted_auc": 0.8148,
+          "item_p_value_auc": 0.7148
+        }
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "self-test uses simulated students only"
+      ]
+    },
+    {
+      "id": "air_estimator",
+      "name": "AIR estimator",
+      "job": "post-attempt rank range",
+      "basis": "math_on_priors",
+      "parameters_come_from": "composes the items above with the sourced cut-offs",
+      "evidence": {
+        "simulated_interval_95_coverage": 0.975
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "calibration is on simulated students",
+        "range widens when label and year assumptions are varied"
+      ]
+    },
+    {
+      "id": "text_quality_gate",
+      "name": "Text-quality gate",
+      "job": "rejects OCR-corrupt rows",
+      "basis": "rule_based",
+      "parameters_come_from": "character ranges and exact duplicate options",
+      "evidence": {
+        "accuracy": null
+      },
+      "uses_real_human_labels": false,
+      "validated_on_real_students": false,
+      "limitations": [
+        "not measured against labeled corruption"
+      ]
+    }
+  ],
+  "problems": [],
+  "passed": true
+}

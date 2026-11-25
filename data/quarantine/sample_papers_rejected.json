@@ -1,6 +1,6 @@
 {
   "source_file": "neet_samples_001_to_101_verified.json",
-  "rejected_count": 7241,
+  "rejected_count": 7425,
   "items": [
     {
       "question_id": "SAMPLE_001_Q011",
@@ -146,6 +146,16 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_003_Q023",
+      "paper_source": "Sample Paper 3",
+      "subject": "Physics",
+      "source_chapter": "Current Electricity",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_003_Q040",
       "paper_source": "Sample Paper 3",
       "subject": "Physics",
@@ -259,6 +269,36 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_004_Q040",
+      "paper_source": "Sample Paper 4",
+      "subject": "Physics",
+      "source_chapter": "Oscillations & Waves",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_004_Q050",
+      "paper_source": "Sample Paper 4",
+      "subject": "Physics",
+      "source_chapter": "Atoms & Nuclei",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_004_Q058",
+      "paper_source": "Sample Paper 4",
+      "subject": "Chemistry",
+      "source_chapter": "Equilibrium",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_004_Q076",
       "paper_source": "Sample Paper 4",
       "subject": "Chemistry",
@@ -355,12 +395,43 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_005_Q017",
+      "paper_source": "Sample Paper 5",
+      "subject": "Physics",
+      "source_chapter": "Oscillations & Waves",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_005_Q021",
       "paper_source": "Sample Paper 5",
       "subject": "Physics",
       "source_chapter": "Kinematics",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_005_Q038",
+      "paper_source": "Sample Paper 5",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_005_Q039",
+      "paper_source": "Sample Paper 5",
+      "subject": "Physics",
+      "source_chapter": "Thermal Physics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
       ],
       "chapter_suggestions": []
     },
@@ -371,6 +442,26 @@
       "source_chapter": "Alternating Current",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_005_Q044",
+      "paper_source": "Sample Paper 5",
+      "subject": "Physics",
+      "source_chapter": "Magnetic Effects of Current",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_005_Q045",
+      "paper_source": "Sample Paper 5",
+      "subject": "Physics",
+      "source_chapter": "Alternating Current",
+      "reasons": [
+        "ocr_foreign_script_in_question"
       ],
       "chapter_suggestions": []
     },
@@ -405,6 +496,16 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_005_Q082",
+      "paper_source": "Sample Paper 5",
+      "subject": "Chemistry",
+      "source_chapter": "Mole Concept / Stoichiometry",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_005_Q088",
       "paper_source": "Sample Paper 5",
       "subject": "Chemistry",
@@ -421,6 +522,26 @@
       "source_chapter": "The Living World & Taxonomy",
       "reasons": [
         "missing_question_text"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_006_Q004",
+      "paper_source": "Sample Paper 6",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_006_Q013",
+      "paper_source": "Sample Paper 6",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -548,6 +669,16 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_007_Q044",
+      "paper_source": "Sample Paper 7",
+      "subject": "Physics",
+      "source_chapter": "Magnetism & Matter",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_007_Q057",
       "paper_source": "Sample Paper 7",
       "subject": "Chemistry",
@@ -641,6 +772,26 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_008_Q017",
+      "paper_source": "Sample Paper 8",
+      "subject": "Physics",
+      "source_chapter": "Oscillations & Waves",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_008_Q020",
+      "paper_source": "Sample Paper 8",
+      "subject": "Physics",
+      "source_chapter": "Electrostatics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_008_Q027",
       "paper_source": "Sample Paper 8",
       "subject": "Physics",
@@ -727,6 +878,16 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_009_Q004",
+      "paper_source": "Sample Paper 9",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_009_Q011",
       "paper_source": "Sample Paper 9",
       "subject": "Physics",
@@ -783,6 +944,16 @@
       "source_chapter": "Kinematics",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_009_Q049",
+      "paper_source": "Sample Paper 9",
+      "subject": "Physics",
+      "source_chapter": "Atoms & Nuclei",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -856,6 +1027,26 @@
       "source_chapter": "Biological Classification",
       "reasons": [
         "missing_question_text"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_010_Q026",
+      "paper_source": "Sample Paper 10",
+      "subject": "Physics",
+      "source_chapter": "Electromagnetic Induction",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_010_Q029",
+      "paper_source": "Sample Paper 10",
+      "subject": "Physics",
+      "source_chapter": "Electromagnetic Waves",
+      "reasons": [
+        "ocr_foreign_script_in_question"
       ],
       "chapter_suggestions": []
     },
@@ -1632,7 +1823,19 @@
       "subject": "Physics",
       "source_chapter": "Dual Nature of Matter",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_017_Q044",
+      "paper_source": "Sample Paper 17",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question",
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -1653,6 +1856,16 @@
       "source_chapter": "Mole Concept / Stoichiometry",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_017_Q063",
+      "paper_source": "Sample Paper 17",
+      "subject": "Chemistry",
+      "source_chapter": "d- and f-Block Elements",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -1692,7 +1905,8 @@
       "subject": "Physics",
       "source_chapter": "Rotational Motion",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -1802,7 +2016,8 @@
       "subject": "Chemistry",
       "source_chapter": "Mole Concept / Stoichiometry",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -1846,6 +2061,16 @@
       "source_chapter": "Redox Reactions & Electrochemistry",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_018_Q074",
+      "paper_source": "Sample Paper 18",
+      "subject": "Chemistry",
+      "source_chapter": "Chemical Kinetics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -2096,6 +2321,16 @@
       "source_chapter": "Mole Concept / Stoichiometry",
       "reasons": [
         "missing_question_text"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_019_Q015",
+      "paper_source": "Sample Paper 19",
+      "subject": "Physics",
+      "source_chapter": "Work, Energy & Power",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -2420,6 +2655,16 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_020_Q006",
+      "paper_source": "Sample Paper 20",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_020_Q010",
       "paper_source": "Sample Paper 20",
       "subject": "Physics",
@@ -2435,7 +2680,8 @@
       "subject": "Physics",
       "source_chapter": "Rotational Motion",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -2798,6 +3044,16 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_021_Q040",
+      "paper_source": "Sample Paper 21",
+      "subject": "Physics",
+      "source_chapter": "Dual Nature of Matter",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_021_Q062",
       "paper_source": "Sample Paper 21",
       "subject": "Chemistry",
@@ -2844,6 +3100,16 @@
       "source_chapter": "Mole Concept / Stoichiometry",
       "reasons": [
         "missing_question_text"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_022_Q057",
+      "paper_source": "Sample Paper 22",
+      "subject": "Chemistry",
+      "source_chapter": "Mole Concept / Stoichiometry",
+      "reasons": [
+        "ocr_foreign_script_in_question"
       ],
       "chapter_suggestions": []
     },
@@ -2921,6 +3187,26 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_023_Q005",
+      "paper_source": "Sample Paper 23",
+      "subject": "Physics",
+      "source_chapter": "Properties of Matter",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_023_Q011",
+      "paper_source": "Sample Paper 23",
+      "subject": "Physics",
+      "source_chapter": "Units & Dimensions",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_023_Q045",
       "paper_source": "Sample Paper 23",
       "subject": "Physics",
@@ -2954,6 +3240,16 @@
       ]
     },
     {
+      "question_id": "SAMPLE_023_Q062",
+      "paper_source": "Sample Paper 23",
+      "subject": "Chemistry",
+      "source_chapter": "Chemical Bonding",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_023_Q065",
       "paper_source": "Sample Paper 23",
       "subject": "Chemistry",
@@ -2984,6 +3280,16 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_023_Q098",
+      "paper_source": "Sample Paper 23",
+      "subject": "Biology",
+      "source_chapter": "Morphology of Flowering Plants",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_023_Q101",
       "paper_source": "Sample Paper 23",
       "subject": "Biology",
@@ -3004,6 +3310,26 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_023_Q173",
+      "paper_source": "Sample Paper 23",
+      "subject": "Biology",
+      "source_chapter": "Biological Classification",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_024_Q009",
+      "paper_source": "Sample Paper 24",
+      "subject": "Physics",
+      "source_chapter": "Alternating Current",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_024_Q031",
       "paper_source": "Sample Paper 24",
       "subject": "Physics",
@@ -3020,6 +3346,26 @@
       "source_chapter": "Kinematics",
       "reasons": [
         "missing_question_text"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_024_Q044",
+      "paper_source": "Sample Paper 24",
+      "subject": "Physics",
+      "source_chapter": "Rotational Motion",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_024_Q052",
+      "paper_source": "Sample Paper 24",
+      "subject": "Chemistry",
+      "source_chapter": "Structure of Atom",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -3195,7 +3541,8 @@
       "subject": "Physics",
       "source_chapter": "Kinematics",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_foreign_script_in_question"
       ],
       "chapter_suggestions": []
     },
@@ -3206,6 +3553,16 @@
       "source_chapter": "Kinematics",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_026_Q006",
+      "paper_source": "Sample Paper 26",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -3322,12 +3679,23 @@
       ]
     },
     {
+      "question_id": "SAMPLE_026_Q172",
+      "paper_source": "Sample Paper 26",
+      "subject": "Biology",
+      "source_chapter": "Human Health, Disease & Microbes",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_027_Q023",
       "paper_source": "Sample Paper 27",
       "subject": "Physics",
       "source_chapter": "Gravitation",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -3338,6 +3706,16 @@
       "source_chapter": "Work, Energy & Power",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_027_Q042",
+      "paper_source": "Sample Paper 27",
+      "subject": "Physics",
+      "source_chapter": "Oscillations & Waves",
+      "reasons": [
+        "ocr_foreign_script_in_question"
       ],
       "chapter_suggestions": []
     },
@@ -3368,6 +3746,17 @@
       "source_chapter": "Mole Concept / Stoichiometry",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_027_Q067",
+      "paper_source": "Sample Paper 27",
+      "subject": "Chemistry",
+      "source_chapter": "Chemical Bonding",
+      "reasons": [
+        "ocr_foreign_script_in_question",
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -3417,7 +3806,8 @@
       "subject": "Physics",
       "source_chapter": "Kinematics",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -3547,6 +3937,26 @@
       "source_chapter": "Kinematics",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_029_Q033",
+      "paper_source": "Sample Paper 29",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_029_Q042",
+      "paper_source": "Sample Paper 29",
+      "subject": "Physics",
+      "source_chapter": "Ray Optics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -3806,12 +4216,72 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_030_Q180",
+      "paper_source": "Sample Paper 30",
+      "subject": "Biology",
+      "source_chapter": "Biological Classification",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_031_Q004",
       "paper_source": "Sample Paper 31",
       "subject": "Physics",
       "source_chapter": "Electrostatics",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_031_Q019",
+      "paper_source": "Sample Paper 31",
+      "subject": "Physics",
+      "source_chapter": "Units & Dimensions",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_031_Q022",
+      "paper_source": "Sample Paper 31",
+      "subject": "Physics",
+      "source_chapter": "Gravitation",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_031_Q027",
+      "paper_source": "Sample Paper 31",
+      "subject": "Physics",
+      "source_chapter": "Ray Optics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_031_Q028",
+      "paper_source": "Sample Paper 31",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_031_Q048",
+      "paper_source": "Sample Paper 31",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
       ],
       "chapter_suggestions": []
     },
@@ -3826,12 +4296,113 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_031_Q065",
+      "paper_source": "Sample Paper 31",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_031_Q079",
+      "paper_source": "Sample Paper 31",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_032_Q007",
       "paper_source": "Sample Paper 32",
       "subject": "Physics",
       "source_chapter": "Kinematics",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_032_Q018",
+      "paper_source": "Sample Paper 32",
+      "subject": "Physics",
+      "source_chapter": "Oscillations & Waves",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_032_Q021",
+      "paper_source": "Sample Paper 32",
+      "subject": "Physics",
+      "source_chapter": "Laws of Motion",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_032_Q026",
+      "paper_source": "Sample Paper 32",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_032_Q028",
+      "paper_source": "Sample Paper 32",
+      "subject": "Physics",
+      "source_chapter": "Rotational Motion",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_032_Q031",
+      "paper_source": "Sample Paper 32",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_032_Q034",
+      "paper_source": "Sample Paper 32",
+      "subject": "Physics",
+      "source_chapter": "Ray Optics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_032_Q039",
+      "paper_source": "Sample Paper 32",
+      "subject": "Physics",
+      "source_chapter": "Semiconductor Electronics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_032_Q044",
+      "paper_source": "Sample Paper 32",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question",
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -3886,6 +4457,16 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_032_Q090",
+      "paper_source": "Sample Paper 32",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_032_Q091",
       "paper_source": "Sample Paper 32",
       "subject": "Biology",
@@ -3912,6 +4493,76 @@
       "source_chapter": "Evolution",
       "reasons": [
         "duplicate_of_pyq"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_032_Q136",
+      "paper_source": "Sample Paper 32",
+      "subject": "Biology",
+      "source_chapter": "Biological Classification",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_032_Q165",
+      "paper_source": "Sample Paper 32",
+      "subject": "Biology",
+      "source_chapter": "Biological Classification",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_032_Q180",
+      "paper_source": "Sample Paper 32",
+      "subject": "Biology",
+      "source_chapter": "Biological Classification",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_033_Q023",
+      "paper_source": "Sample Paper 33",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_033_Q031",
+      "paper_source": "Sample Paper 33",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_033_Q034",
+      "paper_source": "Sample Paper 33",
+      "subject": "Physics",
+      "source_chapter": "Dual Nature of Matter",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_033_Q078",
+      "paper_source": "Sample Paper 33",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -3956,6 +4607,36 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_033_Q156",
+      "paper_source": "Sample Paper 33",
+      "subject": "Biology",
+      "source_chapter": "Biological Classification",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_034_Q003",
+      "paper_source": "Sample Paper 34",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_034_Q018",
+      "paper_source": "Sample Paper 34",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_034_Q020",
       "paper_source": "Sample Paper 34",
       "subject": "Physics",
@@ -3972,6 +4653,46 @@
       "source_chapter": "Electromagnetic Induction",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_034_Q026",
+      "paper_source": "Sample Paper 34",
+      "subject": "Physics",
+      "source_chapter": "Laws of Motion",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_034_Q027",
+      "paper_source": "Sample Paper 34",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_034_Q038",
+      "paper_source": "Sample Paper 34",
+      "subject": "Physics",
+      "source_chapter": "Oscillations & Waves",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_034_Q040",
+      "paper_source": "Sample Paper 34",
+      "subject": "Physics",
+      "source_chapter": "Wave Optics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
       ],
       "chapter_suggestions": []
     },
@@ -4006,6 +4727,16 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_034_Q073",
+      "paper_source": "Sample Paper 34",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_034_Q077",
       "paper_source": "Sample Paper 34",
       "subject": "Physics",
@@ -4026,12 +4757,52 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_034_Q101",
+      "paper_source": "Sample Paper 34",
+      "subject": "Biology",
+      "source_chapter": "The Living World & Taxonomy",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_034_Q180",
+      "paper_source": "Sample Paper 34",
+      "subject": "Biology",
+      "source_chapter": "Structural Organisation in Animals",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_035_Q017",
       "paper_source": "Sample Paper 35",
       "subject": "Physics",
       "source_chapter": "Alternating Current",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_035_Q036",
+      "paper_source": "Sample Paper 35",
+      "subject": "Physics",
+      "source_chapter": "Oscillations & Waves",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_035_Q042",
+      "paper_source": "Sample Paper 35",
+      "subject": "Physics",
+      "source_chapter": "Electrostatics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -4071,7 +4842,8 @@
       "subject": "Biology",
       "source_chapter": "Reproduction & Human Development",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -4102,6 +4874,16 @@
       "source_chapter": "Kinematics",
       "reasons": [
         "missing_question_text"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_036_Q015",
+      "paper_source": "Sample Paper 36",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -4146,12 +4928,52 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_036_Q058",
+      "paper_source": "Sample Paper 36",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_036_Q060",
       "paper_source": "Sample Paper 36",
       "subject": "Physics",
       "source_chapter": "Kinematics",
       "reasons": [
         "missing_question_text"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_036_Q064",
+      "paper_source": "Sample Paper 36",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_036_Q067",
+      "paper_source": "Sample Paper 36",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_036_Q070",
+      "paper_source": "Sample Paper 36",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -4177,12 +4999,72 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_036_Q107",
+      "paper_source": "Sample Paper 36",
+      "subject": "Biology",
+      "source_chapter": "Morphology of Flowering Plants",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_036_Q135",
+      "paper_source": "Sample Paper 36",
+      "subject": "Biology",
+      "source_chapter": "Evolution",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_036_Q148",
+      "paper_source": "Sample Paper 36",
+      "subject": "Biology",
+      "source_chapter": "Human Digestion & Respiration",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_036_Q159",
+      "paper_source": "Sample Paper 36",
+      "subject": "Biology",
+      "source_chapter": "Cell: The Unit of Life",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_036_Q179",
+      "paper_source": "Sample Paper 36",
+      "subject": "Biology",
+      "source_chapter": "Animal Kingdom",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_037_Q006",
       "paper_source": "Sample Paper 37",
       "subject": "Physics",
       "source_chapter": "Magnetic Effects of Current",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_037_Q019",
+      "paper_source": "Sample Paper 37",
+      "subject": "Physics",
+      "source_chapter": "Laws of Motion",
+      "reasons": [
+        "ocr_foreign_script_in_question"
       ],
       "chapter_suggestions": []
     },
@@ -4197,12 +5079,32 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_037_Q042",
+      "paper_source": "Sample Paper 37",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_037_Q052",
       "paper_source": "Sample Paper 37",
       "subject": "Physics",
       "source_chapter": "Kinematics",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_037_Q069",
+      "paper_source": "Sample Paper 37",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -4223,6 +5125,26 @@
       "source_chapter": "Kinematics",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_037_Q074",
+      "paper_source": "Sample Paper 37",
+      "subject": "Chemistry",
+      "source_chapter": "Mole Concept / Stoichiometry",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_037_Q093",
+      "paper_source": "Sample Paper 37",
+      "subject": "Biology",
+      "source_chapter": "Locomotion & Neuro-Endocrine Control",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -4252,7 +5174,39 @@
       "subject": "Biology",
       "source_chapter": "Anatomy of Flowering Plants",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_037_Q128",
+      "paper_source": "Sample Paper 37",
+      "subject": "Biology",
+      "source_chapter": "Biological Classification",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_037_Q131",
+      "paper_source": "Sample Paper 37",
+      "subject": "Biology",
+      "source_chapter": "Biological Classification",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_038_Q008",
+      "paper_source": "Sample Paper 38",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question",
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -4263,6 +5217,16 @@
       "source_chapter": "Kinematics",
       "reasons": [
         "missing_question_text"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_038_Q042",
+      "paper_source": "Sample Paper 38",
+      "subject": "Physics",
+      "source_chapter": "Wave Optics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
       ],
       "chapter_suggestions": []
     },
@@ -4297,12 +5261,43 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_038_Q093",
+      "paper_source": "Sample Paper 38",
+      "subject": "Biology",
+      "source_chapter": "Cell: The Unit of Life",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_039_Q013",
+      "paper_source": "Sample Paper 39",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_039_Q037",
       "paper_source": "Sample Paper 39",
       "subject": "Physics",
       "source_chapter": "Kinematics",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_039_Q044",
+      "paper_source": "Sample Paper 39",
+      "subject": "Physics",
+      "source_chapter": "Wave Optics",
+      "reasons": [
+        "ocr_foreign_script_in_question",
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -4352,7 +5347,48 @@
       "subject": "Physics",
       "source_chapter": "Kinematics",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_039_Q079",
+      "paper_source": "Sample Paper 39",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_039_Q084",
+      "paper_source": "Sample Paper 39",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_039_Q091",
+      "paper_source": "Sample Paper 39",
+      "subject": "Biology",
+      "source_chapter": "Biological Classification",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_039_Q139",
+      "paper_source": "Sample Paper 39",
+      "subject": "Biology",
+      "source_chapter": "Biological Classification",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -4363,6 +5399,26 @@
       "source_chapter": "Biological Classification",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_039_Q173",
+      "paper_source": "Sample Paper 39",
+      "subject": "Biology",
+      "source_chapter": "Biomolecules",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_039_Q180",
+      "paper_source": "Sample Paper 39",
+      "subject": "Biology",
+      "source_chapter": "Biological Classification",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -4387,6 +5443,17 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_040_Q025",
+      "paper_source": "Sample Paper 40",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question",
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_040_Q039",
       "paper_source": "Sample Paper 40",
       "subject": "Physics",
@@ -4407,12 +5474,33 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_040_Q077",
+      "paper_source": "Sample Paper 40",
+      "subject": "Physics",
+      "source_chapter": "Current Electricity",
+      "reasons": [
+        "ocr_foreign_script_in_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_040_Q078",
+      "paper_source": "Sample Paper 40",
+      "subject": "Physics",
+      "source_chapter": "Oscillations & Waves",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_040_Q082",
       "paper_source": "Sample Paper 40",
       "subject": "Physics",
       "source_chapter": "Electrostatics",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -4427,12 +5515,42 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_040_Q178",
+      "paper_source": "Sample Paper 40",
+      "subject": "Biology",
+      "source_chapter": "Biological Classification",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_041_Q005",
+      "paper_source": "Sample Paper 41",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_041_Q018",
       "paper_source": "Sample Paper 41",
       "subject": "Physics",
       "source_chapter": "Dual Nature of Matter",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_041_Q024",
+      "paper_source": "Sample Paper 41",
+      "subject": "Physics",
+      "source_chapter": "Thermal Physics",
+      "reasons": [
+        "ocr_foreign_script_in_option"
       ],
       "chapter_suggestions": []
     },
@@ -4453,6 +5571,16 @@
       "source_chapter": "Kinematics",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_041_Q040",
+      "paper_source": "Sample Paper 41",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_foreign_script_in_question"
       ],
       "chapter_suggestions": []
     },
@@ -7318,12 +8446,378 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "SAMPLE_050_Q002",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Electromagnetic Waves",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q003",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Electrostatics",
+      "reasons": [
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q006",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Gravitation",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q007",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Wave Optics",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q013",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Thermodynamics",
+      "reasons": [
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q014",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Wave Optics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q017",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Atoms & Nuclei",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q018",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Atoms & Nuclei",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q019",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Current Electricity",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "SAMPLE_050_Q020",
       "paper_source": "Sample Paper 50",
       "subject": "Physics",
       "source_chapter": "Rotational Motion",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q022",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Ray Optics",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q023",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Gravitation",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q028",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q030",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q031",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q032",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q034",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Magnetism & Matter",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q036",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q037",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q038",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q040",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Magnetic Effects of Current",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q041",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Work, Energy & Power",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q042",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q043",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Current Electricity",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q047",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q048",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q049",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q050",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q051",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q052",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q055",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q057",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q059",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q060",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q063",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q066",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question"
       ],
       "chapter_suggestions": []
     },
@@ -7333,7 +8827,269 @@
       "subject": "Physics",
       "source_chapter": "Kinematics",
       "reasons": [
-        "duplicate_options"
+        "duplicate_options",
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q069",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q070",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q071",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q073",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q074",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q075",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q077",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q078",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q087",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q088",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q089",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q090",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q095",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q096",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q097",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q101",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q102",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q103",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q104",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q109",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q110",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q115",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q121",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q122",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
       ],
       "chapter_suggestions": []
     },
@@ -7344,6 +9100,58 @@
       "source_chapter": "Kinematics",
       "reasons": [
         "missing_question_text"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q128",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q129",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_question",
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q133",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q134",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "SAMPLE_050_Q135",
+      "paper_source": "Sample Paper 50",
+      "subject": "Physics",
+      "source_chapter": "Kinematics",
+      "reasons": [
+        "ocr_garbled_option"
       ],
       "chapter_suggestions": []
     },
@@ -18760,6 +20568,7 @@
       "subject": "Physics",
       "source_chapter": "General Physics",
       "reasons": [
+        "duplicate_options",
         "chapter_unresolved_low_confidence"
       ],
       "chapter_suggestions": [
@@ -21260,6 +23069,7 @@
       "subject": "Physics",
       "source_chapter": "General Physics",
       "reasons": [
+        "duplicate_options",
         "chapter_unresolved_low_confidence",
         "duplicate_content"
       ],
@@ -24077,6 +25887,7 @@
       "subject": "Physics",
       "source_chapter": "General Physics",
       "reasons": [
+        "duplicate_options",
         "chapter_unresolved_low_confidence",
         "duplicate_content"
       ],
@@ -27045,6 +28856,7 @@
       "subject": "Physics",
       "source_chapter": "General Physics",
       "reasons": [
+        "duplicate_options",
         "chapter_unresolved_low_confidence",
         "duplicate_content"
       ],
@@ -29646,6 +31458,7 @@
       "subject": "Physics",
       "source_chapter": "General Physics",
       "reasons": [
+        "duplicate_options",
         "chapter_unresolved_low_confidence",
         "duplicate_content"
       ],
@@ -32555,6 +34368,7 @@
       "subject": "Physics",
       "source_chapter": "General Physics",
       "reasons": [
+        "duplicate_options",
         "chapter_unresolved_low_confidence",
         "duplicate_content"
       ],
@@ -83448,6 +85262,16 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "PAPER_65_QUES_118",
+      "paper_source": "Sample 65",
+      "subject": "Biology",
+      "source_chapter": "Molecular Basis of Inheritance",
+      "reasons": [
+        "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "PAPER_65_QUES_119",
       "paper_source": "Sample 65",
       "subject": "Biology",
@@ -83482,6 +85306,16 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "PAPER_65_QUES_121",
+      "paper_source": "Sample 65",
+      "subject": "Biology",
+      "source_chapter": "Morphology of Flowering Plants",
+      "reasons": [
+        "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "PAPER_65_QUES_122",
       "paper_source": "Sample 65",
       "subject": "Biology",
@@ -83504,6 +85338,26 @@
           0.0187
         ]
       ]
+    },
+    {
+      "question_id": "PAPER_65_QUES_124",
+      "paper_source": "Sample 65",
+      "subject": "Biology",
+      "source_chapter": "Morphology of Flowering Plants",
+      "reasons": [
+        "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "PAPER_65_QUES_125",
+      "paper_source": "Sample 65",
+      "subject": "Biology",
+      "source_chapter": "Morphology of Flowering Plants",
+      "reasons": [
+        "duplicate_options"
+      ],
+      "chapter_suggestions": []
     },
     {
       "question_id": "PAPER_65_QUES_126",
@@ -83745,6 +85599,16 @@
       ]
     },
     {
+      "question_id": "PAPER_65_QUES_141",
+      "paper_source": "Sample 65",
+      "subject": "Biology",
+      "source_chapter": "Cell: The Unit of Life",
+      "reasons": [
+        "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "PAPER_65_QUES_142",
       "paper_source": "Sample 65",
       "subject": "Biology",
@@ -83837,6 +85701,16 @@
           0.0233
         ]
       ]
+    },
+    {
+      "question_id": "PAPER_65_QUES_149",
+      "paper_source": "Sample 65",
+      "subject": "Biology",
+      "source_chapter": "Anatomy of Flowering Plants",
+      "reasons": [
+        "duplicate_options"
+      ],
+      "chapter_suggestions": []
     },
     {
       "question_id": "PAPER_65_QUES_152",
@@ -84246,6 +86120,16 @@
           0.0212
         ]
       ]
+    },
+    {
+      "question_id": "PAPER_65_QUES_187",
+      "paper_source": "Sample 65",
+      "subject": "Biology",
+      "source_chapter": "Chemical Coordination & Integration",
+      "reasons": [
+        "duplicate_options"
+      ],
+      "chapter_suggestions": []
     },
     {
       "question_id": "PAPER_65_QUES_189",
@@ -87201,6 +89085,7 @@
       "subject": "Biology",
       "source_chapter": "Morphology of Flowering Plants",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -87541,6 +89426,7 @@
       "subject": "Biology",
       "source_chapter": "Cell: The Unit of Life",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -87551,6 +89437,7 @@
       "subject": "Biology",
       "source_chapter": "Molecular Basis of Inheritance",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -87584,6 +89471,7 @@
       "subject": "Biology",
       "source_chapter": "Morphology of Flowering Plants",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -87594,6 +89482,7 @@
       "subject": "Biology",
       "source_chapter": "Morphology of Flowering Plants",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -87604,6 +89493,7 @@
       "subject": "Biology",
       "source_chapter": "Morphology of Flowering Plants",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -87777,6 +89667,7 @@
       "subject": "Biology",
       "source_chapter": "Cell: The Unit of Life",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -87845,6 +89736,7 @@
       "subject": "Biology",
       "source_chapter": "Cell: The Unit of Life",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -87899,6 +89791,7 @@
       "subject": "Biology",
       "source_chapter": "Anatomy of Flowering Plants",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -88113,6 +90006,7 @@
       "subject": "Biology",
       "source_chapter": "Morphology of Flowering Plants",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -88551,6 +90445,7 @@
       "subject": "Biology",
       "source_chapter": "Chemical Coordination & Integration",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -88561,6 +90456,7 @@
       "subject": "Biology",
       "source_chapter": "Morphology of Flowering Plants",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -88635,6 +90531,7 @@
       "subject": "Biology",
       "source_chapter": "Morphology of Flowering Plants",
       "reasons": [
+        "duplicate_options",
         "duplicate_content"
       ],
       "chapter_suggestions": []
@@ -89038,6 +90935,7 @@
       "subject": "Physics",
       "source_chapter": "General Physics",
       "reasons": [
+        "duplicate_options",
         "chapter_unresolved_low_confidence",
         "duplicate_content"
       ],
@@ -108819,6 +110717,16 @@
       "chapter_suggestions": []
     },
     {
+      "question_id": "PAPER_89_QUES_006",
+      "paper_source": "Sample 89",
+      "subject": "Physics",
+      "source_chapter": "Units & Measurements",
+      "reasons": [
+        "ocr_foreign_script_in_option"
+      ],
+      "chapter_suggestions": []
+    },
+    {
       "question_id": "PAPER_89_QUES_008",
       "paper_source": "Sample 89",
       "subject": "Physics",
@@ -108858,6 +110766,16 @@
       "source_chapter": "Waves",
       "reasons": [
         "duplicate_options"
+      ],
+      "chapter_suggestions": []
+    },
+    {
+      "question_id": "PAPER_89_QUES_024",
+      "paper_source": "Sample 89",
+      "subject": "Physics",
+      "source_chapter": "Current Electricity",
+      "reasons": [
+        "ocr_foreign_script_in_question"
       ],
       "chapter_suggestions": []
     },

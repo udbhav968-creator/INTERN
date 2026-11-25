@@ -1,17 +1,24 @@
 from __future__ import annotations
 
+import json
+from pathlib import Path
 from typing import Any
+
 import numpy as np
 
-SCORE_ANCHORS = np.array([0.0, 80.0, 130.0, 165.0, 200.0, 300.0, 400.0, 500.0, 550.0, 600.0, 650.0, 680.0, 700.0, 715.0, 720.0], dtype=np.float64)
-PERCENTILE_ANCHORS = np.array([0.0, 12.0, 27.0, 38.5, 48.0, 71.0, 85.5, 93.8, 96.5, 98.6, 99.65, 99.92, 99.988, 99.998, 100.0], dtype=np.float64)
+_FACTS_PATH = Path(__file__).resolve().parent / "neet_reference_facts.json"
+_FACTS = json.loads(_FACTS_PATH.read_text(encoding="utf-8"))
 
-NEET_YEAR_FACTS = {
-    2026: {"registered": 2279743, "appeared": 1999895, "qualified": 1121185, "general_cutoff_score": 213, "topper_score": 715},
-    2025: {"registered": 2276069, "appeared": 2209318, "qualified": 1236531, "general_cutoff_score": 144},
-    2024: {"registered": 2406079, "appeared": 2333297, "general_cutoff_score": 164},
+SCORE_ANCHORS = np.array(_FACTS["score_percentile_anchors"]["score"], dtype=np.float64)
+PERCENTILE_ANCHORS = np.array(_FACTS["score_percentile_anchors"]["percentile"], dtype=np.float64)
+_NUMERIC_FACTS = ("registered", "appeared", "qualified", "general_cutoff_score", "topper_score")
+NEET_YEAR_FACTS = {int(y): {k: v for k, v in f.items() if k in _NUMERIC_FACTS} for y, f in _FACTS["years"].items()}
+FACTS_PROVENANCE = {
+    "years": {int(y): {"source": f["source"], "verification": f["verification"]} for y, f in _FACTS["years"].items()},
+    "score_percentile_anchors": _FACTS["score_percentile_anchors"]["status"],
+    "college_tiers": _FACTS["college_tiers"]["status"],
 }
-REFERENCE_EXAM_YEAR = 2026
+REFERENCE_EXAM_YEAR = int(_FACTS["reference_exam_year"])
 TOTAL_NEET_CANDIDATES = NEET_YEAR_FACTS[REFERENCE_EXAM_YEAR]["appeared"]
 
 QUALIFYING_CUTOFF_SOURCE = {
@@ -30,12 +37,7 @@ MODEL_ASSUMPTIONS = {
 }
 
 COLLEGE_TIERS = [
-    {"id": "aiims_delhi", "name": "AIIMS New Delhi", "score_threshold": 705, "air_threshold": 55},
-    {"id": "central_institutes", "name": "Central Institutes (MAMC, VMMC, JIPMER, AIIMS Top 5)", "score_threshold": 680, "air_threshold": 1200},
-    {"id": "top_state_govt", "name": "Top State Govt Medical Colleges", "score_threshold": 630, "air_threshold": 15000},
-    {"id": "peripheral_govt", "name": "All-India Govt MBBS Floor", "score_threshold": 595, "air_threshold": 32000},
-    {"id": "state_quota_govt", "name": "State Quota Govt Medical Seats", "score_threshold": 540, "air_threshold": 75000},
-    {"id": "deemed_semi_govt", "name": "Deemed / Semi-Govt Merit Seats", "score_threshold": 480, "air_threshold": 150000},
+    *_FACTS["college_tiers"]["tiers"],
     {"id": "qualifying_floor", "name": "NEET Qualifying Cutoff", "score_threshold": QUALIFYING_CUTOFF_SOURCE["general_cutoff_score"], "air_threshold": NEET_YEAR_FACTS[REFERENCE_EXAM_YEAR]["qualified"]},
 ]
 

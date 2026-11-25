@@ -135,6 +135,99 @@ def _stage_retrieval_challenger() -> dict:
     return {"challenger_top1": rep["challenger"]["top1_chapter_accuracy"], "production_top1": rep["production"].get("top1_chapter_accuracy"), "decision": rep["decision"]}
 
 
+def _stage_text_quality_audit() -> dict:
+    from .text_quality_audit import run
+
+    rep = run(save=True)
+    if not rep["passed"]:
+        raise RuntimeError(
+            f"text quality invariants failed: accepted_flagged={rep['sample_accepted']['flagged']} "
+            f"forms_flagged={rep['assessment_forms_with_flagged_questions']}"
+        )
+    return {
+        "pyq_flagged": rep["pyq"]["flagged"],
+        "sample_raw_flagged": rep["sample_raw"]["flagged"],
+        "sample_accepted_flagged": rep["sample_accepted"]["flagged"],
+        "suspect_papers": [s["paper"] for s in rep["suspect_papers"]],
+    }
+
+
+def _stage_chapter_topic_evaluation() -> dict:
+    from .chapter_topic_evaluation import run
+
+    rep = run(save=True)
+    gate = rep["coverage"]["ratchet"]
+    if not gate["passed"]:
+        raise RuntimeError(
+            f"new data gaps appeared: zero tiers {gate['new_zero_tiers']}, multi-subject chapters {gate['new_multi_subject_chapters']}"
+        )
+    if not rep["cross_dataset"]["gate"]["passed"]:
+        raise RuntimeError(f"taxonomy and question bank disagree: {rep['cross_dataset']['gate']['problems']}")
+    if rep["chapters"]["reliable"] == 0:
+        raise RuntimeError("no chapter has enough held-out rows to evaluate")
+    return {
+        "overall_accuracy": rep["overall_accuracy"],
+        "chapters_reliable": f'{rep["chapters"]["reliable"]}/{rep["chapters"]["total"]}',
+        "chapters_below_majority": len(rep["chapters"]["reliable_below_majority"]),
+        "topics_reliable": f'{rep["topics"]["reliable"]}/{rep["topics"]["total"]}',
+        "bank_questions_missing_vs_taxonomy": rep["cross_dataset"]["bank_missing_vs_taxonomy"],
+        "taxonomy_bank_chapter_share_spearman": rep["cross_dataset"]["chapter_share_spearman"],
+        "known_zero_tiers_open": gate["known_zero_tiers_still_open"],
+        "zero_tiers_resolved": gate["resolved_zero_tiers"],
+    }
+
+
+def _stage_air_estimator_self_test() -> dict:
+    import json as _json
+
+    import numpy as np
+
+    from .air_estimator import build_air_report
+    from .student_profile_initializer import _bank_by_id, _p_correct
+
+    students_per_level = 30
+    max_abs_bias = 0.15
+    min_coverage = 0.85
+    bank = _bank_by_id("unified")
+    form = _json.loads((Path(__file__).resolve().parent / "assessment_forms.json").read_text(encoding="utf-8"))["forms"][0]["question_ids"]
+    rows, covered, total = [], 0, 0
+    for theta in (-1.0, 0.0, 1.0, 2.0):
+        p = np.array([float(_p_correct(np.array(theta), bank[q])) for q in form])
+        errors, airs = [], []
+        for k in range(students_per_level):
+            rng = np.random.default_rng(7000 + 100 * int(theta + 5) + k)
+            answers = [{"question_id": q, "is_correct": bool(rng.random() < pi), "time_taken_seconds": float(bank[q]["ideal_time_sec"])} for q, pi in zip(form, p)]
+            rep = build_air_report(answers)
+            if rep["status"] != "ok":
+                raise RuntimeError(f"air estimate not produced for simulated theta {theta}: {rep['status']}")
+            err = rep["scores"]["theta"] - theta
+            errors.append(err)
+            airs.append(rep["air"]["estimate"])
+            total += 1
+            covered += int(abs(err) <= 1.96 * rep["scores"]["theta_sem"])
+        rows.append({"simulated_true_theta": theta, "mean_error": round(float(np.mean(errors)), 4), "rmse": round(float(np.sqrt(np.mean(np.square(errors)))), 4), "median_air": int(np.median(airs))})
+    coverage = covered / total
+    if any(abs(r["mean_error"]) > max_abs_bias for r in rows):
+        raise RuntimeError(f"ability estimate is biased beyond {max_abs_bias}: {rows}")
+    if coverage < min_coverage:
+        raise RuntimeError(f"claimed ability uncertainty is overconfident: 95% interval coverage {coverage:.2f} < {min_coverage}")
+    if not all(a["median_air"] > b["median_air"] for a, b in zip(rows, rows[1:])):
+        raise RuntimeError(f"air estimate is not monotone in ability: {rows}")
+    return {"simulated_students": rows, "students_per_level": students_per_level, "max_abs_bias_allowed": max_abs_bias, "min_coverage_required": min_coverage, "interval_95_coverage": round(coverage, 3), "note": "simulated students; not a result on real students"}
+
+
+def _stage_model_provenance_audit() -> dict:
+    from .model_provenance import run
+
+    rep = run(save=True)
+    if not rep["passed"]:
+        raise RuntimeError(f"model provenance is inconsistent: {rep['problems']}")
+    by_basis: dict[str, int] = {}
+    for m in rep["models"]:
+        by_basis[m["basis"]] = by_basis.get(m["basis"], 0) + 1
+    return {"models": len(rep["models"]), "real_student_attempts": rep["real_student_attempts"], "models_by_basis": by_basis}
+
+
 def _stage_registries() -> dict:
     from .ml_extension_registry import build_extension_registry, verify_extension_registry
     from .training_and_validation_pipeline import REGISTRY_MANIFEST_FILE, build_model_registry_manifest
@@ -157,6 +250,7 @@ def _stage_model_cards() -> dict:
 
 STAGES = [
     ("data_gates", _stage_data_gates),
+    ("text_quality_audit", _stage_text_quality_audit),
     ("label_validity", _stage_label_validity),
     ("production_training", _stage_production_training),
     ("difficulty_v21", _stage_difficulty_v21),
@@ -168,6 +262,9 @@ STAGES = [
     ("learning_analytics", _stage_learning_analytics),
     ("content_and_language_audits", _stage_content_and_language_audits),
     ("retrieval_challenger", _stage_retrieval_challenger),
+    ("chapter_topic_evaluation", _stage_chapter_topic_evaluation),
+    ("air_estimator_self_test", _stage_air_estimator_self_test),
+    ("model_provenance_audit", _stage_model_provenance_audit),
     ("artifact_registries", _stage_registries),
     ("model_cards_and_promotion_gates", _stage_model_cards),
 ]

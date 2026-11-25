@@ -1918,6 +1918,80 @@ def test_30_decision_logging_ab_assignment_score_snapshots_state_store_and_priva
         lb._STUDENT_BANDITS.pop("STATE_PROBE", None)
 
 
+def test_31_air_estimate_endpoint_full_mock_partial_history_auth_and_empty():
+    import json as _json
+    from pathlib import Path as _Path
+
+    client = TestClient(app)
+    email = "air_estimate_probe@klassed.in"
+    db = SessionLocal()
+    old = db.query(Student).filter_by(email=email).first()
+    if old:
+        db.query(TestAttempt).filter_by(student_id=old.student_id).delete()
+        db.query(StudentTopicState).filter_by(student_id=old.student_id).delete()
+        db.delete(old)
+        db.commit()
+    db.close()
+
+    body = client.post("/auth/signup", json={"name": "Air Probe", "email": email, "password": "strongpassword123"}).json()
+    sid = body["student_id"]
+    hdr = {"Authorization": f"Bearer {body['access_token']}", "X-Klassed-Vault": body["vault_token"]}
+    client.post(f"/students/{sid}/onboarding", json={"class_level": "12", "target_neet_year": 2027}, headers=hdr)
+
+    empty = client.get(f"/students/{sid}/air_estimate", headers=hdr)
+    assert empty.status_code == 200 and empty.json()["status"] == "no_scored_responses" and empty.json()["air"] is None
+    assert client.get(f"/students/{sid}/air_estimate").status_code in (401, 403)
+
+    forms = _json.loads((_Path(__file__).resolve().parents[2] / "model" / "assessment_forms.json").read_text(encoding="utf-8"))["forms"]
+    qids = forms[0]["question_ids"]
+
+    def add(paper, ids, n_correct):
+        session = SessionLocal()
+        for i, q in enumerate(ids):
+            session.add(TestAttempt(student_id=sid, question_id=q, paper_number=paper, is_correct=i < n_correct, time_taken_seconds=60.0, selected_option="a"))
+        session.commit()
+        session.close()
+
+    add(1, qids, 120)
+    full = client.get(f"/students/{sid}/air_estimate", headers=hdr)
+    assert full.status_code == 200
+    rep = full.json()
+    assert rep["status"] == "ok" and rep["evidence"]["scope"] == "full_mock"
+    assert 1 <= rep["air"]["range_90"][0] <= rep["air"]["range_90"][1] <= 2_500_000
+    assert set(rep["air"]["paper_year_scenarios"]) >= {"2024", "2025", "2026"}
+    assert rep["scores"]["raw_marks_this_attempt"] == 120 * 4 - 60
+    assert rep["chapter_wise"] and rep["focus_chapters"] and rep["mock_difficulty"]["verdict"]
+    assert rep["reliability"]["basis"] == "prior_based_no_real_student_calibration" and rep["reliability"]["statement"]
+    assert set(rep["sensitivity"]["difficulty_labels"]) == {"v21_labels", "labels_uninformative"}
+    assert rep["air"]["range_if_assumptions_wrong"][0] <= rep["air"]["range_90"][0] and rep["air"]["range_if_assumptions_wrong"][1] >= rep["air"]["range_90"][1]
+    prov = client.get("/mlops/model_provenance")
+    assert prov.status_code == 200 and prov.json()["passed"] and prov.json()["real_student_attempts"] == 0 and len(prov.json()["models"]) >= 15
+    assert client.get(f"/students/{sid}/air_estimate?paper_number=1", headers=hdr).json()["scores"] == rep["scores"]
+    assert client.get(f"/students/{sid}/air_estimate?paper_number=99", headers=hdr).status_code == 404
+    reduced = client.get(f"/students/{sid}/air_estimate?syllabus_mode=nmc_reduced", headers=hdr)
+    assert reduced.status_code == 200 and reduced.json()["syllabus_mode"] == "nmc_reduced" and rep["syllabus_mode"] == "all"
+    assert reduced.json()["air"]["estimate"] == rep["air"]["estimate"]
+    assert client.get(f"/students/{sid}/air_estimate?syllabus_mode=bogus", headers=hdr).status_code == 422
+
+    chapter_ids = [q for q in forms[1]["question_ids"]][:15]
+    add(2, chapter_ids, 15)
+    partial = client.get(f"/students/{sid}/air_estimate", headers=hdr).json()
+    assert partial["evidence"]["source"] in ("attempt", "attempt_plus_history")
+    assert partial["status"] in ("ok", "insufficient_evidence_for_air")
+    assert partial["chapter_wise"]
+    if partial["status"] == "ok":
+        assert partial["evidence"]["source"] == "attempt_plus_history"
+    else:
+        assert partial["air"] is None and partial["reason"]
+
+    db = SessionLocal()
+    db.query(TestAttempt).filter_by(student_id=sid).delete()
+    db.query(StudentTopicState).filter_by(student_id=sid).delete()
+    db.query(Student).filter_by(student_id=sid).delete()
+    db.commit()
+    db.close()
+
+
 if __name__ == "__main__":
     suites = [
         test_01_random_forest_model_and_live_inference,
@@ -1950,6 +2024,7 @@ if __name__ == "__main__":
         test_28_zero_hardcoded_cold_start_priors_unified_score_and_15_trained_models,
         test_29_section4_recommendations_empirical_quarantine_postgres_multilingual,
         test_30_decision_logging_ab_assignment_score_snapshots_state_store_and_privacy_switch,
+        test_31_air_estimate_endpoint_full_mock_partial_history_auth_and_empty,
     ]
     for fn in suites:
         fn()

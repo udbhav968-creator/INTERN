@@ -18,10 +18,10 @@
   },
   "heuristic_rule_vs_human_verified_sample_tiers": {
     "available": true,
-    "n": 9448,
-    "accuracy": 0.4188,
-    "macro_f1": 0.3821,
-    "cohens_kappa": 0.0693,
+    "n": 9264,
+    "accuracy": 0.4187,
+    "macro_f1": 0.3822,
+    "cohens_kappa": 0.07,
     "interpretation": "kappa near 0 means the PYQ tier rule barely agrees with human-verified tiers"
   },
   "student_responses_available": 0,

@@ -1,27 +1,40 @@
 {
   "status": "PASSED",
-  "total_seconds": 225.56,
+  "total_seconds": 339.15,
   "stages": [
     {
       "stage": "data_gates",
       "status": "PASSED",
-      "seconds": 0.06,
+      "seconds": 0.08,
       "output": {
         "status": "PASSED",
         "warnings": 5
       }
     },
     {
+      "stage": "text_quality_audit",
+      "status": "PASSED",
+      "seconds": 2.24,
+      "output": {
+        "pyq_flagged": 12,
+        "sample_raw_flagged": 311,
+        "sample_accepted_flagged": 0,
+        "suspect_papers": [
+          "Sample Paper 50"
+        ]
+      }
+    },
+    {
       "stage": "label_validity",
       "status": "PASSED",
-      "seconds": 2.76,
+      "seconds": 1.36,
       "output": {
         "heuristic_vs_human": {
           "available": true,
-          "n": 9448,
-          "accuracy": 0.4188,
-          "macro_f1": 0.3821,
-          "cohens_kappa": 0.0693,
+          "n": 9264,
+          "accuracy": 0.4187,
+          "macro_f1": 0.3822,
+          "cohens_kappa": 0.07,
           "interpretation": "kappa near 0 means the PYQ tier rule barely agrees with human-verified tiers"
         }
       }
@@ -29,7 +42,7 @@
     {
       "stage": "production_training",
       "status": "PASSED",
-      "seconds": 63.41,
+      "seconds": 76.23,
       "output": {
         "holdout": {
           "holdout_accuracy": 0.7791666666666667,
@@ -41,14 +54,14 @@
     {
       "stage": "difficulty_v21",
       "status": "PASSED",
-      "seconds": 96.68,
+      "seconds": 113.45,
       "output": {
         "v21": {
-          "accuracy": 0.8238,
-          "macro_f1": 0.7705,
-          "log_loss": 0.4616,
-          "ece_top_label": 0.0189,
-          "n": 9448
+          "accuracy": 0.8218,
+          "macro_f1": 0.769,
+          "log_loss": 0.4672,
+          "ece_top_label": 0.0152,
+          "n": 9264
         },
         "decision": "candidate: beats v2 on duplicate-free held-out papers"
       }
@@ -56,22 +69,22 @@
     {
       "stage": "unified_side_by_side",
       "status": "PASSED",
-      "seconds": 28.56,
+      "seconds": 32.77,
       "output": {
         "rag": {
           "heldout_papers": 16,
           "heldout_chapter_retrieval_production": {
-            "eval_questions": 1747,
+            "eval_questions": 1674,
             "eval_set": "questions not in the index (no chapter hint)",
-            "top1_chapter_accuracy": 0.3183,
-            "top3_chapter_accuracy": 0.5031,
+            "top1_chapter_accuracy": 0.3196,
+            "top3_chapter_accuracy": 0.5066,
             "random_baseline_top1": 0.0154
           },
           "heldout_chapter_retrieval_unified": {
-            "eval_questions": 1747,
+            "eval_questions": 1674,
             "eval_set": "questions not in the index (no chapter hint)",
-            "top1_chapter_accuracy": 0.3268,
-            "top3_chapter_accuracy": 0.5335,
+            "top1_chapter_accuracy": 0.328,
+            "top3_chapter_accuracy": 0.5341,
             "random_baseline_top1": 0.0154
           },
           "unified_index_excludes": "every question from the held-out sample papers"
@@ -81,7 +94,7 @@
     {
       "stage": "evaluation_harness",
       "status": "PASSED",
-      "seconds": 0.94,
+      "seconds": 0.78,
       "output": {
         "status": "PASSED"
       }
@@ -89,7 +102,7 @@
     {
       "stage": "student_pipeline_self_test",
       "status": "PASSED",
-      "seconds": 8.3,
+      "seconds": 8.38,
       "output": {
         "label": "SIMULATED data, used only to verify the estimation code; not a model result",
         "recovery": {
@@ -104,7 +117,7 @@
     {
       "stage": "student_response_models",
       "status": "PASSED",
-      "seconds": 0.14,
+      "seconds": 0.71,
       "output": {
         "status": "SKIPPED_INSUFFICIENT_DATA",
         "readiness": {
@@ -124,7 +137,7 @@
     {
       "stage": "learning_analytics_self_test",
       "status": "PASSED",
-      "seconds": 16.94,
+      "seconds": 16.04,
       "output": {
         "ope": {
           "true_value_greedy": 0.8104,
@@ -148,7 +161,7 @@
     {
       "stage": "learning_analytics",
       "status": "PASSED",
-      "seconds": 0.07,
+      "seconds": 0.06,
       "output": {
         "data": {
           "attempts": 0,
@@ -163,7 +176,7 @@
     {
       "stage": "content_and_language_audits",
       "status": "PASSED",
-      "seconds": 0.22,
+      "seconds": 0.2,
       "output": {
         "exam_spec": "consistent",
         "explanations": {
@@ -176,17 +189,94 @@
     {
       "stage": "retrieval_challenger",
       "status": "PASSED",
-      "seconds": 6.25,
+      "seconds": 6.87,
       "output": {
         "challenger_top1": 0.3237,
-        "production_top1": 0.3496,
+        "production_top1": 0.3491,
         "decision": "HOLD"
+      }
+    },
+    {
+      "stage": "chapter_topic_evaluation",
+      "status": "PASSED",
+      "seconds": 73.61,
+      "output": {
+        "overall_accuracy": 0.8218,
+        "chapters_reliable": "54/63",
+        "chapters_below_majority": 17,
+        "topics_reliable": "104/411",
+        "bank_questions_missing_vs_taxonomy": 161,
+        "taxonomy_bank_chapter_share_spearman": 0.9436,
+        "known_zero_tiers_open": [
+          "Chemistry::Environmental Chemistry::medium",
+          "Chemistry::s-Block Elements::basic",
+          "Physics::Dual Nature of Matter::basic",
+          "Physics::Electromagnetic Induction::advanced",
+          "Physics::Wave Optics::basic"
+        ],
+        "zero_tiers_resolved": []
+      }
+    },
+    {
+      "stage": "air_estimator_self_test",
+      "status": "PASSED",
+      "seconds": 4.97,
+      "output": {
+        "simulated_students": [
+          {
+            "simulated_true_theta": -1.0,
+            "mean_error": 0.0784,
+            "rmse": 0.1517,
+            "median_air": 1320945
+          },
+          {
+            "simulated_true_theta": 0.0,
+            "mean_error": 0.0077,
+            "rmse": 0.0822,
+            "median_air": 534877
+          },
+          {
+            "simulated_true_theta": 1.0,
+            "mean_error": 0.0072,
+            "rmse": 0.1165,
+            "median_air": 128807
+          },
+          {
+            "simulated_true_theta": 2.0,
+            "mean_error": -0.0193,
+            "rmse": 0.1181,
+            "median_air": 18234
+          }
+        ],
+        "students_per_level": 30,
+        "max_abs_bias_allowed": 0.15,
+        "min_coverage_required": 0.85,
+        "interval_95_coverage": 0.975,
+        "note": "simulated students; not a result on real students"
+      }
+    },
+    {
+      "stage": "model_provenance_audit",
+      "status": "PASSED",
+      "seconds": 0.04,
+      "output": {
+        "models": 19,
+        "real_student_attempts": 0,
+        "models_by_basis": {
+          "hand_designed_prior": 4,
+          "math_on_priors": 4,
+          "fitted_on_formula_derived_labels": 3,
+          "design_objective_simulated": 1,
+          "fitted_on_real_human_labels": 3,
+          "rule_based": 3,
+          "built_waiting_for_data": 1
+        }
       }
     },
     {
       "stage": "artifact_registries",
       "status": "PASSED",
-      "seconds": 0.81,
+      "seconds": 0.76,
       "output": {
         "core": "VERIFIED",
         "extension": {
@@ -198,7 +288,7 @@
     {
       "stage": "model_cards_and_promotion_gates",
       "status": "PASSED",
-      "seconds": 0.38,
+      "seconds": 0.55,
       "output": {
         "models": 10,
         "promotion_decisions": {
@@ -218,9 +308,9 @@
     "validation_report.json:random_forest_holdout_evaluation.holdout_accuracy": 0.7791666666666667,
     "validation_report.json:random_forest_holdout_evaluation.macro_f1": 0.7825,
     "validation_report.json:stratified_5fold_cross_validation.mean_cv_accuracy": 0.7953,
-    "difficulty_model_v21_report.json:v21_tfidf_logreg.accuracy": 0.8238,
-    "difficulty_model_v21_report.json:v21_tfidf_logreg.macro_f1": 0.7705,
-    "ncert_rag_svd_meta.json:heldout_chapter_retrieval.top1_chapter_accuracy": 0.3496,
-    "ncert_rag_svd_meta.json:heldout_chapter_retrieval.top3_chapter_accuracy": 0.5341
+    "difficulty_model_v21_report.json:v21_tfidf_logreg.accuracy": 0.8218,
+    "difficulty_model_v21_report.json:v21_tfidf_logreg.macro_f1": 0.769,
+    "ncert_rag_svd_meta.json:heldout_chapter_retrieval.top1_chapter_accuracy": 0.3491,
+    "ncert_rag_svd_meta.json:heldout_chapter_retrieval.top3_chapter_accuracy": 0.5344
   }
 }

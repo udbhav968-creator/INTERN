@@ -2,47 +2,51 @@
   "status": "ingested",
   "source_file": "neet_samples_001_to_101_verified.json",
   "rows_in_file": 16689,
-  "accepted": 9448,
-  "rejected": 7241,
+  "accepted": 9264,
+  "rejected": 7425,
   "rejection_reasons": {
-    "duplicate_options": 644,
+    "duplicate_options": 671,
     "chapter_unresolved_low_confidence": 2633,
     "missing_question_text": 184,
+    "ocr_foreign_script_in_option": 85,
+    "ocr_foreign_script_in_question": 46,
     "duplicate_of_pyq": 4088,
     "duplicate_content": 1359,
+    "ocr_garbled_question": 55,
+    "ocr_garbled_option": 49,
     "subject_chapter_conflict": 9
   },
-  "cold_start_recomputed": 9448,
-  "cold_start_cached": 0,
+  "cold_start_recomputed": 0,
+  "cold_start_cached": 9264,
   "paper_sources": 83,
   "by_subject": {
-    "Physics": 3545,
-    "Chemistry": 1701,
-    "Biology": 4202
+    "Physics": 3401,
+    "Chemistry": 1692,
+    "Biology": 4171
   },
   "by_difficulty": {
-    "basic": 3723,
-    "medium": 4962,
-    "advanced": 763
+    "basic": 3680,
+    "medium": 4840,
+    "advanced": 744
   },
   "by_subject_difficulty": {
     "Physics": {
-      "basic": 445,
-      "medium": 2861,
-      "advanced": 239
+      "basic": 431,
+      "medium": 2746,
+      "advanced": 224
     },
     "Chemistry": {
-      "medium": 1192,
-      "basic": 318,
-      "advanced": 191
+      "medium": 1186,
+      "basic": 316,
+      "advanced": 190
     },
     "Biology": {
-      "basic": 2960,
-      "medium": 909,
-      "advanced": 333
+      "basic": 2933,
+      "medium": 908,
+      "advanced": 330
     }
   },
-  "with_diagrams": 453,
+  "with_diagrams": 442,
   "chapters_covered": 63,
   "chapters_missing_a_tier": [
     "Chemistry::Alcohols, Phenols & Ethers::advanced",
@@ -69,9 +73,9 @@
     "Physics::Wave Optics::basic"
   ],
   "linked_b_mean_by_tier": {
-    "advanced": 1.9769,
-    "basic": -1.483,
-    "medium": 0.3963
+    "advanced": 1.9696,
+    "basic": -1.484,
+    "medium": 0.3903
   },
   "chapter_resolution": {
     "resolver_version": "chapter-resolver-v1",
@@ -133,8 +137,8 @@
     ]
   },
   "accepted_by_chapter_method": {
-    "exact": 7877,
-    "alias": 1475,
+    "exact": 7696,
+    "alias": 1472,
     "classifier_unknown": 1,
     "classifier_generic": 95
   },
@@ -143,81 +147,81 @@
     "assumption": "a verified difficulty tier means the same in sample papers as in PYQs; replace with empirical calibration once student responses exist",
     "cells": {
       "Biology::advanced": {
-        "n_sample": 333,
-        "raw_mean_b": -0.2044,
-        "raw_sd_b": 0.655,
+        "n_sample": 330,
+        "raw_mean_b": -0.2052,
+        "raw_sd_b": 0.6547,
         "target_mean_b": 1.6965,
         "target_sd_b": 0.2185,
         "target_mean_a": 1.9608,
         "target_mean_c": 0.1642
       },
       "Biology::basic": {
-        "n_sample": 2960,
-        "raw_mean_b": -1.6873,
-        "raw_sd_b": 0.4467,
+        "n_sample": 2933,
+        "raw_mean_b": -1.6883,
+        "raw_sd_b": 0.4463,
         "target_mean_b": -1.5525,
         "target_sd_b": 0.0343,
         "target_mean_a": 1.2356,
         "target_mean_c": 0.2325
       },
       "Biology::medium": {
-        "n_sample": 909,
-        "raw_mean_b": -0.8832,
-        "raw_sd_b": 0.7068,
+        "n_sample": 908,
+        "raw_mean_b": -0.8828,
+        "raw_sd_b": 0.7071,
         "target_mean_b": -0.1272,
         "target_sd_b": 0.1334,
         "target_mean_a": 1.529,
         "target_mean_c": 0.2025
       },
       "Chemistry::advanced": {
-        "n_sample": 191,
-        "raw_mean_b": -0.2632,
-        "raw_sd_b": 0.7971,
+        "n_sample": 190,
+        "raw_mean_b": -0.2587,
+        "raw_sd_b": 0.7968,
         "target_mean_b": 1.9335,
         "target_sd_b": 0.2509,
         "target_mean_a": 1.97,
         "target_mean_c": 0.1507
       },
       "Chemistry::basic": {
-        "n_sample": 318,
-        "raw_mean_b": -1.5711,
-        "raw_sd_b": 0.5561,
+        "n_sample": 316,
+        "raw_mean_b": -1.5746,
+        "raw_sd_b": 0.5541,
         "target_mean_b": -1.3866,
         "target_sd_b": 0.0608,
         "target_mean_a": 1.211,
         "target_mean_c": 0.2365
       },
       "Chemistry::medium": {
-        "n_sample": 1192,
-        "raw_mean_b": -1.0087,
-        "raw_sd_b": 0.6637,
+        "n_sample": 1186,
+        "raw_mean_b": -1.0076,
+        "raw_sd_b": 0.6641,
         "target_mean_b": 0.1499,
         "target_sd_b": 0.2186,
         "target_mean_a": 1.5323,
         "target_mean_c": 0.2083
       },
       "Physics::advanced": {
-        "n_sample": 239,
-        "raw_mean_b": 0.93,
-        "raw_sd_b": 0.9137,
+        "n_sample": 224,
+        "raw_mean_b": 0.8727,
+        "raw_sd_b": 0.8938,
         "target_mean_b": 2.4024,
         "target_sd_b": 0.1254,
         "target_mean_a": 2.0411,
         "target_mean_c": 0.1526
       },
       "Physics::basic": {
-        "n_sample": 445,
-        "raw_mean_b": -1.4422,
-        "raw_sd_b": 0.5001,
+        "n_sample": 431,
+        "raw_mean_b": -1.4485,
+        "raw_sd_b": 0.4999,
         "target_mean_b": -1.09,
         "target_sd_b": 0.1859,
         "target_mean_a": 1.2452,
         "target_mean_c": 0.2336
       },
       "Physics::medium": {
-        "n_sample": 2861,
-        "raw_mean_b": -0.7568,
-        "raw_sd_b": 0.6887,
+        "n_sample": 2746,
+        "raw_mean_b": -0.7604,
+        "raw_sd_b": 0.6884,
         "target_mean_b": 0.6652,
         "target_sd_b": 0.2296,
         "target_mean_a": 1.6134,
